@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    height: 100vh;
+    background-color: #0f1011;
+}
+
+.home {
+    background: url("../../Resources/image/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 70vh;
+    backdrop-filter: blur(5px);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
+    padding-bottom: 6.5vh;
+}
+
+.home:after {
+    clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 100%);
+}
+
+.home_content {
+    margin-top: 31.5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.home_content h1 {
+    font-family: "GT Bold";
+    font-size: 110px;
+    color: #fff;
+    text-shadow: 14px 10px 40px black
+}
+
+.home_content h2 {
+    color: white;
+    font-family: "GT Bold";
+    text-shadow: 4px 4px 7px black
+}
+
+.buttons {
+    z-index: 10;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 66%;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+.buttons button {
+    background-color: black;
+    border: 1px transparent;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(219, 219, 219);
+    gap: 10px;
+    padding: 4px 26px 5px 16px;
+    transition: 0.3s ease-in-out;
+}
+
+.buttons button:hover {
+    background-color: #79d2b5;
+}
+
+.svg {
+    transform: scale(0.85);
+    fill: rgb(219, 219, 219);
+    transition: 0.3s;
+}
+
+.svg:hover {
+    fill: #fff
+}
+
+.home_cred {
+    display: flex;
+    justify-content: center;
+    background-color: #0f1011;
+    height: 23.5vh;
+    display: flex;
+}
+
+button div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.home_cred button {
+    height: 110px;
+    width: 20vw;
+    border: 1px transparent;
+    border-radius: 30px;
+    background-color: pink;
+}
+

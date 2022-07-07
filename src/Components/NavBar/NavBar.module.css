@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 40px 2px 30px;
+}
+
+.navbar_left {
+    display: flex;
+    gap: 50px;
+}
+
+.logodiv,
+.pathdiv,
+.navbar_right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+}
+
+.svg {
+    transform: scale(0.525);
+    fill: rgb(219, 219, 219);
+    padding-top: 3px;
+    transition: 0.3s;
+}
+
+.svg:hover {
+    fill: #fff
+}
+
+h3 {
+    color: rgb(219, 219, 219);
+    font-family: "GT Bold";
+    transition: 0.3s;
+}
+
+h3:hover {
+    color: #fff
+}
+
+.pathdiv h3,
+.navbar_right h3 {
+    font-family: "GT Bold";
+}
