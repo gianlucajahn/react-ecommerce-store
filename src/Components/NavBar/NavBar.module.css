@@ -15,35 +15,68 @@
     gap: 50px;
 }
 
+.navbar_right {
+    display: flex;
+    gap: 50px;
+}
+
 .logodiv,
 .pathdiv,
-.navbar_right {
+.cartdiv,
+.githubdiv {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 6px;
     cursor: pointer;
+    transition: ease-in-out 0.2s;
+}
+
+.logodiv:active,
+.pathdiv:active,
+.cartdiv:active,
+.githubdiv:active {
+    transform: scale(0.915);
 }
 
 .svg {
     transform: scale(0.525);
-    fill: rgb(219, 219, 219);
+    fill: #CCCCCC;
     padding-top: 3px;
     transition: 0.3s;
 }
 
+.githubdiv {
+    gap: 18px;
+}
+
+.gh {
+    padding-bottom: 3px;
+    transform: scale(1.5);
+    fill: #CCCCCC;
+    padding-top: 3px;
+    transition: 0.3s;
+}
+
+.gh:hover {
+    fill: #fff;
+}
+
 .svg:hover {
-    fill: #fff
+    fill: #fff;
 }
 
 h3 {
-    color: rgb(219, 219, 219);
+    color: #CCCCCC;
     font-family: "GT Bold";
     transition: 0.3s;
 }
 
-h3:hover {
-    color: #fff
+.logodiv h3:hover,
+.pathdiv h3:hover,
+.githubdiv h3:hover,
+.cartdiv h3:hover {
+    color: #fff;
 }
 
 .pathdiv h3,

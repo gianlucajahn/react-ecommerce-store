@@ -3,8 +3,15 @@
     padding: 0;
 }
 
+html, 
+body {
+    margin: 0; 
+    height: 100%; 
+    overflow: hidden
+}
+
 .main {
-    height: 100vh;
+    height: 100vh !important;
     background-color: #0f1011;
 }
 
@@ -13,7 +20,6 @@
     background-size: cover;
     background-repeat: no-repeat;
     height: 70vh;
-    backdrop-filter: blur(5px);
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
     padding-bottom: 6.5vh;
 }
@@ -63,7 +69,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    color: rgb(219, 219, 219);
     gap: 10px;
     padding: 4px 26px 5px 16px;
     transition: 0.3s ease-in-out;
@@ -98,10 +103,33 @@ button div {
 }
 
 .home_cred button {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
     height: 110px;
-    width: 20vw;
+    width: 330px;
     border: 1px transparent;
     border-radius: 30px;
-    background-color: pink;
+    background-color: #79d2b5;
+    font-family: "GT Bold";
+    font-size: 48px;
+    cursor: pointer;
+    transition: ease-in-out 0.2s;
+}
+
+.home_cred button:active {
+    transform: scale(0.9);
+}
+
+.browse {
+    stroke: #000000;
+    stroke-width: 2px;
+}
+
+h3,
+p {
+    transition: all 0.2s;
 }
 
