@@ -12,7 +12,8 @@ const NavBar = props => {
     const { browsing,
             handleHover,
             hoverState,
-            handleBrowse
+            handleBrowse,
+            handleHome
           } = props;
     
     const variants = {
@@ -38,6 +39,7 @@ const NavBar = props => {
             <div className={styles.logodiv} id="0"
               onMouseEnter={handleHover}
               onMouseLeave={handleHover}
+              onClick={handleHome}
             >
                 <Logo className={styles.svg} style={{ fill: hoverState[0].hovered ? "#fff" : "#cccccc" }}/>
                 <h3 style={{ color: hoverState[0].hovered ? "#fff" : "#cccccc" }}>Game Store</h3>

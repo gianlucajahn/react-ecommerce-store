@@ -49,9 +49,14 @@ const Home = () => {
     ]);
   }
 
-  const handleBrowse = (e) => {
+  const handleBrowse = () => {
     setBrowsing(true);
-    navigate('/browse')
+    navigate('/browse');
+  }
+
+  const handleHome = () => {
+    setBrowsing(false);
+    navigate('/');
   }
 
   const variants = {
@@ -72,6 +77,7 @@ const Home = () => {
               hoverState={hoverState}
               browsing={browsing}
               handleBrowse={handleBrowse}
+              handleHome={handleHome}
             />
     
             <motion.div 
