@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styles from './NavBar.module.css';
 import { ReactComponent as Logo } from "../../Resources/image/logo.svg";
 import { ReactComponent as Browse } from "../../Resources/image/browse.svg";
@@ -8,13 +8,15 @@ import { ReactComponent as Search } from "../../Resources/image/search.svg";
 import { motion } from "framer-motion";
 import { useNavigate } from 'react-router-dom';
 
-const NavBar = props => {
-    const { browsing,
-            handleHover,
-            hoverState,
-            handleBrowse,
-            handleHome
-          } = props;
+const NavBar = props => { 
+    const {
+        handleHover,
+        hoverState,
+        handleHome,
+        handleBrowse,
+        browsing,
+        landingPage
+    } = props;
     
     const variants = {
         hidden: { opacity: 1, y: 15 },
@@ -31,9 +33,9 @@ const NavBar = props => {
       <motion.div 
         className={styles.navbar}
         animate="visible"
-        initial="hidden"
+        initial={ landingPage ? "hidden" : "visible"}
         variants={variants}
-        transition={{ y: { type: "spring" }, duration: 1 }}
+        transition={{ y: { type: "spring" }, duration: 0.01 }}
       >
         <div className={styles.navbar_left}>
             <div className={styles.logodiv} id="0"
@@ -55,7 +57,7 @@ const NavBar = props => {
                       animate="visible"
                       initial="hidden"
                       variants={searchVariants}
-                      transition={{ opacity: { type: "spring" }, duration: 0.3 }}
+                      transition={{ opacity: { type: "spring" }, duration: 0.01 }}
                       className={styles.searchdiv}
                     >
                         <input 

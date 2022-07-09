@@ -1,0 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.Browse {
+    background-color: #0f1011;
+    height: 100vh;
+}
+
+.browseContent {
+    margin-top: 15px;
+}
