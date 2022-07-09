@@ -4,17 +4,25 @@ import { ReactComponent as Logo } from "../../Resources/image/logo.svg";
 import { ReactComponent as Browse } from "../../Resources/image/browse.svg";
 import { ReactComponent as Cart } from "../../Resources/image/cart.svg";
 import { ReactComponent as GitHub } from "../../Resources/image/github.svg";
+import { ReactComponent as Search } from "../../Resources/image/search.svg";
 import { motion } from "framer-motion";
+import { useNavigate } from 'react-router-dom';
 
 const NavBar = props => {
     const { browsing,
             handleHover,
-            hoverState
+            hoverState,
+            handleBrowse
           } = props;
     
     const variants = {
-        hidden: { opacity: 1, y: 20 },
+        hidden: { opacity: 1, y: 15 },
         visible: { opacity: 1, y: 0 },
+    }
+
+    const searchVariants = {
+        hidden: { opacity: 0 },
+        visible: { opacity: 1 },
     }
 
   return (
@@ -41,14 +49,33 @@ const NavBar = props => {
             >
                 {browsing ? 
                   <>
-    
+                    <motion.div 
+                      animate="visible"
+                      initial="hidden"
+                      variants={searchVariants}
+                      transition={{ opacity: { type: "spring" }, duration: 0.3 }}
+                      className={styles.searchdiv}
+                    >
+                        <input 
+                          placeholder="Search games..."
+                        >
+
+                        </input>
+                        <Search 
+                          className={styles.svg}
+                          style={{ fill: hoverState[7].hovered ? "#fff" : "#cccccc" }} 
+                          onMouseEnter={handleHover}
+                          onMouseLeave={handleHover}
+                          id="7"
+                        />
+                    </motion.div>
                   </>
                   
                   :
                   
                   <>
                     <Browse className={styles.svg} style={{ fill: hoverState[1].hovered ? "#fff" : "#cccccc" }}/>
-                    <h3 style={{ color: hoverState[1].hovered ? "#fff" : "#cccccc" }}>Browse Store</h3>
+                    <h3 style={{ color: hoverState[1].hovered ? "#fff" : "#cccccc" }} onClick={handleBrowse}>Browse Store</h3>
                   </>
                 }
             </div>
