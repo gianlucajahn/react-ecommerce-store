@@ -49,6 +49,7 @@ const Home = () => {
     setHoverState([
         ...hoverState, hoverState[e.target.id] = newHoverState
     ]);
+    console.log("set state")
   }
 
   const handleBrowse = () => {
@@ -99,7 +100,7 @@ const Home = () => {
               variants={buttonVariants}
               transition={{ x: { type: "spring" }, duration: 1.5 }}
             >
-                <button id="4"
+                <button id="4" className={styles.parent}
                       onMouseEnter={handleHover}
                       onMouseLeave={handleHover}
                 >
@@ -110,7 +111,7 @@ const Home = () => {
                     </div>
                 </button>
     
-                <button id="5"
+                <button id="5" className={styles.parent}
                     onMouseEnter={handleHover}
                     onMouseLeave={handleHover}
                 >
@@ -121,7 +122,7 @@ const Home = () => {
                     </div>
                 </button>
     
-                <button id="6"
+                <button id="6" className={styles.parent}
                     onMouseEnter={handleHover}
                     onMouseLeave={handleHover}
                 >

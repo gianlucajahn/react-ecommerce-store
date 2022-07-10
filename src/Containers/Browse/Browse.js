@@ -14,6 +14,7 @@ const Browse = props => {
     const navigate = useNavigate();
     const [browsing, setBrowsing] = useState(true);
     const [landingPage, setLandingPage] = useState(false);
+    const [currentFilter, setCurrentFilter] = useState("none");
     
     const handleBrowse = () => {
         navigate('/browse');
@@ -36,7 +37,33 @@ const Browse = props => {
 
         <AnimatedPage>
             <div className={styles.browseContent}>
-              <h1 style={{ color: "#fff" }}>Text Text Text Text Text Text</h1>
+              <div className={styles.filters}>
+                <h2>Filters</h2>
+              </div>
+
+              <div className={styles.list}>
+                <h1>Trending and interesting</h1>
+                <p>Based on player counts and ratings</p>
+
+                <div className={styles.applied}>
+                  <button className={styles.filterButton}>Order by: <span>{currentFilter}</span></button>
+                  
+                  <div className={styles.displayStyle}>
+                    <p>Display options:</p>
+                    <button className={styles.desktop}>
+
+                    </button>
+
+                    <button className={styles.mobile}>
+
+                    </button>
+                  </div>
+                </div>
+
+                <div className={styles.grid}>
+
+                </div>
+              </div>
             </div>
         </AnimatedPage>
       </div>

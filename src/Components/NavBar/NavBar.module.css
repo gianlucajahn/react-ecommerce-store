@@ -33,6 +33,14 @@
     transition: ease-in-out 0.2s;
 }
 
+.logodiv *,
+.pathdiv *,
+.cartdiv *,
+.githubdiv *,
+.searchdiv * {
+    pointer-events: none;
+}
+
 .logodiv:active,
 .pathdiv:active,
 .cartdiv:active,
@@ -86,7 +94,7 @@ h3 {
 }
 
 .searchdiv input {
-    margin-left: 100px;
+    margin-left: 55px;
     background-color: #262626;
     border: 1px transparent;
     border-radius: 8px;

@@ -10,4 +10,78 @@
 
 .browseContent {
     margin-top: 15px;
+    display: flex;
+    padding-top: 25px;
+    width: 100vw;
+}
+
+.filters {
+    padding: 26px 40px 0px 40px;
+    width: 270px;
+}
+
+.filters h2 {
+    font-family: "GT Medium";
+    color: white;
+    font-size: 1.6em;
+    letter-spacing: 1px;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-right: 40px;
+}
+
+.list h1,
+.list p {
+    color: white;
+}
+
+.list h1 {
+    font-family: "GT Bold";
+    font-size: 4em;
+}
+
+.applied {
+    margin-top: 28px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.filterButton {
+    padding: 12px 22px;
+    background-color: #262626;
+    color: #fff;
+    font-family: "GT Light";
+    font-size: 0.95em;
+    border: 1px transparent;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.filterButton:hover {
+    background-color: #2d2d2d;
+}
+
+.filterButton:active {
+    transform: scale(0.9);
+}
+
+.applied button span {
+    color: #fff;
+    font-family: "GT Bold";
+}
+
+.displayStyle {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.displayStyle p {
+    color: #696969;
+    font-family: "GT Medium";
 }
