@@ -1,0 +1,90 @@
+.filters {
+    padding: 26px 40px 0px 40px;
+    width: 270px;
+}
+
+.globalFilters {
+    margin-bottom: 24px;
+}
+
+.filters h2 {
+    font-family: "GT Medium";
+    color: white;
+    font-size: 1.6em;
+    letter-spacing: 1px;
+    margin-bottom: 22px;
+}
+
+.filterDiv {
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: "GT Regular";
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.filterBtn {
+    background-color: #2d2d2d;
+    padding: 4px;
+    border: 1px transparent;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.filterSVG2 {
+    width: 25px;
+}
+
+.filterSVG3 {
+    width: 29px;
+    height: 29px;
+}
+
+.filterBtn2,
+.filterBtn4 {
+    background-color: #2d2d2d;
+    padding: 7px;
+    border: 1px transparent;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.filterBtn4 {
+    padding-left: 8px;
+    padding-right: 6px;
+    padding-bottom: 5px;
+    padding-top: 6px;
+}
+
+.filterBtn4 .filterSVG3 {
+    width: 26px;
+}
+
+.filterBtn3 {
+    padding: 6px 5px 4px 5px;
+    background-color: #2d2d2d;
+    border: 1px transparent;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.filterImg {
+    width: 26px;
+}
+
+.filterBtn,
+.filterBtn2,
+.filterBtn3,
+.filterBtn4 {
+    transition: 0.3s all;
+}
+
+.filterBtn:hover,
+.filterBtn2:hover,
+.filterBtn3:hover,
+.filterBtn4:hover {
+    background-color: #fff;
+}

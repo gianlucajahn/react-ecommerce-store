@@ -57,7 +57,7 @@ const NavBar = props => {
                       animate="visible"
                       initial="hidden"
                       variants={searchVariants}
-                      transition={{ opacity: { type: "spring" }, duration: 0.01 }}
+                      transition={{ opacity: { type: "spring" }, duration: 0.01, delay: 0.4 }}
                       className={styles.searchdiv}
                     >
                         <input 
