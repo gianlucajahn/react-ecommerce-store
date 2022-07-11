@@ -34,10 +34,8 @@
 }
 
 .logodiv *,
-.pathdiv *,
 .cartdiv *,
-.githubdiv *,
-.searchdiv * {
+.githubdiv * {
     pointer-events: none;
 }
 
