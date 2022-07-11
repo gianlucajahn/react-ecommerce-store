@@ -26,6 +26,10 @@
     cursor: pointer;
 }
 
+.filterDiv * {
+    pointer-events: none;
+}
+
 .filterBtn {
     background-color: #2d2d2d;
     padding: 4px;
@@ -55,7 +59,7 @@
 .filterBtn4 {
     padding-left: 8px;
     padding-right: 6px;
-    padding-bottom: 5px;
+    padding-bottom: 7px;
     padding-top: 6px;
 }
 
@@ -79,7 +83,7 @@
 .filterBtn2,
 .filterBtn3,
 .filterBtn4 {
-    transition: 0.3s all;
+    transition: 0.2s all;
 }
 
 .filterBtn:hover,
@@ -87,4 +91,11 @@
 .filterBtn3:hover,
 .filterBtn4:hover {
     background-color: #fff;
+}
+
+.filterSVG1,
+.filterSVG2,
+.filterSVG3,
+.filterSVG4 {
+    transition: 0.2s all;
 }

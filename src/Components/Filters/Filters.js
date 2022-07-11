@@ -13,35 +13,44 @@ import { ReactComponent as Racing } from "../../Resources/image/racing.svg";
 import { ReactComponent as Sports } from "../../Resources/image/sports.svg";
 
 const Filters = props => {
+    const {
+        hoverState,
+        handleHover,
+        handleSelect,
+        currentFilter
+    } = props;
+
     return (
         <div className={styles.filters}>
           <h2>Filters</h2>
 
           <div className={styles.globalFilters}>
-               <div className={styles.filterDiv}>
-                 <button className={styles.filterBtn}>
+               <div className={`${styles.filterDiv} ${styles.Wishlist}`} id="8" onMouseEnter={handleHover} onMouseLeave={handleHover} onClick={handleSelect}>
+                 <button className={`${styles.filterBtn} ${styles.Wishlist}`} style={{ backgroundColor: (hoverState[8].hovered || currentFilter == "Wishlist") ? "#fff" : "#2d2d2d" }}>
                      <Wishlist 
-                       className={styles.filterSVG1} 
+                        style={{ fill: (hoverState[8].hovered || currentFilter == "Wishlist") ? "#000000" : "#fff" }} 
+                        className={styles.Wishlist}
                      />
                  </button>
                  Wishlist
                </div>
      
-               <div className={styles.filterDiv}>
-                 <button className={styles.filterBtn2}>
+               <div className={`${styles.filterDiv} ${styles.Ratings}`} id="9" onMouseEnter={handleHover} onMouseLeave={handleHover} onClick={handleSelect}>
+                 <button className={`${styles.filterBtn2} ${styles.Ratings}`} style={{ backgroundColor: (hoverState[9].hovered || currentFilter == "Ratings") ? "#fff" : "#2d2d2d" }}>
                      <Ratings
-                       className={styles.filterSVG2} 
+                       className={`${styles.filterSVG2} ${styles.Ratings}`} 
+                       style={{ fill: (hoverState[9].hovered || currentFilter == "Ratings") ? "#000000" : "#fff" }} 
                      />
                  </button>
                  Ratings
                </div>
      
-               <div className={styles.filterDiv}>
-                 <button className={styles.filterBtn3}>
+               <div className={`${styles.filterDiv} ${styles.Reviews}`} id="10" onMouseEnter={handleHover} onMouseLeave={handleHover} onClick={handleSelect}>
+                 <button className={`${styles.filterBtn3} ${styles.Reviews}`} style={{ backgroundColor: (hoverState[10].hovered || currentFilter == "Reviews") ? "#fff" : "#2d2d2d" }}>
                      <Reviews
-                       className={styles.filterSVG3} 
+                       className={`${styles.filterSVG3} ${styles.Reviews}`} 
                        viewBox="0 0 48 48" 
-                       style={{ fill: "#fff" }}
+                       style={{ fill: (hoverState[10].hovered || currentFilter == "Reviews") ? "#000000" : "#fff" }} 
                      />
                  </button>
                  Reviews
@@ -51,59 +60,82 @@ const Filters = props => {
           <div className={styles.genreFilters}>
             <h2>Genres</h2>
 
-            <div className={styles.filterDiv}>
-                 <button className={styles.filterBtn3}>
+            <div className={styles.filterDiv} id="11" onMouseEnter={handleHover} onMouseLeave={handleHover} onClick={handleSelect}>
+                 <button className={styles.filterBtn3} style={{ backgroundColor: (hoverState[11].hovered || currentFilter == "Action") ? "#fff" : "#2d2d2d" }}>
                     <Action 
-                      className={styles.filterSVG3} />
+                      className={styles.filterSVG3}
+                      style={{ fill: (hoverState[11].hovered || currentFilter == "Action") ? "#000000" : "#fff" }} 
+                    />
                  </button>
                  Action
             </div>
 
-            <div className={styles.filterDiv}>
-                 <button className={styles.filterBtn2}>
-                     <Strategy className={styles.filterSVG2} />
+            <div className={styles.filterDiv} id="12" onMouseEnter={handleHover} onMouseLeave={handleHover} onClick={handleSelect}>
+                 <button className={styles.filterBtn2} style={{ backgroundColor: (hoverState[12].hovered || currentFilter == "Strategy") ? "#fff" : "#2d2d2d" }}>
+                     <Strategy 
+                       className={styles.filterSVG2} 
+                       style={{ fill: (hoverState[12].hovered || currentFilter == "Strategy") ? "#000000" : "#fff" }} 
+                     />
                  </button>
                  Strategy
             </div>
 
-            <div className={styles.filterDiv}>
-                 <button className={styles.filterBtn3}>
-                     <RPG className={styles.filterSVG3} />
+            <div className={styles.filterDiv} id="13" onMouseEnter={handleHover} onMouseLeave={handleHover} onClick={handleSelect}>
+                 <button className={styles.filterBtn3} style={{ backgroundColor: (hoverState[13].hovered || currentFilter == "RPG") ? "#fff" : "#2d2d2d" }}>
+                     <RPG 
+                       className={styles.filterSVG3} 
+                       style={{ fill: (hoverState[13].hovered || currentFilter == "RPG") ? "#000000" : "#fff" }} 
+                      />
                  </button>
                  RPG
             </div>
 
-            <div className={styles.filterDiv}>
-                 <button className={styles.filterBtn2}>
-                     <Shooter className={styles.filterSVG2} />
+            <div className={styles.filterDiv} id="14" onMouseEnter={handleHover} onMouseLeave={handleHover} onClick={handleSelect}>
+                 <button className={styles.filterBtn2} style={{ backgroundColor: (hoverState[14].hovered || currentFilter == "Shooter") ? "#fff" : "#2d2d2d" }}>
+                     <Shooter 
+                       className={styles.filterSVG2} 
+                       style={{ fill: (hoverState[14].hovered || currentFilter == "Shooter") ? "#000000" : "#fff" }} 
+                      />
                  </button>
                  Shooter
             </div>
 
-            <div className={styles.filterDiv}>
-                 <button className={styles.filterBtn2}>
-                     <Adventure className={styles.filterSVG2} />
+            <div className={styles.filterDiv} id="15" onMouseEnter={handleHover} onMouseLeave={handleHover} onClick={handleSelect}>
+                 <button className={styles.filterBtn2} style={{ backgroundColor: (hoverState[15].hovered || currentFilter == "Adventure") ? "#fff" : "#2d2d2d" }}>
+                     <Adventure 
+                       className={styles.filterSVG2} 
+                       style={{ fill: (hoverState[15].hovered || currentFilter == "Adventure") ? "#000000" : "#fff" }} 
+                      />
                  </button>
                  Adventure
             </div>
 
-            <div className={styles.filterDiv}>
-                 <button className={styles.filterBtn4}>
-                     <Puzzle className={styles.filterSVG2} />
+            <div className={styles.filterDiv} id="16" onMouseEnter={handleHover} onMouseLeave={handleHover} onClick={handleSelect}>
+                 <button className={styles.filterBtn4} style={{ backgroundColor: (hoverState[16].hovered || currentFilter == "Puzzle") ? "#fff" : "#2d2d2d" }}>
+                     <Puzzle 
+                       className={styles.filterSVG2} 
+                       style={{ fill: (hoverState[16].hovered || currentFilter == "Puzzle") ? "#000000" : "#fff" }} 
+                      />
                  </button>
                  Puzzle
             </div>
 
-            <div className={styles.filterDiv}>
-                 <button className={styles.filterBtn3}>
-                     <Racing className={styles.filterSVG3} />
+            <div className={styles.filterDiv} id="17" onMouseEnter={handleHover} onMouseLeave={handleHover} onClick={handleSelect}>
+                 <button className={styles.filterBtn3} style={{ backgroundColor: (hoverState[17].hovered || currentFilter == "Racing") ? "#fff" : "#2d2d2d" }}>
+                     <Racing 
+                       className={styles.filterSVG3} 
+                       style={{ fill: (hoverState[17].hovered || currentFilter == "Racing") ? "#000000" : "#fff" }} 
+                      />
                  </button>
                  Racing
             </div>
 
-            <div className={styles.filterDiv}>
-                 <button className={styles.filterBtn4}>
-                     <Sports className={styles.filterSVG3} />
+            <div className={styles.filterDiv} id="18" onMouseEnter={handleHover} onMouseLeave={handleHover} onClick={handleSelect}>
+                 <button className={styles.filterBtn4} style={{ backgroundColor: (hoverState[18].hovered || currentFilter == "Sports") ? "#fff" : "#2d2d2d" }}>
+                     <Sports 
+                       className={styles.filterSVG3} 
+                       style={{ fill: (hoverState[18].hovered || currentFilter == "Sports") ? "#000000" : "#fff" }} 
+                      />
                  </button>
                  Sports
             </div>

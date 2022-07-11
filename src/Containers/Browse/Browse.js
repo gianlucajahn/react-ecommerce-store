@@ -11,13 +11,14 @@ import Filters from '../../Components/Filters/Filters';
 const Browse = props => {
   const { 
           handleHover,
-          hoverState
+          handleSelect,
+          hoverState,
+          currentFilter
         } = props;
     
     const navigate = useNavigate();
     const [browsing, setBrowsing] = useState(true);
     const [landingPage, setLandingPage] = useState(false);
-    const [currentFilter, setCurrentFilter] = useState("none");
     const [grid, setGrid] = useState(true);
     
     const handleBrowse = () => {
@@ -49,7 +50,12 @@ const Browse = props => {
 
         <AnimatedPage>
             <div className={styles.browseContent}>
-              <Filters />
+              <Filters 
+                hoverState={hoverState}
+                handleHover={handleHover}
+                handleSelect={handleSelect}
+                currentFilter={currentFilter} 
+              />
 
               <div className={styles.list}>
                 <h1>Trending and interesting</h1>
