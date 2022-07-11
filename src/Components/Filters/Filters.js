@@ -26,7 +26,7 @@ const Filters = props => {
 
           <div className={styles.globalFilters}>
                <div 
-                 className={`${styles.filterDiv} ${styles.Wishlist}`} 
+                 className={styles.filterDiv} 
                  id="8" 
                  onMouseEnter={handleHover} 
                  onMouseLeave={handleHover} 
@@ -45,7 +45,7 @@ const Filters = props => {
                </div>
      
                <div 
-                 className={`${styles.filterDiv} ${styles.Ratings}`} 
+                 className={styles.filterDiv} 
                  id="9" 
                  onMouseEnter={handleHover} 
                  onMouseLeave={handleHover} 
@@ -64,7 +64,7 @@ const Filters = props => {
                </div>
      
                <div 
-                 className={`${styles.filterDiv} ${styles.Reviews}`} 
+                 className={styles.filterDiv}
                  id="10" 
                  onMouseEnter={handleHover} 
                  onMouseLeave={handleHover} 
