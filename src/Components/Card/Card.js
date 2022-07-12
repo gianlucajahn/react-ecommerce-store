@@ -15,7 +15,7 @@ const Card = props => {
 
         <div className={styles.price}>
             <div>
-                Add to cart +
+                Add to cart 
             </div>
             {game.price}
         </div>
