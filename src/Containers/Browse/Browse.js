@@ -4,9 +4,10 @@ import NavBar from '../../Components/NavBar/NavBar';
 import { useNavigate } from 'react-router-dom';
 import { AnimatePresence } from "framer-motion";
 import AnimatedPage from '../AnimatedPage/AnimatedPage';
-import { ReactComponent as Grid } from "../../Resources/image/grid.svg";
+import { ReactComponent as Grids } from "../../Resources/image/grid.svg";
 import { ReactComponent as Columns } from "../../Resources/image/columns.svg";
 import Filters from '../../Components/Filters/Filters';
+import Grid from '../../Components/Grid/Grid';
 
 const Browse = props => {
   const { 
@@ -67,7 +68,7 @@ const Browse = props => {
                   <div className={styles.displayStyle}>
                     <p>Display options:</p>
                     <button className={styles.displayBtn}>
-                      <Grid 
+                      <Grids 
                         className={styles.displayItem} 
                         style={{ fill: grid ? "#e5e5e5" : "#6f6f6f" }}
                         onClick={handleLayoutSwitch} 
@@ -86,9 +87,7 @@ const Browse = props => {
                   </div>
                 </div>
 
-                <div className={styles.grid}>
-
-                </div>
+                <Grid />
               </div>
             </div>
         </AnimatedPage>

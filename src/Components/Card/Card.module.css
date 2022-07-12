@@ -1,0 +1,45 @@
+.card {
+    background-color: #202020;
+    grid-column: auto;
+    border: 1px transparent;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.3s all;
+}
+
+.card:hover {
+    background-color: #2d2d2d;
+}
+
+.card:active {
+    transform: scale(0.9375);
+}
+
+.card img {
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    max-width: 100%;
+}
+
+.card div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 15px 3px 7px;
+}
+
+.name {
+    color: white;
+    padding-left: 14px;
+    font-family: "GT Bold";
+    padding-bottom: 30px;
+}
+
+.price {
+    color: white;
+    font-family: "GT Medium";
+}
+
+.price div {
+    color: #999;
+}
