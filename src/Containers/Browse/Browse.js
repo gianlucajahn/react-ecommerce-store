@@ -1,5 +1,5 @@
 import styles from './Browse.module.css';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import NavBar from '../../Components/NavBar/NavBar';
 import { useNavigate } from 'react-router-dom';
 import { AnimatePresence } from "framer-motion";
@@ -14,7 +14,8 @@ const Browse = props => {
           handleHover,
           handleSelect,
           hoverState,
-          currentFilter
+          currentFilter,
+          shownGames
         } = props;
     
     const navigate = useNavigate();
@@ -63,7 +64,7 @@ const Browse = props => {
                 <p>Based on player counts and ratings</p>
 
                 <div className={styles.applied}>
-                  <button className={styles.filterButton}>Order by: <span>{currentFilter}</span></button>
+                  <button className={styles.filterButton}>Filter by: <span>{currentFilter}</span></button>
                   
                   <div className={styles.displayStyle}>
                     <p>Display options:</p>
@@ -87,7 +88,9 @@ const Browse = props => {
                   </div>
                 </div>
 
-                <Grid />
+                <Grid 
+                  shownGames={shownGames}
+                />
               </div>
             </div>
         </AnimatedPage>

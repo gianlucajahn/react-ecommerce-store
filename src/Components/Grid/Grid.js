@@ -2,20 +2,16 @@ import styles from './Grid.module.css';
 import React from 'react';
 import Card from '../Card/Card';
 
-const Grid = () => {
-    const games = [
-        "Cyberpunk",
-        "Battlefield",
-        "Life-Is-Strange",
-        "Mario-Kart"
-    ];
+const Grid = props => {
+    const {
+        shownGames
+    } = props;
 
     return (
       <div className={styles.gridContainer}>
-        <Card game={games[0]} />
-        <Card game={games[1]} />
-        <Card game={games[2]} />
-        <Card game={games[3]} />
+        {shownGames.map((game, i) => {
+            return <Card game={game} key={i} />
+        })}
       </div>
     );
   }

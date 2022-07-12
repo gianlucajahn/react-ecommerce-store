@@ -4,6 +4,7 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 311px;
     grid-gap: 20px;
+    padding-bottom: 50px;
 }
 
 @media (max-width: 1700px) {

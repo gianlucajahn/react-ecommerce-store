@@ -5,7 +5,7 @@
 
 .Browse {
     background-color: #0f1011;
-    min-height: 100vh;
+    overflow-y: hidden
 }
 
 .browseContent {
@@ -31,7 +31,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding-right: 40px;
+    padding-right: 60px;
 }
 
 .list h1,

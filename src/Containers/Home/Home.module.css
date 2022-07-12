@@ -6,8 +6,6 @@
 html, 
 body {
     margin: 0; 
-    height: 100%; 
-    overflow: hidden
 }
 
 .parent * {
@@ -17,6 +15,7 @@ body {
 .main {
     height: 100vh !important;
     background-color: #0f1011;
+    overflow: hidden;
 }
 
 .home {

@@ -8,9 +8,11 @@ import NotFound from './Containers/NotFound/NotFound';
 import Home from './Containers/Home/Home';
 import { AnimatePresence } from "framer-motion";
 import filterNames from './utils/filterNames';
+import games from './utils/games';
 
 function App() {
   const [currentFilter, setCurrentFilter] = useState("none");
+  const [shownGames, setShownGames] = useState(games);
   const [hoverState, setHoverState] = useState([
     {
         hovered: false,
@@ -112,8 +114,8 @@ const location = useLocation();
   return (
       <AnimatePresence exitBeforeEnter>
           <Routes key={location.pathname} location={location}>
-            <Route path="/" element={<Home handleHover={handleHover} hoverState={hoverState} />} />
-            <Route path="/browse" element={<Browse handleHover={handleHover} handleSelect={handleSelect} hoverState={hoverState} currentFilter={currentFilter} />} />
+            <Route path="/" element={<Home handleHover={handleHover} hoverState={hoverState} shownGames={shownGames} />} />
+            <Route path="/browse" element={<Browse handleHover={handleHover} handleSelect={handleSelect} hoverState={hoverState} currentFilter={currentFilter} shownGames={shownGames} />} />
             <Route path="/:gameId" element={<GamePage />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
