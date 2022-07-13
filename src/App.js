@@ -96,6 +96,10 @@ const handleSelect = (e) => {
   setCurrentFilter(filterNames[e.target.id - 8]);
 }
 
+const clearFilter = () => {
+  setCurrentFilter("none");
+}
+
 const handleHover = (e) => {
   if (hoverState[e.target.id].selected) {
     return;
@@ -115,7 +119,7 @@ const location = useLocation();
       <AnimatePresence exitBeforeEnter>
           <Routes key={location.pathname} location={location}>
             <Route path="/" element={<Home handleHover={handleHover} hoverState={hoverState} shownGames={shownGames} />} />
-            <Route path="/browse" element={<Browse handleHover={handleHover} handleSelect={handleSelect} hoverState={hoverState} currentFilter={currentFilter} shownGames={shownGames} setShownGames={setShownGames} />} />
+            <Route path="/browse" element={<Browse handleHover={handleHover} handleSelect={handleSelect} hoverState={hoverState} currentFilter={currentFilter} shownGames={shownGames} setShownGames={setShownGames} clearFilter={clearFilter} />} />
             <Route path="/:gameId" element={<GamePage />} />
             <Route path="*" element={<NotFound />} />
           </Routes>

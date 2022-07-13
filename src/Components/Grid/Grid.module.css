@@ -7,6 +7,20 @@
     padding-bottom: 50px;
 }
 
+.reviews {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.reviews h2 {
+    font-size: 3em;
+    font-family: "GT Bold";
+    color: white;
+}
+
 @media (max-width: 1700px) {
     .gridContainer {
         grid-template-rows: 280px;
