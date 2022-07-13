@@ -11,7 +11,9 @@ const games = [
         developers: 'CD PROJECT RED, CD PROJECT',
         publishers: 'CD PROJECT RED',
         inCart: false,
-        selected: false
+        selected: false,
+        isLiked: false,
+        rating: 78
     },
     {
         name: "Battlefield V",
@@ -25,7 +27,9 @@ const games = [
         developers: 'EA Digital Illusions CE',
         publishers: 'Electronic Arts',
         inCart: false,
-        selected: false
+        selected: false,
+        isLiked: false,
+        rating: 71
     },
     {
         name: "Life is Strange",
@@ -39,7 +43,9 @@ const games = [
         developers: 'Dontnod Entertainment',
         publishers: 'Square Enix',
         inCart: false,
-        selected: false
+        selected: false,
+        isLiked: false,
+        rating: 83
     },
     {
         name: "Mario Kart 8: Deluxe",
@@ -53,7 +59,9 @@ const games = [
         developers: 'Nintendo EAD',
         publishers: 'Nintendo',
         inCart: false,
-        selected: false
+        selected: false,
+        isLiked: false,
+        rating: 84
     },
     {
         name: "Bioshock Infinite",
@@ -67,7 +75,9 @@ const games = [
         developers: 'Irrational Games',
         publishers: '2K Games',
         inCart: false,
-        selected: false
+        selected: false,
+        isLiked: false,
+        rating: 86
     },
     {
         name: "Anno: 1800",
@@ -81,7 +91,9 @@ const games = [
         developers: 'Blue Byte',
         publishers: 'Ubisoft',
         inCart: false,
-        selected: false
+        selected: false,
+        isLiked: false,
+        rating: 81
     },
     {
         name: "Red Dead Redemption 2",
@@ -95,7 +107,9 @@ const games = [
         developers: 'Rockstar Studios',
         publishers: 'Rockstar Games',
         inCart: false,
-        selected: false
+        selected: false,
+        isLiked: false,
+        rating: 92
     },
     {
         name: "Horizon Zero Dawn",
@@ -109,7 +123,9 @@ const games = [
         developers: 'Guerrilla Games',
         publishers: 'Sony Interactive Entertainment',
         inCart: false,
-        selected: false
+        selected: false,
+        isLiked: false,
+        rating: 90
     },
     {
         name: "Grand Theft Auto: V",
@@ -123,7 +139,9 @@ const games = [
         developers: 'Rockstar North',
         publishers: 'Rockstar Games',
         inCart: false,
-        selected: false
+        selected: false,
+        isLiked: false,
+        rating: 90
     },
     {
         name: "Warframe",
@@ -137,7 +155,9 @@ const games = [
         developers: 'Digital Extremes',
         publishers: 'Digital Extremes',
         inCart: false,
-        selected: false
+        selected: false,
+        isLiked: false,
+        rating: 76
     },
     {
         name: "Minecraft",
@@ -151,7 +171,9 @@ const games = [
         developers: 'Mojang',
         publishers: 'Mojang / Xbox Game Studios / Sony Interactive Entertainment',
         inCart: false,
-        selected: false
+        selected: false,
+        isLiked: false,
+        rating: 84
     },
     {
         name: "Rise of the Tomb Raider",
@@ -165,7 +187,9 @@ const games = [
         developers: 'Crystal Dynamics',
         publishers: 'Microsoft Studios / Square Enix Europe',
         inCart: false,
-        selected: false
+        selected: false,
+        isLiked: false,
+        rating: 82
     },
     {
         name: "Metro 2033",
@@ -179,7 +203,9 @@ const games = [
         developers: '4A Games',
         publishers: 'THQ / Deep Silver',
         inCart: false,
-        selected: false
+        selected: false,
+        isLiked: false,
+        rating: 82
     },
     {
         name: "Terraria",
@@ -193,7 +219,9 @@ const games = [
         developers: 'Re-Logic',
         publishers: '505 Games',
         inCart: false,
-        selected: false
+        selected: false,
+        isLiked: false,
+        rating: 81
     },
     {
         name: "Rocket League",
@@ -207,7 +235,9 @@ const games = [
         developers: 'Psyonix',
         publishers: 'Psyonix',
         inCart: false,
-        selected: false
+        selected: false,
+        isLiked: false,
+        rating: 83
     },
     {
         name: "The Witcher 3: Wild Hunt",
@@ -221,7 +251,9 @@ const games = [
         developers: 'CD PROJECT RED',
         publishers: 'CD PROJECT',
         inCart: false,
-        selected: false
+        selected: false,
+        isLiked: false,
+        rating: 95
     },
     {
         name: "Hitman",
@@ -235,7 +267,9 @@ const games = [
         developers: 'IO Interactive',
         publishers: 'Square Enix Europe',
         inCart: false,
-        selected: false
+        selected: false,
+        isLiked: false,
+        rating: 81
     },
     {
         name: "Fallout 4",
@@ -249,7 +283,9 @@ const games = [
         developers: 'Bethesda Game Studios',
         publishers: 'Bethesda Softworks',
         inCart: false,
-        selected: false
+        selected: false,
+        isLiked: false,
+        rating: 80
     },
     {
         name: "GTA: San Andreas",
@@ -263,7 +299,9 @@ const games = [
         developers: 'Rockstar North',
         publishers: 'Rockstar Games',
         inCart: false,
-        selected: false
+        selected: false,
+        isLiked: false,
+        rating: 90
     },
     {
         name: "Golf with your Friends",
@@ -277,7 +315,9 @@ const games = [
         developers: 'Blacklight Interactive',
         publishers: 'Team17 Digital / Blacklight Interactive',
         inCart: false,
-        selected: false
+        selected: false,
+        isLiked: false,
+        rating: 70
     },
     {
         name: "Heavy Rain",
@@ -291,7 +331,9 @@ const games = [
         developers: 'Quantic Dream',
         publishers: 'Sony Computer Entertainment / Quantic Dream',
         inCart: false,
-        selected: false
+        selected: false,
+        isLiked: false,
+        rating: 82
     },
     {
         name: "Dota 2",
@@ -305,7 +347,9 @@ const games = [
         developers: 'Valve',
         publishers: 'Valve',
         inCart: false,
-        selected: false
+        selected: false,
+        isLiked: false,
+        rating: 79
     },
     {
         name: "Portal 2",
@@ -319,7 +363,9 @@ const games = [
         developers: 'Valve',
         publishers: 'Valve',
         inCart: false,
-        selected: false
+        selected: false,
+        isLiked: false,
+        rating: 92
     },
     {
         name: "Sid Meier's Civilization VI",
@@ -333,7 +379,9 @@ const games = [
         developers: 'Firaxis Games',
         publishers: '2K Games / Aspyr Media',
         inCart: false,
-        selected: false
+        selected: false,
+        isLiked: false,
+        rating: 82
     },
     {
         name: "God of War",
@@ -347,7 +395,9 @@ const games = [
         developers: 'Santa Monica Studio',
         publishers: 'Sony Interactive Entertainment',
         inCart: false,
-        selected: false
+        selected: false,
+        isLiked: false,
+        rating: 94
     },
     {
         name: "FIFA 22",
@@ -361,7 +411,9 @@ const games = [
         developers: 'EA Vancouver / EA Romania',
         publishers: 'EA Sports',
         inCart: false,
-        selected: false
+        selected: false,
+        isLiked: false,
+        rating: 80
     },
     {
         name: "Half-Life 2",
@@ -375,7 +427,9 @@ const games = [
         developers: 'Valve',
         publishers: 'Valve',
         inCart: false,
-        selected: false
+        selected: false,
+        isLiked: false,
+        rating: 91
     },
     {
         name: "The Walking Dead: S1",
@@ -389,7 +443,9 @@ const games = [
         developers: 'Telltale Games',
         publishers: 'Telltale Games',
         inCart: false,
-        selected: false
+        selected: false,
+        isLiked: false,
+        rating: 86
     },
     {
         name: "Crusader Kings III",
@@ -403,7 +459,9 @@ const games = [
         developers: 'Paradox Development Studios',
         publishers: 'Paradox Interactive',
         inCart: false,
-        selected: false
+        selected: false,
+        isLiked: false,
+        rating: 85
     },
     {
         name: "Counter Strike: GO",
@@ -417,7 +475,9 @@ const games = [
         developers: 'Valve / Hidden Path Entertainment',
         publishers: 'Valve',
         inCart: false,
-        selected: false
+        selected: false,
+        isLiked: false,
+        rating: 82
     },
     {
         name: "Detroit: Become Human",
@@ -431,7 +491,9 @@ const games = [
         developers: 'Quantic Dream',
         publishers: 'Sony Interactive Entertainment / Quantic Dream',
         inCart: false,
-        selected: false
+        selected: false,
+        isLiked: false,
+        rating: 89
     },
     {
         name: "Tomb Raider",
@@ -445,7 +507,9 @@ const games = [
         developers: 'Crystal Dynamics',
         publishers: 'Square Enix Europe',
         inCart: false,
-        selected: false
+        selected: false,
+        isLiked: false,
+        rating: 85
     },
 ]
 

@@ -6,6 +6,24 @@
 html, 
 body {
     margin: 0; 
+    min-width: 100vh;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    display: none;
+}
+
+::-webkit-scrollbar-track {
+    background: #0f1011;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
 }
 
 .parent * {
@@ -13,7 +31,6 @@ body {
 }
 
 .main {
-    height: 100vh !important;
     background-color: #0f1011;
     overflow: hidden;
 }

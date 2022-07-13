@@ -115,7 +115,7 @@ const location = useLocation();
       <AnimatePresence exitBeforeEnter>
           <Routes key={location.pathname} location={location}>
             <Route path="/" element={<Home handleHover={handleHover} hoverState={hoverState} shownGames={shownGames} />} />
-            <Route path="/browse" element={<Browse handleHover={handleHover} handleSelect={handleSelect} hoverState={hoverState} currentFilter={currentFilter} shownGames={shownGames} />} />
+            <Route path="/browse" element={<Browse handleHover={handleHover} handleSelect={handleSelect} hoverState={hoverState} currentFilter={currentFilter} shownGames={shownGames} setShownGames={setShownGames} />} />
             <Route path="/:gameId" element={<GamePage />} />
             <Route path="*" element={<NotFound />} />
           </Routes>

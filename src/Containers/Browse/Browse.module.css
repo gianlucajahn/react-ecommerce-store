@@ -5,7 +5,8 @@
 
 .Browse {
     background-color: #0f1011;
-    overflow-y: hidden
+    overflow-y: hidden;
+    min-height: 100vh;
 }
 
 .browseContent {
@@ -18,6 +19,15 @@
 .filters {
     padding: 26px 40px 0px 40px;
     width: 270px;
+}
+
+.filterList {
+    display: flex;
+    gap: 8px;
+}
+
+.clearButton {
+    font-family: "GT Bold" !important;
 }
 
 .filters h2 {
