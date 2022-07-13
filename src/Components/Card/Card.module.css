@@ -5,14 +5,16 @@
     border-radius: 12px;
     cursor: pointer;
     transition: 0.3s all;
+    position: relative;
 }
 
 .card:hover {
     background-color: #2d2d2d;
+    transform: scale(1.035);
 }
 
 .card:active {
-    transform: scale(0.9375);
+    transform: scale(0.975);
 }
 
 .card img {
@@ -42,4 +44,27 @@
 
 .price div {
     color: #999;
+}
+
+.like {
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    width: 18px;
+    bottom: 5%;
+    right: 4.5%;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.like * {
+    pointer-events: none;
+}
+
+.likeSVG:hover {
+    fill: rgb(248, 103, 103);
+}
+
+.likeSVG:focus {
+    transform: scale(1.25);
 }

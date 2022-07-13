@@ -3,6 +3,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 311px;
+    grid-auto-rows: 311px;
     grid-gap: 20px;
     padding-bottom: 50px;
 }
@@ -24,5 +25,6 @@
 @media (max-width: 1700px) {
     .gridContainer {
         grid-template-rows: 280px;
+        grid-auto-rows: 280px;
     }
 }

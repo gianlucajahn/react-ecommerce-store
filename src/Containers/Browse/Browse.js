@@ -18,7 +18,12 @@ const Browse = props => {
           currentFilter,
           shownGames,
           setShownGames,
-          clearFilter
+          clearFilter,
+          setReviewDisplay,
+          reviewDisplay,
+          allGames,
+          setAllGames,
+          handleLike
         } = props;
     
     const navigate = useNavigate();
@@ -41,22 +46,28 @@ const Browse = props => {
         setGrid(false);
       }
     }
-    
+
     useEffect(() => {
       if (currentFilter == "none") {
-        console.log(games + " in the none-if");
-        setShownGames(games);
+        setShownGames(allGames);
 
-      } else if (currentFilter != "Ratings") {
-          let filteredShownGames = games.filter(game => game.genre === currentFilter);
+      } else if (currentFilter != "Ratings" && currentFilter != "Reviews" && currentFilter != "Wishlist") {
+          let filteredShownGames = allGames.filter(game => game.genre === currentFilter);
           setShownGames(filteredShownGames);
 
       } else if (currentFilter === "Ratings") {
-          let filteredShownGames = games.slice(0);
+          let filteredShownGames = allGames.slice(0);
           filteredShownGames = filteredShownGames.sort(function(a, b) {
             return b.rating - a.rating;
           })
           setShownGames(filteredShownGames);
+
+      } else if (currentFilter === "Reviews") {
+          setReviewDisplay(true);
+      }
+
+      if (currentFilter != "Reviews") {
+          setReviewDisplay(false);
       }
     }, [currentFilter])
 
@@ -114,6 +125,8 @@ const Browse = props => {
 
                 <Grid 
                   shownGames={shownGames}
+                  reviewDisplay={reviewDisplay}
+                  handleLike={handleLike}
                 />
               </div>
             </div>

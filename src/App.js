@@ -12,7 +12,9 @@ import games from './utils/games';
 
 function App() {
   const [currentFilter, setCurrentFilter] = useState("none");
-  const [shownGames, setShownGames] = useState(games);
+  const [allGames, setAllGames] = useState(games);
+  const [shownGames, setShownGames] = useState(allGames);
+  const [reviewDisplay, setReviewDisplay] = useState(false);
   const [hoverState, setHoverState] = useState([
     {
         hovered: false,
@@ -96,8 +98,26 @@ const handleSelect = (e) => {
   setCurrentFilter(filterNames[e.target.id - 8]);
 }
 
+const handleLike = (e) => {
+  let handledLike = allGames.map((game, i) => {
+    if (e.target.id == i) {
+      console.log(e.target);
+      console.log(i);
+      game.isLiked = true;
+      return game
+    } else {
+      console.log(e.target)
+      return game;
+    }
+  });
+
+  console.log(handledLike);
+  setAllGames(handledLike);
+}
+
 const clearFilter = () => {
   setCurrentFilter("none");
+  setReviewDisplay(false);
 }
 
 const handleHover = (e) => {
@@ -118,8 +138,26 @@ const location = useLocation();
   return (
       <AnimatePresence exitBeforeEnter>
           <Routes key={location.pathname} location={location}>
-            <Route path="/" element={<Home handleHover={handleHover} hoverState={hoverState} shownGames={shownGames} />} />
-            <Route path="/browse" element={<Browse handleHover={handleHover} handleSelect={handleSelect} hoverState={hoverState} currentFilter={currentFilter} shownGames={shownGames} setShownGames={setShownGames} clearFilter={clearFilter} />} />
+            <Route path="/" element={<Home 
+                                        handleHover={handleHover} 
+                                        hoverState={hoverState} 
+                                        shownGames={shownGames} 
+                                      />} />
+            <Route path="/browse" element={<Browse 
+          
+                                              handleHover={handleHover} 
+                                              handleSelect={handleSelect} 
+                                              hoverState={hoverState} 
+                                              currentFilter={currentFilter} 
+                                              shownGames={shownGames} 
+                                              setShownGames={setShownGames} 
+                                              clearFilter={clearFilter} 
+                                              reviewDisplay={reviewDisplay}
+                                              setReviewDisplay={setReviewDisplay}
+                                              allGames={allGames}
+                                              setAllGames={setAllGames}
+                                              handleLike={handleLike}
+                                          />} />
             <Route path="/:gameId" element={<GamePage />} />
             <Route path="*" element={<NotFound />} />
           </Routes>

@@ -49,7 +49,6 @@ const Home = () => {
     setHoverState([
         ...hoverState, hoverState[e.target.id] = newHoverState
     ]);
-    console.log("set state")
   }
 
   const handleBrowse = () => {

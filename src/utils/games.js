@@ -13,7 +13,8 @@ const games = [
         inCart: false,
         selected: false,
         isLiked: false,
-        rating: 78
+        rating: 78,
+        id: 0
     },
     {
         name: "Battlefield V",
@@ -29,7 +30,8 @@ const games = [
         inCart: false,
         selected: false,
         isLiked: false,
-        rating: 71
+        rating: 71,
+        id: 1
     },
     {
         name: "Life is Strange",
@@ -45,7 +47,8 @@ const games = [
         inCart: false,
         selected: false,
         isLiked: false,
-        rating: 83
+        rating: 83,
+        id: 2
     },
     {
         name: "Mario Kart 8: Deluxe",
@@ -61,7 +64,8 @@ const games = [
         inCart: false,
         selected: false,
         isLiked: false,
-        rating: 84
+        rating: 84,
+        id: 3
     },
     {
         name: "Bioshock Infinite",
@@ -77,7 +81,8 @@ const games = [
         inCart: false,
         selected: false,
         isLiked: false,
-        rating: 86
+        rating: 86,
+        id: 4
     },
     {
         name: "Anno: 1800",
@@ -93,7 +98,8 @@ const games = [
         inCart: false,
         selected: false,
         isLiked: false,
-        rating: 81
+        rating: 81,
+        id: 5
     },
     {
         name: "Red Dead Redemption 2",
@@ -109,7 +115,8 @@ const games = [
         inCart: false,
         selected: false,
         isLiked: false,
-        rating: 92
+        rating: 92,
+        id: 6
     },
     {
         name: "Horizon Zero Dawn",
@@ -125,7 +132,8 @@ const games = [
         inCart: false,
         selected: false,
         isLiked: false,
-        rating: 90
+        rating: 90,
+        id: 7
     },
     {
         name: "Grand Theft Auto: V",
@@ -141,7 +149,8 @@ const games = [
         inCart: false,
         selected: false,
         isLiked: false,
-        rating: 90
+        rating: 90,
+        id: 8
     },
     {
         name: "Warframe",
@@ -157,7 +166,8 @@ const games = [
         inCart: false,
         selected: false,
         isLiked: false,
-        rating: 76
+        rating: 76,
+        id: 9
     },
     {
         name: "Minecraft",
@@ -173,7 +183,8 @@ const games = [
         inCart: false,
         selected: false,
         isLiked: false,
-        rating: 84
+        rating: 84,
+        id: 10
     },
     {
         name: "Rise of the Tomb Raider",
@@ -189,7 +200,8 @@ const games = [
         inCart: false,
         selected: false,
         isLiked: false,
-        rating: 82
+        rating: 82,
+        id: 11
     },
     {
         name: "Metro 2033",
@@ -205,7 +217,8 @@ const games = [
         inCart: false,
         selected: false,
         isLiked: false,
-        rating: 82
+        rating: 82,
+        id: 12
     },
     {
         name: "Terraria",
@@ -221,7 +234,8 @@ const games = [
         inCart: false,
         selected: false,
         isLiked: false,
-        rating: 81
+        rating: 81,
+        id: 13
     },
     {
         name: "Rocket League",
@@ -237,7 +251,8 @@ const games = [
         inCart: false,
         selected: false,
         isLiked: false,
-        rating: 83
+        rating: 83,
+        id: 14
     },
     {
         name: "The Witcher 3: Wild Hunt",
@@ -253,7 +268,8 @@ const games = [
         inCart: false,
         selected: false,
         isLiked: false,
-        rating: 95
+        rating: 95,
+        id: 15
     },
     {
         name: "Hitman",
@@ -269,7 +285,8 @@ const games = [
         inCart: false,
         selected: false,
         isLiked: false,
-        rating: 81
+        rating: 81,
+        id: 16
     },
     {
         name: "Fallout 4",
@@ -285,7 +302,8 @@ const games = [
         inCart: false,
         selected: false,
         isLiked: false,
-        rating: 80
+        rating: 80,
+        id: 17
     },
     {
         name: "GTA: San Andreas",
@@ -301,7 +319,8 @@ const games = [
         inCart: false,
         selected: false,
         isLiked: false,
-        rating: 90
+        rating: 90,
+        id: 18
     },
     {
         name: "Golf with your Friends",
@@ -317,7 +336,8 @@ const games = [
         inCart: false,
         selected: false,
         isLiked: false,
-        rating: 70
+        rating: 70,
+        id: 19
     },
     {
         name: "Heavy Rain",
@@ -333,7 +353,8 @@ const games = [
         inCart: false,
         selected: false,
         isLiked: false,
-        rating: 82
+        rating: 82,
+        id: 20
     },
     {
         name: "Dota 2",
@@ -349,7 +370,8 @@ const games = [
         inCart: false,
         selected: false,
         isLiked: false,
-        rating: 79
+        rating: 79,
+        id: 21
     },
     {
         name: "Portal 2",
@@ -365,7 +387,8 @@ const games = [
         inCart: false,
         selected: false,
         isLiked: false,
-        rating: 92
+        rating: 92,
+        id: 22
     },
     {
         name: "Sid Meier's Civilization VI",
@@ -381,7 +404,8 @@ const games = [
         inCart: false,
         selected: false,
         isLiked: false,
-        rating: 82
+        rating: 82,
+        id: 23
     },
     {
         name: "God of War",
@@ -397,7 +421,8 @@ const games = [
         inCart: false,
         selected: false,
         isLiked: false,
-        rating: 94
+        rating: 94,
+        id: 24
     },
     {
         name: "FIFA 22",
@@ -413,7 +438,8 @@ const games = [
         inCart: false,
         selected: false,
         isLiked: false,
-        rating: 80
+        rating: 80,
+        id: 25
     },
     {
         name: "Half-Life 2",
@@ -429,7 +455,8 @@ const games = [
         inCart: false,
         selected: false,
         isLiked: false,
-        rating: 91
+        rating: 91,
+        id: 26
     },
     {
         name: "The Walking Dead: S1",
@@ -445,7 +472,8 @@ const games = [
         inCart: false,
         selected: false,
         isLiked: false,
-        rating: 86
+        rating: 86,
+        id: 27
     },
     {
         name: "Crusader Kings III",
@@ -461,7 +489,8 @@ const games = [
         inCart: false,
         selected: false,
         isLiked: false,
-        rating: 85
+        rating: 85,
+        id: 28
     },
     {
         name: "Counter Strike: GO",
@@ -477,7 +506,8 @@ const games = [
         inCart: false,
         selected: false,
         isLiked: false,
-        rating: 82
+        rating: 82,
+        id: 29
     },
     {
         name: "Detroit: Become Human",
@@ -493,7 +523,8 @@ const games = [
         inCart: false,
         selected: false,
         isLiked: false,
-        rating: 89
+        rating: 89,
+        id: 30
     },
     {
         name: "Tomb Raider",
@@ -509,7 +540,8 @@ const games = [
         inCart: false,
         selected: false,
         isLiked: false,
-        rating: 85
+        rating: 85,
+        id: 31
     },
 ]
 
