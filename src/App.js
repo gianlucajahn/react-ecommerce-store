@@ -101,17 +101,13 @@ const handleSelect = (e) => {
 const handleLike = (e) => {
   let handledLike = allGames.map((game, i) => {
     if (e.target.id == i) {
-      console.log(e.target);
-      console.log(i);
-      game.isLiked = true;
+      game.isLiked = !game.isLiked
       return game
     } else {
-      console.log(e.target)
       return game;
     }
   });
 
-  console.log(handledLike);
   setAllGames(handledLike);
 }
 

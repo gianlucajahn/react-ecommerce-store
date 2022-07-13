@@ -64,6 +64,10 @@ const Browse = props => {
 
       } else if (currentFilter === "Reviews") {
           setReviewDisplay(true);
+
+      } else if (currentFilter === "Wishlist") {
+          let filteredShownGames = allGames.filter(game => game.isLiked === true);
+          setShownGames(filteredShownGames);
       }
 
       if (currentFilter != "Reviews") {
