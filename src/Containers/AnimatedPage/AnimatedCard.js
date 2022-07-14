@@ -4,7 +4,7 @@ import styles from "./AnimatedCard.module.css";
 
 const animations = {
     initial: { opacity: 0 },
-    animate: { opacity: 1, transition: { opacity: { type: "spring", duration: 1.85, bounce: 0.4 }} }
+    animate: { opacity: 1, transition: { opacity: { type: "spring", duration: 2, bounce: 0.4 }} }
 }
 
 const AnimatedCard = ({children}) => {
