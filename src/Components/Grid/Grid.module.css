@@ -2,8 +2,8 @@
     margin-top: 25px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 318px;
-    grid-auto-rows: 318px;
+    grid-template-rows: 320px;
+    grid-auto-rows: 320px;
     grid-gap: 20px;
     padding-bottom: 50px;
 }
@@ -24,7 +24,7 @@
 
 @media (max-width: 1700px) {
     .gridContainer {
-        grid-template-rows: 288px;
-        grid-auto-rows: 288px;
+        grid-template-rows: 290px;
+        grid-auto-rows: 290px;
     }
 }

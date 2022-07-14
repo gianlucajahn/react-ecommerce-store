@@ -34,6 +34,7 @@ const Browse = props => {
     const [browsing, setBrowsing] = useState(true);
     const [landingPage, setLandingPage] = useState(false);
     const [grid, setGrid] = useState(true);
+    const [loading, setLoading] = useState(true);
     
     const handleBrowse = () => {
         navigate('/browse');
@@ -91,7 +92,7 @@ const Browse = props => {
           cartAmount={cartAmount}
         />
 
-        <AnimatedPage>
+        <AnimatedPage exitBeforeEnter>
             <div className={styles.browseContent}>
               <Filters 
                 hoverState={hoverState}
@@ -112,21 +113,17 @@ const Browse = props => {
                   
                   <div className={styles.displayStyle}>
                     <p>Display options:</p>
-                    <button className={styles.displayBtn}>
+                    <button className={styles.displayBtn} onClick={handleLayoutSwitch} id="grid">
                       <Grids 
                         className={styles.displayItem} 
                         style={{ fill: grid ? "#e5e5e5" : "#6f6f6f" }}
-                        onClick={handleLayoutSwitch} 
-                        id="grid"
                       />
                     </button>
 
-                    <button className={styles.displayBtn}>
+                    <button className={styles.displayBtn} onClick={handleLayoutSwitch} id="columns"> 
                       <Columns 
                         className={styles.displayItem} 
                         style={{ fill: grid ? "#6f6f6f" : "#e5e5e5" }}
-                        onClick={handleLayoutSwitch} 
-                        id="columns"
                       />
                     </button>
                   </div>
@@ -138,6 +135,8 @@ const Browse = props => {
                   handleLike={handleLike}
                   handleHoverGame={handleHoverGame}
                   handleAddToCart={handleAddToCart}
+                  loading={loading}
+                  setLoading={setLoading}
                 />
               </div>
             </div>

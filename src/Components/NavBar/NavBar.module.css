@@ -53,6 +53,12 @@
     transition: 0.3s;
 }
 
+.svg2 {
+    width: 20px;
+    margin-right: 6px;
+    transition: 0.3s;
+}
+
 .githubdiv {
     gap: 18px;
 }

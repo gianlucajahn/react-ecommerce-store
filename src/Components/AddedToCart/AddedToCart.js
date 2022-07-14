@@ -9,12 +9,10 @@ const AddedToCart = props => {
     } = props;
 
     return (
-        <AnimatedCard>
             <div className={styles.addToCart}>
                 <h4>Added</h4>
                 <Added className={styles.add} />
             </div>
-        </AnimatedCard>
     );
   }
   

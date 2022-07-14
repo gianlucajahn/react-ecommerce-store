@@ -106,8 +106,16 @@
     padding: 0px 3px;
 }
 
+.displayBtn * {
+    pointer-events: none;
+}
+
 .displayBtn:hover {
     background-color: #313131;
+}
+
+.displayBtn:active {
+    transform: scale(0.9125);
 }
 
 .displayItem {
