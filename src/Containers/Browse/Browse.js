@@ -23,7 +23,11 @@ const Browse = props => {
           reviewDisplay,
           allGames,
           setAllGames,
-          handleLike
+          handleLike,
+          handleHoverGame,
+          cart,
+          cartAmount,
+          handleAddToCart
         } = props;
     
     const navigate = useNavigate();
@@ -84,6 +88,7 @@ const Browse = props => {
           handleHome={handleHome}
           browsing={browsing}
           landingPage={landingPage}
+          cartAmount={cartAmount}
         />
 
         <AnimatedPage>
@@ -131,6 +136,8 @@ const Browse = props => {
                   shownGames={shownGames}
                   reviewDisplay={reviewDisplay}
                   handleLike={handleLike}
+                  handleHoverGame={handleHoverGame}
+                  handleAddToCart={handleAddToCart}
                 />
               </div>
             </div>

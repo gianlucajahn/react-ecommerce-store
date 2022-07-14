@@ -6,7 +6,9 @@ const Grid = props => {
     const {
         shownGames,
         reviewDisplay,
-        handleLike
+        handleLike,
+        handleHoverGame,
+        handleAddToCart
     } = props;
 
     return (
@@ -17,7 +19,7 @@ const Grid = props => {
       </div>
       <div className={styles.gridContainer} style={{ display: reviewDisplay ? "none" : "grid" }}>
         {shownGames.map((game, i) => {
-            return <Card game={game} key={i} handleLike={handleLike} />
+            return <Card game={game} key={i} handleLike={handleLike} handleHoverGame={handleHoverGame} handleAddToCart={handleAddToCart} />
         })}
       </div>
     </>

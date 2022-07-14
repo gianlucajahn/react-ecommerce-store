@@ -1,0 +1,21 @@
+.addToCart {
+    display: flex;
+    gap: 6px;
+}
+
+.addToCart * {
+    pointer-events: none;
+}
+
+.addToCart h4 {
+    font-family: "GT Light";
+    font-size: 0.945em;
+    color: #90ee90;
+    transition: 0.3s all;
+}
+
+.add {
+    width: 14px;
+    transition: 0.3s all;
+    fill: #90ee90;
+}

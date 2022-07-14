@@ -12,6 +12,7 @@ const games = [
         publishers: 'CD PROJECT RED',
         inCart: false,
         selected: false,
+        isHovered: false,
         isLiked: false,
         rating: 78,
         id: 0
@@ -29,6 +30,7 @@ const games = [
         publishers: 'Electronic Arts',
         inCart: false,
         selected: false,
+        isHovered: false,
         isLiked: false,
         rating: 71,
         id: 1
@@ -46,6 +48,7 @@ const games = [
         publishers: 'Square Enix',
         inCart: false,
         selected: false,
+        isHovered: false,
         isLiked: false,
         rating: 83,
         id: 2
@@ -63,6 +66,7 @@ const games = [
         publishers: 'Nintendo',
         inCart: false,
         selected: false,
+        isHovered: false,
         isLiked: false,
         rating: 84,
         id: 3
@@ -80,6 +84,7 @@ const games = [
         publishers: '2K Games',
         inCart: false,
         selected: false,
+        isHovered: false,
         isLiked: false,
         rating: 86,
         id: 4
@@ -97,6 +102,7 @@ const games = [
         publishers: 'Ubisoft',
         inCart: false,
         selected: false,
+        isHovered: false,
         isLiked: false,
         rating: 81,
         id: 5
@@ -114,6 +120,7 @@ const games = [
         publishers: 'Rockstar Games',
         inCart: false,
         selected: false,
+        isHovered: false,
         isLiked: false,
         rating: 92,
         id: 6
@@ -131,6 +138,7 @@ const games = [
         publishers: 'Sony Interactive Entertainment',
         inCart: false,
         selected: false,
+        isHovered: false,
         isLiked: false,
         rating: 90,
         id: 7
@@ -148,6 +156,7 @@ const games = [
         publishers: 'Rockstar Games',
         inCart: false,
         selected: false,
+        isHovered: false,
         isLiked: false,
         rating: 90,
         id: 8
@@ -165,6 +174,7 @@ const games = [
         publishers: 'Digital Extremes',
         inCart: false,
         selected: false,
+        isHovered: false,
         isLiked: false,
         rating: 76,
         id: 9
@@ -182,6 +192,7 @@ const games = [
         publishers: 'Mojang / Xbox Game Studios / Sony Interactive Entertainment',
         inCart: false,
         selected: false,
+        isHovered: false,
         isLiked: false,
         rating: 84,
         id: 10
@@ -199,6 +210,7 @@ const games = [
         publishers: 'Microsoft Studios / Square Enix Europe',
         inCart: false,
         selected: false,
+        isHovered: false,
         isLiked: false,
         rating: 82,
         id: 11
@@ -216,6 +228,7 @@ const games = [
         publishers: 'THQ / Deep Silver',
         inCart: false,
         selected: false,
+        isHovered: false,
         isLiked: false,
         rating: 82,
         id: 12
@@ -233,6 +246,7 @@ const games = [
         publishers: '505 Games',
         inCart: false,
         selected: false,
+        isHovered: false,
         isLiked: false,
         rating: 81,
         id: 13
@@ -250,6 +264,7 @@ const games = [
         publishers: 'Psyonix',
         inCart: false,
         selected: false,
+        isHovered: false,
         isLiked: false,
         rating: 83,
         id: 14
@@ -267,6 +282,7 @@ const games = [
         publishers: 'CD PROJECT',
         inCart: false,
         selected: false,
+        isHovered: false,
         isLiked: false,
         rating: 95,
         id: 15
@@ -284,6 +300,7 @@ const games = [
         publishers: 'Square Enix Europe',
         inCart: false,
         selected: false,
+        isHovered: false,
         isLiked: false,
         rating: 81,
         id: 16
@@ -301,6 +318,7 @@ const games = [
         publishers: 'Bethesda Softworks',
         inCart: false,
         selected: false,
+        isHovered: false,
         isLiked: false,
         rating: 80,
         id: 17
@@ -318,6 +336,7 @@ const games = [
         publishers: 'Rockstar Games',
         inCart: false,
         selected: false,
+        isHovered: false,
         isLiked: false,
         rating: 90,
         id: 18
@@ -335,6 +354,7 @@ const games = [
         publishers: 'Team17 Digital / Blacklight Interactive',
         inCart: false,
         selected: false,
+        isHovered: false,
         isLiked: false,
         rating: 70,
         id: 19
@@ -352,6 +372,7 @@ const games = [
         publishers: 'Sony Computer Entertainment / Quantic Dream',
         inCart: false,
         selected: false,
+        isHovered: false,
         isLiked: false,
         rating: 82,
         id: 20
@@ -369,6 +390,7 @@ const games = [
         publishers: 'Valve',
         inCart: false,
         selected: false,
+        isHovered: false,
         isLiked: false,
         rating: 79,
         id: 21
@@ -386,6 +408,7 @@ const games = [
         publishers: 'Valve',
         inCart: false,
         selected: false,
+        isHovered: false,
         isLiked: false,
         rating: 92,
         id: 22
@@ -403,6 +426,7 @@ const games = [
         publishers: '2K Games / Aspyr Media',
         inCart: false,
         selected: false,
+        isHovered: false,
         isLiked: false,
         rating: 82,
         id: 23
@@ -420,6 +444,7 @@ const games = [
         publishers: 'Sony Interactive Entertainment',
         inCart: false,
         selected: false,
+        isHovered: false,
         isLiked: false,
         rating: 94,
         id: 24
@@ -437,6 +462,7 @@ const games = [
         publishers: 'EA Sports',
         inCart: false,
         selected: false,
+        isHovered: false,
         isLiked: false,
         rating: 80,
         id: 25
@@ -454,6 +480,7 @@ const games = [
         publishers: 'Valve',
         inCart: false,
         selected: false,
+        isHovered: false,
         isLiked: false,
         rating: 91,
         id: 26
@@ -471,6 +498,7 @@ const games = [
         publishers: 'Telltale Games',
         inCart: false,
         selected: false,
+        isHovered: false,
         isLiked: false,
         rating: 86,
         id: 27
@@ -488,6 +516,7 @@ const games = [
         publishers: 'Paradox Interactive',
         inCart: false,
         selected: false,
+        isHovered: false,
         isLiked: false,
         rating: 85,
         id: 28
@@ -505,6 +534,7 @@ const games = [
         publishers: 'Valve',
         inCart: false,
         selected: false,
+        isHovered: false,
         isLiked: false,
         rating: 82,
         id: 29
@@ -522,6 +552,7 @@ const games = [
         publishers: 'Sony Interactive Entertainment / Quantic Dream',
         inCart: false,
         selected: false,
+        isHovered: false,
         isLiked: false,
         rating: 89,
         id: 30
@@ -539,6 +570,7 @@ const games = [
         publishers: 'Square Enix Europe',
         inCart: false,
         selected: false,
+        isHovered: false,
         isLiked: false,
         rating: 85,
         id: 31

@@ -1,6 +1,9 @@
 import styles from './Card.module.css';
 import React from 'react';
 import { ReactComponent as Like } from "../../Resources/image/like.svg";
+import { ReactComponent as Add } from "../../Resources/image/add.svg";
+import AddToCart from '../AddToCart/AddToCart';
+import AddedToCart from '../AddedToCart/AddedToCart';
 
 const Card = props => {
     const { 
@@ -8,7 +11,8 @@ const Card = props => {
         handleSelectGame,
         handleAddToCart,
         handleHover,
-        handleLike
+        handleLike,
+        handleHoverGame,
       } = props;
 
     return (
@@ -16,9 +20,12 @@ const Card = props => {
         <img src={require(`../../Resources/image/gameFootage/${game.surname}.jpg`)} />
 
         <div className={styles.price}>
-            <div>
-                Add to cart 
-            </div>
+                {game.inCart ? <AddedToCart /> : <AddToCart 
+                                      game={game} 
+                                      handleHoverGame={handleHoverGame} 
+                                      handleAddToCart={handleAddToCart} 
+                                    />
+                }
             {game.price}
         </div>
         <h2 className={styles.name}>{game.name}</h2>

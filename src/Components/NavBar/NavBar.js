@@ -15,7 +15,8 @@ const NavBar = props => {
         handleHome,
         handleBrowse,
         browsing,
-        landingPage
+        landingPage,
+        cartAmount
     } = props;
     
     const variants = {
@@ -99,7 +100,7 @@ const NavBar = props => {
               onMouseLeave={handleHover}
             >
                 <Cart className={styles.svg} style={{ fill: hoverState[3].hovered ? "#fff" : "#cccccc" }}/>
-                <h3 style={{ color: hoverState[3].hovered ? "#fff" : "#cccccc" }}>Cart: 0</h3>
+                <h3 style={{ color: hoverState[3].hovered ? "#fff" : "#cccccc" }}>Cart: {cartAmount}</h3>
             </div>
         </div>
       </motion.div>

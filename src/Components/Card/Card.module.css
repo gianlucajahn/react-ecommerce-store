@@ -3,7 +3,6 @@
     grid-column: auto;
     border: 1px transparent;
     border-radius: 12px;
-    cursor: pointer;
     transition: 0.3s all;
     position: relative;
 }
@@ -61,10 +60,12 @@
     pointer-events: none;
 }
 
-.likeSVG:hover {
-    fill: rgb(248, 103, 103);
+.likeSVG {
+    transition: 0.2s all;
 }
+
 
 .likeSVG:focus {
     transform: scale(1.25);
 }
+

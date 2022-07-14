@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import styles from './App.module.css';
 import { BrowserRouter, Routes, Route, useNavigate, useLocation } from "react-router-dom";
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Browse from './Containers/Browse/Browse';
 import GamePage from './Containers/GamePage/GamePage';
 import NotFound from './Containers/NotFound/NotFound';
@@ -13,6 +13,8 @@ import games from './utils/games';
 function App() {
   const [currentFilter, setCurrentFilter] = useState("none");
   const [allGames, setAllGames] = useState(games);
+  const [cart, setCart] = useState([]);
+  const [cartAmount, setCartAmount] = useState(0);
   const [shownGames, setShownGames] = useState(allGames);
   const [reviewDisplay, setReviewDisplay] = useState(false);
   const [hoverState, setHoverState] = useState([
@@ -129,6 +131,36 @@ const handleHover = (e) => {
   ]);
 }
 
+const handleHoverGame = (e) => {
+  let handledHoveredGame = allGames.map((game, i) => {
+    if (e.target.id == i) {
+      game.isHovered = !game.isHovered
+      return game
+    } else {
+      return game;
+    }
+  });
+
+  setAllGames(handledHoveredGame);
+}
+
+const handleAddToCart = (e) => {
+  let handledAddedGame = allGames.map((game, i) => {
+    if (e.target.id == i) {
+      game.inCart = true
+      let newCart = cart;
+      newCart.push(game);
+      setCart(newCart);
+      setCartAmount(cartAmount + 1);
+      return game
+    } else {
+      return game;
+    }
+  });
+
+  setAllGames(handledAddedGame);
+}
+
 const location = useLocation();
 
   return (
@@ -138,9 +170,12 @@ const location = useLocation();
                                         handleHover={handleHover} 
                                         hoverState={hoverState} 
                                         shownGames={shownGames} 
+                                        cart={cart}
+                                        cartAmount={cartAmount}
                                       />} />
             <Route path="/browse" element={<Browse 
-          
+                                              cart={cart}
+                                              cartAmount={cartAmount}
                                               handleHover={handleHover} 
                                               handleSelect={handleSelect} 
                                               hoverState={hoverState} 
@@ -153,6 +188,8 @@ const location = useLocation();
                                               allGames={allGames}
                                               setAllGames={setAllGames}
                                               handleLike={handleLike}
+                                              handleHoverGame={handleHoverGame}
+                                              handleAddToCart={handleAddToCart}
                                           />} />
             <Route path="/:gameId" element={<GamePage />} />
             <Route path="*" element={<NotFound />} />

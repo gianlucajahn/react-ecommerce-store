@@ -10,7 +10,13 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Navigate, useNavigate } from 'react-router-dom';
 import AnimatedPage from '../AnimatedPage/AnimatedPage';
 
-const Home = () => {
+const Home = props => {
+  const {
+    shownGames,
+    cartAmount,
+    cart
+  } = props;
+
   const [browsing, setBrowsing] = useState(false);
   const [landingPage, setLandingPage] = useState(true);
   const [hoverState, setHoverState] = useState([
@@ -83,6 +89,7 @@ const Home = () => {
               handleBrowse={handleBrowse}
               handleHome={handleHome}
               landingPage={landingPage}
+              cartAmount={cartAmount}
             />
               <AnimatedPage>
                 <motion.div className={styles.home_content}>
