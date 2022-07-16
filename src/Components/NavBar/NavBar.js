@@ -17,7 +17,9 @@ const NavBar = props => {
         browsing,
         landingPage,
         cart,
-        cartAmount
+        cartAmount,
+        search,
+        handleSearch
     } = props;
     
     const variants = {
@@ -64,6 +66,8 @@ const NavBar = props => {
                     >
                         <input 
                           placeholder="Search games..."
+                          value={search}
+                          onChange={handleSearch}
                         >
 
                         </input>

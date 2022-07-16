@@ -8,6 +8,18 @@
     padding-bottom: 50px;
 }
 
+.noGrid {
+    margin-top: 25px;
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: 500px;
+    grid-auto-columns: 500px;
+    grid-template-rows: 400px;
+    grid-auto-rows: 400px;
+    grid-gap: 20px;
+    padding-bottom: 50px;
+}
+
 .reviews {
     margin-top: 30px;
     display: flex;
@@ -28,3 +40,4 @@
         grid-auto-rows: 290px;
     }
 }
+

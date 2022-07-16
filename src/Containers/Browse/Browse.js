@@ -34,7 +34,7 @@ const Browse = props => {
     const [browsing, setBrowsing] = useState(true);
     const [landingPage, setLandingPage] = useState(false);
     const [grid, setGrid] = useState(true);
-    const [loading, setLoading] = useState(true);
+    const [search, setSearch] = useState("");
     
     const handleBrowse = () => {
         navigate('/browse');
@@ -50,6 +50,10 @@ const Browse = props => {
       } else {
         setGrid(false);
       }
+    }
+
+    const handleSearch = (e) => {
+
     }
 
     useEffect(() => {
@@ -90,6 +94,8 @@ const Browse = props => {
           browsing={browsing}
           landingPage={landingPage}
           cartAmount={cartAmount}
+          search={search}
+          handleSearch={handleSearch}
         />
 
         <AnimatedPage exitBeforeEnter>
@@ -129,15 +135,14 @@ const Browse = props => {
                   </div>
                 </div>
 
-                <Grid 
-                  shownGames={shownGames}
-                  reviewDisplay={reviewDisplay}
-                  handleLike={handleLike}
-                  handleHoverGame={handleHoverGame}
-                  handleAddToCart={handleAddToCart}
-                  loading={loading}
-                  setLoading={setLoading}
-                />
+                    <Grid 
+                      shownGames={shownGames}
+                      reviewDisplay={reviewDisplay}
+                      handleLike={handleLike}
+                      handleHoverGame={handleHoverGame}
+                      handleAddToCart={handleAddToCart}
+                      grid={grid}
+                    />
               </div>
             </div>
         </AnimatedPage>

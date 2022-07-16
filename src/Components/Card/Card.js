@@ -2,6 +2,7 @@ import styles from './Card.module.css';
 import React from 'react';
 import { ReactComponent as Like } from "../../Resources/image/like.svg";
 import { ReactComponent as Add } from "../../Resources/image/add.svg";
+import { motion } from "framer-motion";
 import AddToCart from '../AddToCart/AddToCart';
 import AddedToCart from '../AddedToCart/AddedToCart';
 import AnimatedCard from '../../Containers/AnimatedPage/AnimatedCard';
@@ -16,8 +17,21 @@ const Card = props => {
         handleHoverGame,
       } = props;
 
+    const variants = {
+        initial: { opacity: 0 },
+        animate: { opacity: 1 },
+        exit: { opacity: 0 },
+    }
+
     return (
-          <div className={styles.card}>
+          <motion.div 
+            className={styles.card}
+            style={{ margin: 0, padding: 0 }}
+            variants={variants}
+            initial="initial"
+            animate="animate"
+            exit="exit"
+          >
             <img src={require(`../../Resources/image/gameFootage/${game.surname}.jpg`)} />
     
             <div className={styles.price}>
@@ -36,7 +50,7 @@ const Card = props => {
                   className={styles.likeSVG}
                 />
             </button>
-          </div>
+          </motion.div>
     );
   }
   
