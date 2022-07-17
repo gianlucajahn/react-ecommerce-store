@@ -36,6 +36,11 @@
     padding-bottom: 40px;
 }
 
+.name,
+.img {
+    cursor: pointer;
+}
+
 .price {
     color: white;
     font-family: "GT Medium";

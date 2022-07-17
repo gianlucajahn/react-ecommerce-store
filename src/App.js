@@ -104,9 +104,14 @@ const handleSelect = (e) => {
 }
 
 const handleSelectGame = (e) => {
-  setSelectedGame(games[e.target.id]);
-
-  navigate(`/${games[e.target.id].surname}`);
+  console.log(e.target.tagName);
+  if (e.target.tagName === "BUTTON") {
+    return
+  } else {
+        setSelectedGame(games[e.target.parentNode.id]);
+        console.log(e.target.parentNode.id);
+        navigate(`/${games[e.target.parentNode.id].surname}`);
+  }
 }
 
 const handleLike = (e) => {
