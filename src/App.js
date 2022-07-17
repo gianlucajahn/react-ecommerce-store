@@ -17,6 +17,7 @@ function App() {
   const [cartAmount, setCartAmount] = useState(0);
   const [shownGames, setShownGames] = useState(allGames);
   const [reviewDisplay, setReviewDisplay] = useState(false);
+  const [selectedGame, setSelectedGame] = useState({});
   const [hoverState, setHoverState] = useState([
     {
         hovered: false,
@@ -96,8 +97,16 @@ function App() {
     }
   ]);
 
+const navigate = useNavigate();
+
 const handleSelect = (e) => {
   setCurrentFilter(filterNames[e.target.id - 8]);
+}
+
+const handleSelectGame = (e) => {
+  setSelectedGame(games[e.target.id]);
+
+  navigate(`/${games[e.target.id].surname}`);
 }
 
 const handleLike = (e) => {
@@ -190,6 +199,7 @@ const location = useLocation();
                                               handleLike={handleLike}
                                               handleHoverGame={handleHoverGame}
                                               handleAddToCart={handleAddToCart}
+                                              handleSelectGame={handleSelectGame}
                                           />} />
             <Route path="/:gameId" element={<GamePage />} />
             <Route path="*" element={<NotFound />} />

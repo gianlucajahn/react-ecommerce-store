@@ -10,6 +10,16 @@
     padding: 5px 40px 2px 30px;
 }
 
+form {
+    display: flex;
+    align-items: center;
+}
+
+form button {
+    background: transparent;
+    cursor: pointer;
+}
+
 .navbar_left {
     display: flex;
     gap: 50px;

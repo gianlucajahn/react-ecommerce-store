@@ -19,7 +19,9 @@ const NavBar = props => {
         cart,
         cartAmount,
         search,
-        handleSearch
+        searching,
+        handleSearch,
+        handleSearchSubmit
     } = props;
     
     const variants = {
@@ -64,6 +66,7 @@ const NavBar = props => {
                       transition={{ opacity: { type: "spring" }, duration: 0.01, delay: 0.4 }}
                       className={styles.searchdiv}
                     >
+                      <form onSubmit={handleSearchSubmit}>
                         <input 
                           placeholder="Search games..."
                           value={search}
@@ -71,13 +74,21 @@ const NavBar = props => {
                         >
 
                         </input>
-                        <Search 
-                          className={styles.svg}
-                          style={{ fill: hoverState[7].hovered ? "#fff" : "#cccccc" }} 
-                          onMouseEnter={handleHover}
-                          onMouseLeave={handleHover}
-                          id="7"
+                        <input 
+                          type="submit" 
+                          hidden 
+                          className={styles.submit} 
                         />
+                        <button type="submit">
+                            <Search 
+                              className={styles.svg}
+                              style={{ fill: hoverState[7].hovered ? "#fff" : "#cccccc" }} 
+                              onMouseEnter={handleHover}
+                              onMouseLeave={handleHover}
+                              id="7"
+                            />
+                        </button>
+                      </form>
                     </motion.div>
                   </>
                   

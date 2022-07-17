@@ -11,7 +11,10 @@ const Grid = props => {
         handleLike,
         handleHoverGame,
         handleAddToCart,
-        grid
+        grid,
+        search,
+        searching,
+        handleSelectGame
     } = props;
 
     useEffect(() => {
@@ -35,8 +38,26 @@ const Grid = props => {
               <h3>You can add some, soon.</h3>
           </div>
           <div className={styles.gridContainer} style={{ display: reviewDisplay ? "none" : "grid" }} id="gridContainer">
-            {shownGames.map((game, i) => {
-                return <Card game={game} key={game.name} handleLike={handleLike} handleHoverGame={handleHoverGame} handleAddToCart={handleAddToCart} />
+            {searching === false ? shownGames.map((game, i) => {
+                return <Card 
+                         game={game} 
+                         key={game.name} 
+                         handleLike={handleLike} 
+                         handleHoverGame={handleHoverGame} 
+                         handleAddToCart={handleAddToCart} 
+                         handleSelectGame={handleSelectGame}
+                       />
+            }) : shownGames.map((game, i) => {
+                    if (game.name.toLowerCase().includes(search.toLowerCase())) {
+                        return <Card 
+                                 game={game} 
+                                 key={game.name} 
+                                 handleLike={handleLike} 
+                                 handleHoverGame={handleHoverGame} 
+                                 handleAddToCart={handleAddToCart} 
+                                 handleSelectGame={handleSelectGame}
+                               />
+                    }
             })}
           </div>
     </>
