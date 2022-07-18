@@ -1,0 +1,53 @@
+.gamepage {
+    height: 100vh;
+    background-color: #0f1011;
+}
+
+.gamepageContent {
+    padding: 30px 45px;
+    display: flex;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+header h1 {
+    font-family: "GT Ultrabold";
+    color: white;
+    font-size: 3.3em;
+    transform: scaleY(1.1);
+    letter-spacing: 1px;
+}
+
+.goBack {
+    background-color: transparent;
+    border: 1px transparent;
+    display: flex;
+    font-family: "GT Medium";
+    font-size: 1.5em;
+    gap: 8px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.goBack * {
+    pointer-events: none;
+}
+
+.goBack:active {
+    transform: scale(0.925);
+}
+
+.arrow {
+    padding-top: 1px;
+    width: 20px;
+    height: 20px;
+}
+
+.arrow,
+.goBack {
+    transition: 0.275s all;
+}

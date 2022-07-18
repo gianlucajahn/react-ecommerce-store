@@ -1,7 +1,7 @@
 import styles from './Browse.module.css';
 import React, { useEffect, useState } from 'react';
 import NavBar from '../../Components/NavBar/NavBar';
-import { useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import { AnimatePresence } from "framer-motion";
 import AnimatedPage from '../AnimatedPage/AnimatedPage';
 import { ReactComponent as Grids } from "../../Resources/image/grid.svg";
@@ -28,23 +28,19 @@ const Browse = props => {
           cart,
           cartAmount,
           handleAddToCart,
-          handleSelectGame
+          handleSelectGame,
+          handleSearch,
+          handleSearchSubmit,
+          search,
+          searching,
+          browsing,
+          handleBrowse,
+          handleHome
         } = props;
     
     const navigate = useNavigate();
-    const [browsing, setBrowsing] = useState(true);
     const [landingPage, setLandingPage] = useState(false);
     const [grid, setGrid] = useState(true);
-    const [search, setSearch] = useState("");
-    const [searching, setSearching] = useState(false);
-    
-    const handleBrowse = () => {
-        navigate('/browse');
-    }
-    
-    const handleHome = () => {
-        navigate('/');
-    }
 
     const handleLayoutSwitch = (e) => {
       if (e.target.id == "grid") {
@@ -52,16 +48,6 @@ const Browse = props => {
       } else {
         setGrid(false);
       }
-    }
-
-    const handleSearch = (e) => {
-      setSearch(e.target.value);
-      setSearching(false);
-    }
-
-    const handleSearchSubmit = (e) => {
-      e.preventDefault();
-      setSearching(true);
     }
 
     useEffect(() => {

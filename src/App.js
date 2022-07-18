@@ -17,6 +17,9 @@ function App() {
   const [cartAmount, setCartAmount] = useState(0);
   const [shownGames, setShownGames] = useState(allGames);
   const [reviewDisplay, setReviewDisplay] = useState(false);
+  const [search, setSearch] = useState("");
+  const [searching, setSearching] = useState(false);
+  const [browsing, setBrowsing] = useState(true);
   const [selectedGame, setSelectedGame] = useState({});
   const [hoverState, setHoverState] = useState([
     {
@@ -94,10 +97,38 @@ function App() {
     {
         hovered: false,
         selected: false
+    },
+    {
+      hovered: false,
+      selected: false
     }
   ]);
 
 const navigate = useNavigate();
+
+async function handleBrowse() {
+  navigate('/browse');
+}
+
+const handleHome = () => {
+  navigate('/');
+}
+
+const handleSearch = (e) => {
+  setSearch(e.target.value);
+  setSearching(false);
+
+  console.log(location.pathname);
+}
+
+const handleSearchSubmit = (e) => {
+  e.preventDefault();
+  setSearching(true);
+
+  if (location.pathname != "/browse") {
+    navigate('/browse');
+  }
+}
 
 const handleSelect = (e) => {
   setCurrentFilter(filterNames[e.target.id - 8]);
@@ -174,6 +205,13 @@ const handleAddToCart = (e) => {
 }
 
 const location = useLocation();
+useEffect(() => {
+  if (location.pathname === "/") {
+    setBrowsing(false);
+  } else {
+    setBrowsing(true);
+  }
+}, [location.pathname])
 
   return (
       <AnimatePresence exitBeforeEnter>
@@ -203,6 +241,13 @@ const location = useLocation();
                                               handleHoverGame={handleHoverGame}
                                               handleAddToCart={handleAddToCart}
                                               handleSelectGame={handleSelectGame}
+                                              handleSearch={handleSearch}
+                                              handleSearchSubmit={handleSearchSubmit}
+                                              search={search}
+                                              searching={searching}
+                                              browsing={browsing}
+                                              handleBrowse={handleBrowse}
+                                              handleHome={handleHome}
                                           />} />
             <Route path="/:gameId" element={<GamePage
                                                cart={cart}
@@ -212,6 +257,15 @@ const location = useLocation();
                                                handleLike={handleLike}
                                                handleAddToCart={handleAddToCart}
                                                handleSelectGame={handleSelectGame} 
+                                               selectedGame={selectedGame}
+                                               handleSearch={handleSearch}
+                                               handleSearchSubmit={handleSearchSubmit}
+                                               search={search}
+                                               searching={searching}
+                                               browsing={browsing}
+                                               handleBrowse={handleBrowse}
+                                               handleHome={handleHome}
+                                               setHoverState={setHoverState}
                                             />} />
           </Routes>
       </AnimatePresence>

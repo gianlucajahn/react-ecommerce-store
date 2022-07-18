@@ -35,3 +35,9 @@ code {
   src: local("GT Bold"),
    url('./Resources/fonts/walsheim/GTWalsheimPro-Bold.ttf') format("truetype");
 }
+
+@font-face {
+  font-family: "GT Ultrabold";
+  src: local("GT Ultrabold"),
+   url('./Resources/fonts/walsheim/GTWalsheimPro-UltraBold.ttf') format("truetype");
+}
