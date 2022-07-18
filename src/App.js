@@ -104,12 +104,10 @@ const handleSelect = (e) => {
 }
 
 const handleSelectGame = (e) => {
-  console.log(e.target.tagName);
   if (e.target.tagName === "BUTTON") {
     return
   } else {
         setSelectedGame(games[e.target.parentNode.id]);
-        console.log(e.target.parentNode.id);
         navigate(`/${games[e.target.parentNode.id].surname}`);
   }
 }
@@ -206,8 +204,15 @@ const location = useLocation();
                                               handleAddToCart={handleAddToCart}
                                               handleSelectGame={handleSelectGame}
                                           />} />
-            <Route path="/:gameId" element={<GamePage />} />
-            <Route path="*" element={<NotFound />} />
+            <Route path="/:gameId" element={<GamePage
+                                               cart={cart}
+                                               cartAmount={cartAmount}
+                                               handleHover={handleHover}
+                                               hoverState={hoverState}
+                                               handleLike={handleLike}
+                                               handleAddToCart={handleAddToCart}
+                                               handleSelectGame={handleSelectGame} 
+                                            />} />
           </Routes>
       </AnimatePresence>
   );
