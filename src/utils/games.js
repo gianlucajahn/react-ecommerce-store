@@ -18,7 +18,10 @@ const games = [
         id: 0,
         cover: "https://res.cloudinary.com/gianlucajahn/image/upload/c_scale,q_100,w_500/v1658188604/cyberpunk_n6jitl.jpg",
         footage: [
-            "https://res.cloudinary.com/gianlucajahn/image/upload/v1658188604/cyberpunk_n6jitl.jpg"
+            "https://res.cloudinary.com/gianlucajahn/image/upload/v1658188604/cyberpunk_n6jitl.jpg",
+            "https://res.cloudinary.com/gianlucajahn/image/upload/c_scale,q_100,w_1920/v1658235373/cyberpunk_1_s00vwf.jpg",
+            "https://res.cloudinary.com/gianlucajahn/image/upload/c_scale,q_100,w_1920/v1658235372/cyberpunk_2_mq46xm.jpg",
+            "https://res.cloudinary.com/gianlucajahn/image/upload/c_scale,q_100,w_1920/v1658235378/cyberpunk_3_fajdmi.jpg"
         ]
     },
     {
@@ -41,6 +44,9 @@ const games = [
         cover: "https://res.cloudinary.com/gianlucajahn/image/upload/c_scale,q_100,w_500/v1658188621/battlefield_n0gd5a.jpg",
         footage: [
             "https://res.cloudinary.com/gianlucajahn/image/upload/v1658188621/battlefield_n0gd5a.jpg",
+            "https://res.cloudinary.com/gianlucajahn/image/upload/v1658235437/battlefield_1_jpudhq.jpg",
+            "https://res.cloudinary.com/gianlucajahn/image/upload/v1658235437/battlefield_3_zy9ewv.jpg",
+            "https://res.cloudinary.com/gianlucajahn/image/upload/v1658235438/battlefield_2_txs230.jpg"
         ]
     },
     {
@@ -63,6 +69,9 @@ const games = [
         cover: "https://res.cloudinary.com/gianlucajahn/image/upload/c_scale,q_100,w_500/v1658188606/lis_ft0puo.jpg",
         footage: [
             "https://res.cloudinary.com/gianlucajahn/image/upload/v1658188606/lis_ft0puo.jpg",
+            "https://res.cloudinary.com/gianlucajahn/image/upload/v1658236055/lis_1_rkrxt5.jpg",
+            "https://res.cloudinary.com/gianlucajahn/image/upload/v1658236272/lis_2_dcrdwz.jpg",
+            "https://res.cloudinary.com/gianlucajahn/image/upload/v1658236055/lis_3_komskf.jpg"
         ]
     },
     {
@@ -85,6 +94,9 @@ const games = [
         cover: "https://res.cloudinary.com/gianlucajahn/image/upload/c_scale,q_100,w_500/v1658232678/mariokart_0_mhgbeg.jpg",
         footage: [
             "https://res.cloudinary.com/gianlucajahn/image/upload/v1658232678/mariokart_0_mhgbeg.jpg",
+            "https://res.cloudinary.com/gianlucajahn/image/upload/c_scale,q_100,w_1920/v1658236315/mariokart_1_heekfq.jpg",
+            "https://res.cloudinary.com/gianlucajahn/image/upload/c_scale,q_100,w_1920/v1658236316/mariokart_3_yzhdje.jpg",
+            "https://res.cloudinary.com/gianlucajahn/image/upload/v1658236315/mariokart_2_peeyho.jpg"
         ]
     },
     {
@@ -107,6 +119,9 @@ const games = [
         cover: "https://res.cloudinary.com/gianlucajahn/image/upload/c_scale,q_100,w_500/v1658188602/bioshockinfinite_qyo3pi.jpg",
         footage: [
             "https://res.cloudinary.com/gianlucajahn/image/upload/v1658188602/bioshockinfinite_qyo3pi.jpg",
+            "https://res.cloudinary.com/gianlucajahn/image/upload/v1658236359/bioshockinfinite_1_vutin0.jpg",
+            "https://res.cloudinary.com/gianlucajahn/image/upload/v1658236360/bioshockinfinite_2_bphusb.jpg",
+            "https://res.cloudinary.com/gianlucajahn/image/upload/v1658236361/bioshockinfinite_3_v1ckvh.jpg"
         ]
     },
     {
@@ -129,6 +144,9 @@ const games = [
         cover: "https://res.cloudinary.com/gianlucajahn/image/upload/c_scale,q_100,w_500/v1658188622/anno_cbmzye.jpg",
         footage: [
             "https://res.cloudinary.com/gianlucajahn/image/upload/v1658188622/anno_cbmzye.jpg",
+            "https://res.cloudinary.com/gianlucajahn/image/upload/v1658236405/anno_1_bpil6t.jpg",
+            "https://res.cloudinary.com/gianlucajahn/image/upload/c_scale,q_100,w_1920/v1658236405/anno_2_udh5ep.jpg",
+            "https://res.cloudinary.com/gianlucajahn/image/upload/v1658236405/anno_3_hoqcp0.jpg"
         ]
     },
     {
@@ -150,7 +168,10 @@ const games = [
         id: 6,
         cover: "https://res.cloudinary.com/gianlucajahn/image/upload/c_scale,q_100,w_500/v1658188613/rdr_fhqs3d.jpg",
         footage: [
-            "https://res.cloudinary.com/gianlucajahn/image/upload/c_scale,w_1920/v1658188613/rdr_fhqs3d.jpg"
+            "https://res.cloudinary.com/gianlucajahn/image/upload/c_scale,w_1920/v1658188613/rdr_fhqs3d.jpg",
+            "https://res.cloudinary.com/gianlucajahn/image/upload/v1658236494/rdr_3_euhfwh.jpg",
+            "https://res.cloudinary.com/gianlucajahn/image/upload/c_scale,q_100,w_1920/v1658236495/rdr_2_aodums.jpg",
+            "https://res.cloudinary.com/gianlucajahn/image/upload/v1658236494/rdr_1_v6xhov.jpg"
         ]
     },
     {
@@ -173,6 +194,9 @@ const games = [
         cover: "https://res.cloudinary.com/gianlucajahn/image/upload/c_scale,q_100,w_500/v1658188606/horizon_jzlhsd.jpg",
         footage: [
             "https://res.cloudinary.com/gianlucajahn/image/upload/v1658188606/horizon_jzlhsd.jpg",
+            "https://res.cloudinary.com/gianlucajahn/image/upload/c_scale,q_100,w_1920/v1658236576/horizon_3_vwjcpi.jpg",
+            "https://res.cloudinary.com/gianlucajahn/image/upload/v1658236574/horizon_2_ara05m.jpg",
+            "https://res.cloudinary.com/gianlucajahn/image/upload/c_scale,q_100,w_1920/v1658236574/horizon_1_johwym.jpg"
         ]
     },
     {
@@ -195,6 +219,9 @@ const games = [
         cover: "https://res.cloudinary.com/gianlucajahn/image/upload/c_scale,q_100,w_500/v1658188604/gtav_x1ccio.jpg",
         footage: [
             "https://res.cloudinary.com/gianlucajahn/image/upload/v1658188604/gtav_x1ccio.jpg",
+            "https://res.cloudinary.com/gianlucajahn/image/upload/v1658236641/gtav_1_gkelkb.jpg",
+            "https://res.cloudinary.com/gianlucajahn/image/upload/v1658236641/gtav_3_dswcgm.jpg",
+            "https://res.cloudinary.com/gianlucajahn/image/upload/v1658236641/gtav_2_b1xno6.jpg"
         ]
     },
     {
@@ -216,7 +243,10 @@ const games = [
         id: 9,
         cover: "https://res.cloudinary.com/gianlucajahn/image/upload/c_scale,q_100,w_500/v1658188601/warframe_kghu8g.jpg",
         footage: [
-            "https://res.cloudinary.com/gianlucajahn/image/upload/v1658188601/warframe_kghu8g.jpg"
+            "https://res.cloudinary.com/gianlucajahn/image/upload/v1658188601/warframe_kghu8g.jpg",
+            "https://res.cloudinary.com/gianlucajahn/image/upload/c_scale,q_100,w_1920/v1658236676/warframe_3_t2bwvx.jpg",
+            "https://res.cloudinary.com/gianlucajahn/image/upload/c_scale,q_100,w_1920/v1658236676/warframe_2_ihvoqj.jpg",
+            "https://res.cloudinary.com/gianlucajahn/image/upload/c_scale,q_100,w_1920/v1658236674/warframe_1_txaury.jpg"
         ]
     },
     {
@@ -239,6 +269,9 @@ const games = [
         cover: "https://res.cloudinary.com/gianlucajahn/image/upload/c_scale,q_100,w_500/v1658188606/minecraft_iuejtm.jpg",
         footage: [
             "https://res.cloudinary.com/gianlucajahn/image/upload/v1658188606/minecraft_iuejtm.jpg",
+            "https://res.cloudinary.com/gianlucajahn/image/upload/v1658236747/minecraft_2_pqo4tv.png",
+            "https://res.cloudinary.com/gianlucajahn/image/upload/v1658236749/minecraft_1_vyp8bd.png",
+            "https://res.cloudinary.com/gianlucajahn/image/upload/v1658236744/minecraft_3_cea2dc.png"
         ]
     },
     {
@@ -261,6 +294,9 @@ const games = [
         cover: "https://res.cloudinary.com/gianlucajahn/image/upload/c_scale,q_100,w_500/v1658188610/riseofthetombraider_uq2q6t.jpg",
         footage: [
             "https://res.cloudinary.com/gianlucajahn/image/upload/v1658188610/riseofthetombraider_uq2q6t.jpg",
+            "https://res.cloudinary.com/gianlucajahn/image/upload/c_scale,q_100,w_1920/v1658236831/riseofthetombraider_2_vvhbqe.jpg",
+            "https://res.cloudinary.com/gianlucajahn/image/upload/c_scale,q_100,w_1920/v1658236829/riseofthetombraider_1_bq8avn.jpg",
+            "https://res.cloudinary.com/gianlucajahn/image/upload/c_scale,q_100,w_1920/v1658236830/riseofthetombraider_3_xm9ggz.jpg"
         ]
     },
     {
@@ -283,6 +319,9 @@ const games = [
         cover: "https://res.cloudinary.com/gianlucajahn/image/upload/c_scale,q_100,w_500/v1658188608/metro_o45ytf.jpg",
         footage: [
             "https://res.cloudinary.com/gianlucajahn/image/upload/v1658188608/metro_o45ytf.jpg",
+            "https://res.cloudinary.com/gianlucajahn/image/upload/v1658236875/metro_1_mseeps.jpg",
+            "https://res.cloudinary.com/gianlucajahn/image/upload/c_scale,q_100,w_1920/v1658236878/metro_2_wtk9ux.jpg",
+            "https://res.cloudinary.com/gianlucajahn/image/upload/v1658236875/metro_3_y6ux12.jpg"
         ]
     },
     {
@@ -305,6 +344,9 @@ const games = [
         cover: "https://res.cloudinary.com/gianlucajahn/image/upload/c_scale,q_100,w_500/v1658188609/terraria_yb3iuc.jpg",
         footage: [
             "https://res.cloudinary.com/gianlucajahn/image/upload/v1658188609/terraria_yb3iuc.jpg",
+            "https://res.cloudinary.com/gianlucajahn/image/upload/v1658236904/terraria_1_sw79la.jpg",
+            "https://res.cloudinary.com/gianlucajahn/image/upload/v1658236905/terraria_2_kqpdyq.jpg",
+            "https://res.cloudinary.com/gianlucajahn/image/upload/v1658236905/terraria_3_wghczh.jpg"
         ]
     },
     {
@@ -327,6 +369,9 @@ const games = [
         cover: "https://res.cloudinary.com/gianlucajahn/image/upload/c_scale,q_100,w_500/v1658188608/rocketleague_on6yqd.jpg",
         footage: [
             "https://res.cloudinary.com/gianlucajahn/image/upload/c_scale,w_1920/v1658188608/rocketleague_on6yqd.jpg",
+            "https://res.cloudinary.com/gianlucajahn/image/upload/c_scale,q_100,w_1920/v1658236932/rocketleague_2_oogr9i.jpg",
+            "https://res.cloudinary.com/gianlucajahn/image/upload/c_scale,q_100,w_1920/v1658236933/rocketleague_3_s6klzw.jpg",
+            "https://res.cloudinary.com/gianlucajahn/image/upload/v1658236929/rocketleague_1_qcslm3.jpg"
         ]
     },
     {
@@ -349,6 +394,9 @@ const games = [
         cover: "https://res.cloudinary.com/gianlucajahn/image/upload/c_scale,q_100,w_500/v1658188610/thewitcher_tllr60.jpg",
         footage: [
             "https://res.cloudinary.com/gianlucajahn/image/upload/v1658188610/thewitcher_tllr60.jpg",
+            "https://res.cloudinary.com/gianlucajahn/image/upload/v1658236962/thewitcher_2_tipggu.jpg",
+            "https://res.cloudinary.com/gianlucajahn/image/upload/v1658237770/witcher1_zgg86b.jpg",
+            "https://res.cloudinary.com/gianlucajahn/image/upload/v1658236962/thewitcher_3_kyoymo.jpg"
         ]
     },
     {
@@ -371,6 +419,9 @@ const games = [
         cover: "https://res.cloudinary.com/gianlucajahn/image/upload/c_scale,q_100,w_500/v1658188605/hitman_pqhnm6.jpg",
         footage: [
             "https://res.cloudinary.com/gianlucajahn/image/upload/v1658188605/hitman_pqhnm6.jpg",
+            "https://res.cloudinary.com/gianlucajahn/image/upload/v1658237949/hitman_yj2now.jpg",
+            "https://res.cloudinary.com/gianlucajahn/image/upload/v1658237835/hitman_2_s3d61k.jpg",
+            "https://res.cloudinary.com/gianlucajahn/image/upload/c_scale,q_100,w_1920/v1658237835/hitman_1_ny5whm.jpg"
         ]
     },
     {
@@ -393,6 +444,9 @@ const games = [
         cover: "https://res.cloudinary.com/gianlucajahn/image/upload/c_scale,q_100,w_500/v1658188603/fallout_kuxjw3.jpg",
         footage: [
             "https://res.cloudinary.com/gianlucajahn/image/upload/v1658188603/fallout_kuxjw3.jpg",
+            "https://res.cloudinary.com/gianlucajahn/image/upload/v1658238100/fallout_1_b4smuk.jpg",
+            "https://res.cloudinary.com/gianlucajahn/image/upload/v1658238100/fallout_2_rlg0ng.jpg",
+            "https://res.cloudinary.com/gianlucajahn/image/upload/v1658238100/fallout_3_tc6vd8.jpg"
         ]
     },
     {
@@ -415,6 +469,9 @@ const games = [
         cover: "https://res.cloudinary.com/gianlucajahn/image/upload/c_scale,q_100,w_500/v1658188606/gtasanandreas_xkkyyp.jpg",
         footage: [
             "https://res.cloudinary.com/gianlucajahn/image/upload/c_scale,w_1920/v1658188606/gtasanandreas_xkkyyp.jpg",
+            "https://res.cloudinary.com/gianlucajahn/image/upload/v1658238143/gtasanandreas_1_zah5ph.jpg",
+            "https://res.cloudinary.com/gianlucajahn/image/upload/v1658238142/gtasanandreas_2_vhvzyf.jpg",
+            "https://res.cloudinary.com/gianlucajahn/image/upload/v1658238143/gtasanandreas_3_pb1aih.jpg"
         ]
     },
     {
@@ -437,6 +494,9 @@ const games = [
         cover: "https://res.cloudinary.com/gianlucajahn/image/upload/c_scale,q_100,w_500/v1658188609/golfwithyourfriends_rxrsbv.jpg",
         footage: [
             "https://res.cloudinary.com/gianlucajahn/image/upload/v1658188609/golfwithyourfriends_rxrsbv.jpg",
+            "https://res.cloudinary.com/gianlucajahn/image/upload/v1658238166/golfwithyourfriends_1_hoq6ii.jpg",
+            "https://res.cloudinary.com/gianlucajahn/image/upload/v1658238166/golfwithyourfriends_2_zecdjb.jpg",
+            "https://res.cloudinary.com/gianlucajahn/image/upload/v1658238166/golfwithyourfriends_3_euuouh.jpg"
         ]
     },
     {
@@ -459,6 +519,9 @@ const games = [
         cover: "https://res.cloudinary.com/gianlucajahn/image/upload/c_scale,q_100,w_500/v1658188605/heavyrain_bljnwv.jpg",
         footage: [
             "https://res.cloudinary.com/gianlucajahn/image/upload/v1658188605/heavyrain_bljnwv.jpg",
+            "https://res.cloudinary.com/gianlucajahn/image/upload/v1658238195/heavyrain_1_vvpszy.jpg",
+            "https://res.cloudinary.com/gianlucajahn/image/upload/v1658238195/heavyrain_2_f8y4rn.jpg",
+            "https://res.cloudinary.com/gianlucajahn/image/upload/v1658238196/heavyrain_3_fmkc8p.jpg"
         ]
     },
     {
@@ -481,6 +544,9 @@ const games = [
         cover: "https://res.cloudinary.com/gianlucajahn/image/upload/c_scale,q_100,w_500/v1658188603/dota_gdjxqx.jpg",
         footage: [
             "https://res.cloudinary.com/gianlucajahn/image/upload/v1658188603/dota_gdjxqx.jpg",
+            "https://res.cloudinary.com/gianlucajahn/image/upload/v1658238225/dota_1_lld4aw.jpg",
+            "https://res.cloudinary.com/gianlucajahn/image/upload/v1658238227/dota_2_pguv1e.jpg",
+            "https://res.cloudinary.com/gianlucajahn/image/upload/v1658238225/dota_3_ef1lec.jpg"
         ]
     },
     {
@@ -503,6 +569,9 @@ const games = [
         cover: "https://res.cloudinary.com/gianlucajahn/image/upload/c_scale,q_100,w_500/v1658188606/portal2_eugfiq.jpg",
         footage: [
             "https://res.cloudinary.com/gianlucajahn/image/upload/v1658188606/portal2_eugfiq.jpg",
+            "https://res.cloudinary.com/gianlucajahn/image/upload/v1658238290/portal2_1_tm6kyw.jpg",
+            "https://res.cloudinary.com/gianlucajahn/image/upload/v1658238290/portal2_2_kmrlol.jpg",
+            "https://res.cloudinary.com/gianlucajahn/image/upload/v1658238292/portal2_3_pjhzkj.jpg"
         ]
     },
     {
@@ -525,6 +594,9 @@ const games = [
         cover: "https://res.cloudinary.com/gianlucajahn/image/upload/c_scale,q_100,w_500/v1658188603/civilization_jcuqap.jpg",
         footage: [
             "https://res.cloudinary.com/gianlucajahn/image/upload/v1658188603/civilization_jcuqap.jpg",
+            "https://res.cloudinary.com/gianlucajahn/image/upload/c_scale,q_100,w_1920/v1658238319/civilization_2_gpuqrk.jpg",
+            "https://res.cloudinary.com/gianlucajahn/image/upload/c_scale,q_100,w_1920/v1658238319/civilization_1_cc21ew.jpg",
+            "https://res.cloudinary.com/gianlucajahn/image/upload/v1658238318/civilization_3_qv8ben.jpg"
         ]
     },
     {
@@ -547,6 +619,9 @@ const games = [
         cover: "https://res.cloudinary.com/gianlucajahn/image/upload/c_scale,q_100,w_500/v1658188602/godofwar_cbqzk1.jpg",
         footage: [
             "https://res.cloudinary.com/gianlucajahn/image/upload/v1658188602/godofwar_cbqzk1.jpg",
+            "https://res.cloudinary.com/gianlucajahn/image/upload/v1658238374/godofwar_1_c7k5as.jpg",
+            "https://res.cloudinary.com/gianlucajahn/image/upload/v1658238373/godofwar_2_tiemyf.jpg",
+            "https://res.cloudinary.com/gianlucajahn/image/upload/v1658238377/godofwar_3_qohtw3.jpg"
         ]
     },
     {
@@ -569,6 +644,9 @@ const games = [
         cover: "https://res.cloudinary.com/gianlucajahn/image/upload/c_scale,q_100,w_500/v1658188603/fifa_zb6ook.jpg",
         footage: [
             "https://res.cloudinary.com/gianlucajahn/image/upload/v1658188603/fifa_zb6ook.jpg",
+            "https://res.cloudinary.com/gianlucajahn/image/upload/v1658238407/fifa_1_tt7wm8.jpg",
+            "https://res.cloudinary.com/gianlucajahn/image/upload/v1658238407/fifa_2_bmdtzm.jpg",
+            "https://res.cloudinary.com/gianlucajahn/image/upload/v1658238406/fifa_3_rwnx2k.jpg"
         ]
     },
     {
@@ -591,6 +669,9 @@ const games = [
         cover: "https://res.cloudinary.com/gianlucajahn/image/upload/c_scale,q_100,w_500/v1658188604/halflife_fiorjc.jpg",
         footage: [
             "https://res.cloudinary.com/gianlucajahn/image/upload/v1658188604/halflife_fiorjc.jpg",
+            "https://res.cloudinary.com/gianlucajahn/image/upload/v1658238448/halflife_1_nhsnrj.jpg",
+            "https://res.cloudinary.com/gianlucajahn/image/upload/v1658238448/halflife_2_wpnvmz.jpg",
+            "https://res.cloudinary.com/gianlucajahn/image/upload/v1658238450/halflife_3_xgil4x.jpg"
         ]
     },
     {
@@ -613,6 +694,9 @@ const games = [
         cover: "https://res.cloudinary.com/gianlucajahn/image/upload/c_scale,q_100,w_500/v1658188600/twd_dmycxx.jpg",
         footage: [
             "https://res.cloudinary.com/gianlucajahn/image/upload/v1658188600/twd_dmycxx.jpg",
+            "https://res.cloudinary.com/gianlucajahn/image/upload/v1658238474/twd_1_l4bv5v.jpg",
+            "https://res.cloudinary.com/gianlucajahn/image/upload/v1658238474/twd_2_m9rg9r.jpg",
+            "https://res.cloudinary.com/gianlucajahn/image/upload/v1658238474/twd_3_cclznv.jpg"
         ]
     },
     {
@@ -635,6 +719,9 @@ const games = [
         cover: "https://res.cloudinary.com/gianlucajahn/image/upload/c_scale,q_100,w_500/v1658188601/crusaderkings_fpz1te.jpg",
         footage: [
             "https://res.cloudinary.com/gianlucajahn/image/upload/v1658188601/crusaderkings_fpz1te.jpg",
+            "https://res.cloudinary.com/gianlucajahn/image/upload/c_scale,q_100,w_1920/v1658238507/crusaderkings_1_m5wm5p.jpg",
+            "https://res.cloudinary.com/gianlucajahn/image/upload/v1658238507/crusaderkings_2_pmrmcc.jpg",
+            "https://res.cloudinary.com/gianlucajahn/image/upload/v1658238506/crusaderkings_3_hdzha4.jpg"
         ]
     },
     {
@@ -657,6 +744,9 @@ const games = [
         cover: "https://res.cloudinary.com/gianlucajahn/image/upload/c_scale,q_100,w_500/v1658188600/csgo_o9whdd.jpg",
         footage: [
             "https://res.cloudinary.com/gianlucajahn/image/upload/v1658188600/csgo_o9whdd.jpg",
+            "https://res.cloudinary.com/gianlucajahn/image/upload/v1658238547/csgo_1_gne318.jpg",
+            "https://res.cloudinary.com/gianlucajahn/image/upload/v1658238546/csgo_2_j1tgfo.jpg",
+            "https://res.cloudinary.com/gianlucajahn/image/upload/v1658238546/csgo_3_qgcwjw.jpg"
         ]
     },
     {
@@ -679,6 +769,9 @@ const games = [
         cover: "https://res.cloudinary.com/gianlucajahn/image/upload/c_scale,q_100,w_500/v1658188602/detroit_a4kqkx.jpg",
         footage: [
             "https://res.cloudinary.com/gianlucajahn/image/upload/v1658188602/detroit_a4kqkx.jpg",
+            "https://res.cloudinary.com/gianlucajahn/image/upload/c_scale,q_100,w_1920/v1658238582/detroit_1_i8im17.jpg",
+            "https://res.cloudinary.com/gianlucajahn/image/upload/c_scale,q_100,w_1920/v1658238582/detroit_2_yacxie.jpg",
+            "https://res.cloudinary.com/gianlucajahn/image/upload/v1658238578/detroit_3_truscr.jpg"
         ]
     },
     {
@@ -701,6 +794,9 @@ const games = [
         cover: "https://res.cloudinary.com/gianlucajahn/image/upload/c_scale,q_100,w_500/v1658188613/tombraider_qx2xiy.jpg",
         footage: [
             "https://res.cloudinary.com/gianlucajahn/image/upload/c_scale,q_100,w_1920/v1658188613/tombraider_qx2xiy.jpg",
+            "https://res.cloudinary.com/gianlucajahn/image/upload/v1658238650/tombraider_1_jxeua4.jpg",
+            "https://res.cloudinary.com/gianlucajahn/image/upload/v1658238650/tombraider_2_fnhmmd.jpg",
+            "https://res.cloudinary.com/gianlucajahn/image/upload/v1658238650/tombraider_3_cr0yee.jpg"
         ]
     },
 ]
