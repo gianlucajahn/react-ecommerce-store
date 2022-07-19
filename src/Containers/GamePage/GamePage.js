@@ -1,5 +1,5 @@
 import styles from './GamePage.module.css';
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { motion, AnimatePresence } from "framer-motion";
 import AnimatedGamePage from '../AnimatedPage/AnimatedGamePage';
@@ -25,6 +25,23 @@ const GamePage = props => {
   } = props;
 
   let { gameId } = useParams();
+  const [carouselState, setCarouselState] = useState(0);
+
+  const incrementCarousel = (e) => {
+    if (carouselState === 3) {
+      setCarouselState(0);
+    } else {
+      setCarouselState(carouselState => carouselState + 1);
+    }
+  }
+
+  const decrementCarousel = (e) => {
+    if (carouselState === 0) {
+      setCarouselState(3);
+    } else {
+      setCarouselState(carouselState => carouselState - 1);
+    }
+  }
 
   return (
     <>

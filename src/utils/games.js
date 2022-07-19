@@ -15,7 +15,11 @@ const games = [
         isHovered: false,
         isLiked: false,
         rating: 78,
-        id: 0
+        id: 0,
+        cover: "https://res.cloudinary.com/gianlucajahn/image/upload/c_scale,q_100,w_500/v1658188604/cyberpunk_n6jitl.jpg",
+        footage: [
+            "https://res.cloudinary.com/gianlucajahn/image/upload/v1658188604/cyberpunk_n6jitl.jpg"
+        ]
     },
     {
         name: "Battlefield V",
@@ -33,7 +37,11 @@ const games = [
         isHovered: false,
         isLiked: false,
         rating: 71,
-        id: 1
+        id: 1,
+        cover: "https://res.cloudinary.com/gianlucajahn/image/upload/c_scale,q_100,w_500/v1658188621/battlefield_n0gd5a.jpg",
+        footage: [
+            "https://res.cloudinary.com/gianlucajahn/image/upload/v1658188621/battlefield_n0gd5a.jpg",
+        ]
     },
     {
         name: "Life is Strange",
@@ -51,7 +59,11 @@ const games = [
         isHovered: false,
         isLiked: false,
         rating: 83,
-        id: 2
+        id: 2,
+        cover: "https://res.cloudinary.com/gianlucajahn/image/upload/c_scale,q_100,w_500/v1658188606/lis_ft0puo.jpg",
+        footage: [
+            "https://res.cloudinary.com/gianlucajahn/image/upload/v1658188606/lis_ft0puo.jpg",
+        ]
     },
     {
         name: "Mario Kart 8: Deluxe",
@@ -69,10 +81,14 @@ const games = [
         isHovered: false,
         isLiked: false,
         rating: 84,
-        id: 3
+        id: 3,
+        cover: "https://res.cloudinary.com/gianlucajahn/image/upload/c_scale,q_100,w_500/v1658232678/mariokart_0_mhgbeg.jpg",
+        footage: [
+            "https://res.cloudinary.com/gianlucajahn/image/upload/v1658232678/mariokart_0_mhgbeg.jpg",
+        ]
     },
     {
-        name: "Bioshock Infinite",
+        name: "BioShock Infinite",
         surname: "bioshockinfinite",
         price: "$18.99",
         desc: 'This first-person story-driven shooter and entry in the Bioshock franchise follows Booker DeWitt as he enters the floating independent (formerly US) city of Columbia in 1912 and attempts to retrieve a girl trapped in a tower by the citys self-proclaimed despot/prophet in order to erase his financial debt. Throughout the story, themes of violence, racism and fatalism are brought up.',
@@ -87,7 +103,11 @@ const games = [
         isHovered: false,
         isLiked: false,
         rating: 86,
-        id: 4
+        id: 4,
+        cover: "https://res.cloudinary.com/gianlucajahn/image/upload/c_scale,q_100,w_500/v1658188602/bioshockinfinite_qyo3pi.jpg",
+        footage: [
+            "https://res.cloudinary.com/gianlucajahn/image/upload/v1658188602/bioshockinfinite_qyo3pi.jpg",
+        ]
     },
     {
         name: "Anno: 1800",
@@ -105,7 +125,11 @@ const games = [
         isHovered: false,
         isLiked: false,
         rating: 81,
-        id: 5
+        id: 5,
+        cover: "https://res.cloudinary.com/gianlucajahn/image/upload/c_scale,q_100,w_500/v1658188622/anno_cbmzye.jpg",
+        footage: [
+            "https://res.cloudinary.com/gianlucajahn/image/upload/v1658188622/anno_cbmzye.jpg",
+        ]
     },
     {
         name: "Red Dead Redemption 2",
@@ -123,7 +147,11 @@ const games = [
         isHovered: false,
         isLiked: false,
         rating: 92,
-        id: 6
+        id: 6,
+        cover: "https://res.cloudinary.com/gianlucajahn/image/upload/c_scale,q_100,w_500/v1658188613/rdr_fhqs3d.jpg",
+        footage: [
+            "https://res.cloudinary.com/gianlucajahn/image/upload/c_scale,w_1920/v1658188613/rdr_fhqs3d.jpg"
+        ]
     },
     {
         name: "Horizon Zero Dawn",
@@ -141,7 +169,11 @@ const games = [
         isHovered: false,
         isLiked: false,
         rating: 90,
-        id: 7
+        id: 7,
+        cover: "https://res.cloudinary.com/gianlucajahn/image/upload/c_scale,q_100,w_500/v1658188606/horizon_jzlhsd.jpg",
+        footage: [
+            "https://res.cloudinary.com/gianlucajahn/image/upload/v1658188606/horizon_jzlhsd.jpg",
+        ]
     },
     {
         name: "Grand Theft Auto: V",
@@ -159,7 +191,11 @@ const games = [
         isHovered: false,
         isLiked: false,
         rating: 90,
-        id: 8
+        id: 8,
+        cover: "https://res.cloudinary.com/gianlucajahn/image/upload/c_scale,q_100,w_500/v1658188604/gtav_x1ccio.jpg",
+        footage: [
+            "https://res.cloudinary.com/gianlucajahn/image/upload/v1658188604/gtav_x1ccio.jpg",
+        ]
     },
     {
         name: "Warframe",
@@ -177,7 +213,11 @@ const games = [
         isHovered: false,
         isLiked: false,
         rating: 76,
-        id: 9
+        id: 9,
+        cover: "https://res.cloudinary.com/gianlucajahn/image/upload/c_scale,q_100,w_500/v1658188601/warframe_kghu8g.jpg",
+        footage: [
+            "https://res.cloudinary.com/gianlucajahn/image/upload/v1658188601/warframe_kghu8g.jpg"
+        ]
     },
     {
         name: "Minecraft",
@@ -195,7 +235,11 @@ const games = [
         isHovered: false,
         isLiked: false,
         rating: 84,
-        id: 10
+        id: 10,
+        cover: "https://res.cloudinary.com/gianlucajahn/image/upload/c_scale,q_100,w_500/v1658188606/minecraft_iuejtm.jpg",
+        footage: [
+            "https://res.cloudinary.com/gianlucajahn/image/upload/v1658188606/minecraft_iuejtm.jpg",
+        ]
     },
     {
         name: "Rise of the Tomb Raider",
@@ -213,7 +257,11 @@ const games = [
         isHovered: false,
         isLiked: false,
         rating: 82,
-        id: 11
+        id: 11,
+        cover: "https://res.cloudinary.com/gianlucajahn/image/upload/c_scale,q_100,w_500/v1658188610/riseofthetombraider_uq2q6t.jpg",
+        footage: [
+            "https://res.cloudinary.com/gianlucajahn/image/upload/v1658188610/riseofthetombraider_uq2q6t.jpg",
+        ]
     },
     {
         name: "Metro Exodus",
@@ -231,7 +279,11 @@ const games = [
         isHovered: false,
         isLiked: false,
         rating: 83,
-        id: 12
+        id: 12,
+        cover: "https://res.cloudinary.com/gianlucajahn/image/upload/c_scale,q_100,w_500/v1658188608/metro_o45ytf.jpg",
+        footage: [
+            "https://res.cloudinary.com/gianlucajahn/image/upload/v1658188608/metro_o45ytf.jpg",
+        ]
     },
     {
         name: "Terraria",
@@ -249,7 +301,11 @@ const games = [
         isHovered: false,
         isLiked: false,
         rating: 81,
-        id: 13
+        id: 13,
+        cover: "https://res.cloudinary.com/gianlucajahn/image/upload/c_scale,q_100,w_500/v1658188609/terraria_yb3iuc.jpg",
+        footage: [
+            "https://res.cloudinary.com/gianlucajahn/image/upload/v1658188609/terraria_yb3iuc.jpg",
+        ]
     },
     {
         name: "Rocket League",
@@ -267,7 +323,11 @@ const games = [
         isHovered: false,
         isLiked: false,
         rating: 83,
-        id: 14
+        id: 14,
+        cover: "https://res.cloudinary.com/gianlucajahn/image/upload/c_scale,q_100,w_500/v1658188608/rocketleague_on6yqd.jpg",
+        footage: [
+            "https://res.cloudinary.com/gianlucajahn/image/upload/c_scale,w_1920/v1658188608/rocketleague_on6yqd.jpg",
+        ]
     },
     {
         name: "The Witcher 3: Wild Hunt",
@@ -285,7 +345,11 @@ const games = [
         isHovered: false,
         isLiked: false,
         rating: 95,
-        id: 15
+        id: 15,
+        cover: "https://res.cloudinary.com/gianlucajahn/image/upload/c_scale,q_100,w_500/v1658188610/thewitcher_tllr60.jpg",
+        footage: [
+            "https://res.cloudinary.com/gianlucajahn/image/upload/v1658188610/thewitcher_tllr60.jpg",
+        ]
     },
     {
         name: "Hitman",
@@ -303,7 +367,11 @@ const games = [
         isHovered: false,
         isLiked: false,
         rating: 81,
-        id: 16
+        id: 16,
+        cover: "https://res.cloudinary.com/gianlucajahn/image/upload/c_scale,q_100,w_500/v1658188605/hitman_pqhnm6.jpg",
+        footage: [
+            "https://res.cloudinary.com/gianlucajahn/image/upload/v1658188605/hitman_pqhnm6.jpg",
+        ]
     },
     {
         name: "Fallout 4",
@@ -321,7 +389,11 @@ const games = [
         isHovered: false,
         isLiked: false,
         rating: 80,
-        id: 17
+        id: 17,
+        cover: "https://res.cloudinary.com/gianlucajahn/image/upload/c_scale,q_100,w_500/v1658188603/fallout_kuxjw3.jpg",
+        footage: [
+            "https://res.cloudinary.com/gianlucajahn/image/upload/v1658188603/fallout_kuxjw3.jpg",
+        ]
     },
     {
         name: "GTA: San Andreas",
@@ -339,7 +411,11 @@ const games = [
         isHovered: false,
         isLiked: false,
         rating: 90,
-        id: 18
+        id: 18,
+        cover: "https://res.cloudinary.com/gianlucajahn/image/upload/c_scale,q_100,w_500/v1658188606/gtasanandreas_xkkyyp.jpg",
+        footage: [
+            "https://res.cloudinary.com/gianlucajahn/image/upload/c_scale,w_1920/v1658188606/gtasanandreas_xkkyyp.jpg",
+        ]
     },
     {
         name: "Golf with your Friends",
@@ -357,7 +433,11 @@ const games = [
         isHovered: false,
         isLiked: false,
         rating: 70,
-        id: 19
+        id: 19,
+        cover: "https://res.cloudinary.com/gianlucajahn/image/upload/c_scale,q_100,w_500/v1658188609/golfwithyourfriends_rxrsbv.jpg",
+        footage: [
+            "https://res.cloudinary.com/gianlucajahn/image/upload/v1658188609/golfwithyourfriends_rxrsbv.jpg",
+        ]
     },
     {
         name: "Heavy Rain",
@@ -375,7 +455,11 @@ const games = [
         isHovered: false,
         isLiked: false,
         rating: 82,
-        id: 20
+        id: 20,
+        cover: "https://res.cloudinary.com/gianlucajahn/image/upload/c_scale,q_100,w_500/v1658188605/heavyrain_bljnwv.jpg",
+        footage: [
+            "https://res.cloudinary.com/gianlucajahn/image/upload/v1658188605/heavyrain_bljnwv.jpg",
+        ]
     },
     {
         name: "Dota 2",
@@ -393,7 +477,11 @@ const games = [
         isHovered: false,
         isLiked: false,
         rating: 79,
-        id: 21
+        id: 21,
+        cover: "https://res.cloudinary.com/gianlucajahn/image/upload/c_scale,q_100,w_500/v1658188603/dota_gdjxqx.jpg",
+        footage: [
+            "https://res.cloudinary.com/gianlucajahn/image/upload/v1658188603/dota_gdjxqx.jpg",
+        ]
     },
     {
         name: "Portal 2",
@@ -411,7 +499,11 @@ const games = [
         isHovered: false,
         isLiked: false,
         rating: 92,
-        id: 22
+        id: 22,
+        cover: "https://res.cloudinary.com/gianlucajahn/image/upload/c_scale,q_100,w_500/v1658188606/portal2_eugfiq.jpg",
+        footage: [
+            "https://res.cloudinary.com/gianlucajahn/image/upload/v1658188606/portal2_eugfiq.jpg",
+        ]
     },
     {
         name: "Sid Meier's Civilization VI",
@@ -429,7 +521,11 @@ const games = [
         isHovered: false,
         isLiked: false,
         rating: 82,
-        id: 23
+        id: 23,
+        cover: "https://res.cloudinary.com/gianlucajahn/image/upload/c_scale,q_100,w_500/v1658188603/civilization_jcuqap.jpg",
+        footage: [
+            "https://res.cloudinary.com/gianlucajahn/image/upload/v1658188603/civilization_jcuqap.jpg",
+        ]
     },
     {
         name: "God of War",
@@ -447,7 +543,11 @@ const games = [
         isHovered: false,
         isLiked: false,
         rating: 94,
-        id: 24
+        id: 24,
+        cover: "https://res.cloudinary.com/gianlucajahn/image/upload/c_scale,q_100,w_500/v1658188602/godofwar_cbqzk1.jpg",
+        footage: [
+            "https://res.cloudinary.com/gianlucajahn/image/upload/v1658188602/godofwar_cbqzk1.jpg",
+        ]
     },
     {
         name: "FIFA 22",
@@ -465,7 +565,11 @@ const games = [
         isHovered: false,
         isLiked: false,
         rating: 80,
-        id: 25
+        id: 25,
+        cover: "https://res.cloudinary.com/gianlucajahn/image/upload/c_scale,q_100,w_500/v1658188603/fifa_zb6ook.jpg",
+        footage: [
+            "https://res.cloudinary.com/gianlucajahn/image/upload/v1658188603/fifa_zb6ook.jpg",
+        ]
     },
     {
         name: "Half-Life 2",
@@ -483,7 +587,11 @@ const games = [
         isHovered: false,
         isLiked: false,
         rating: 91,
-        id: 26
+        id: 26,
+        cover: "https://res.cloudinary.com/gianlucajahn/image/upload/c_scale,q_100,w_500/v1658188604/halflife_fiorjc.jpg",
+        footage: [
+            "https://res.cloudinary.com/gianlucajahn/image/upload/v1658188604/halflife_fiorjc.jpg",
+        ]
     },
     {
         name: "The Walking Dead: S1",
@@ -501,7 +609,11 @@ const games = [
         isHovered: false,
         isLiked: false,
         rating: 86,
-        id: 27
+        id: 27,
+        cover: "https://res.cloudinary.com/gianlucajahn/image/upload/c_scale,q_100,w_500/v1658188600/twd_dmycxx.jpg",
+        footage: [
+            "https://res.cloudinary.com/gianlucajahn/image/upload/v1658188600/twd_dmycxx.jpg",
+        ]
     },
     {
         name: "Crusader Kings III",
@@ -519,7 +631,11 @@ const games = [
         isHovered: false,
         isLiked: false,
         rating: 85,
-        id: 28
+        id: 28,
+        cover: "https://res.cloudinary.com/gianlucajahn/image/upload/c_scale,q_100,w_500/v1658188601/crusaderkings_fpz1te.jpg",
+        footage: [
+            "https://res.cloudinary.com/gianlucajahn/image/upload/v1658188601/crusaderkings_fpz1te.jpg",
+        ]
     },
     {
         name: "Counter Strike: GO",
@@ -537,7 +653,11 @@ const games = [
         isHovered: false,
         isLiked: false,
         rating: 82,
-        id: 29
+        id: 29,
+        cover: "https://res.cloudinary.com/gianlucajahn/image/upload/c_scale,q_100,w_500/v1658188600/csgo_o9whdd.jpg",
+        footage: [
+            "https://res.cloudinary.com/gianlucajahn/image/upload/v1658188600/csgo_o9whdd.jpg",
+        ]
     },
     {
         name: "Detroit: Become Human",
@@ -555,7 +675,11 @@ const games = [
         isHovered: false,
         isLiked: false,
         rating: 89,
-        id: 30
+        id: 30,
+        cover: "https://res.cloudinary.com/gianlucajahn/image/upload/c_scale,q_100,w_500/v1658188602/detroit_a4kqkx.jpg",
+        footage: [
+            "https://res.cloudinary.com/gianlucajahn/image/upload/v1658188602/detroit_a4kqkx.jpg",
+        ]
     },
     {
         name: "Tomb Raider",
@@ -573,7 +697,11 @@ const games = [
         isHovered: false,
         isLiked: false,
         rating: 85,
-        id: 31
+        id: 31,
+        cover: "https://res.cloudinary.com/gianlucajahn/image/upload/c_scale,q_100,w_500/v1658188613/tombraider_qx2xiy.jpg",
+        footage: [
+            "https://res.cloudinary.com/gianlucajahn/image/upload/c_scale,q_100,w_1920/v1658188613/tombraider_qx2xiy.jpg",
+        ]
     },
 ]
 

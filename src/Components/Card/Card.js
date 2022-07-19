@@ -34,7 +34,7 @@ const Card = props => {
             animate="animate"
             exit="exit"
           >
-            <img src={require(`../../Resources/image/gameFootage/${game.surname}.jpg`)} className={styles.img} />
+            <img src={game.cover} className={styles.img} />
     
             <div className={styles.price}>
                     {game.inCart ? <AddedToCart /> : <AddToCart 
