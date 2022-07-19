@@ -19,10 +19,12 @@
 
 .left {
     top: 48.5%;
-    left: 1.5%;
+    left: 2.5%;
+    fill: #ccc;
 }
 
 .right {
     top: 48.5%;
-    right: 1.5%;
+    right: 2.5%;
+    fill: #ccc;
 }

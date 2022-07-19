@@ -5,6 +5,8 @@ import { motion, AnimatePresence } from "framer-motion";
 import AnimatedGamePage from '../AnimatedPage/AnimatedGamePage';
 import NavBar from '../../Components/NavBar/NavBar';
 import { ReactComponent as Arrow } from "../../Resources/image/arrow.svg";
+import { ReactComponent as Up } from "../../Resources/image/up.svg";
+import { ReactComponent as Down } from "../../Resources/image/down.svg";
 import Slider from '../../Components/Slider/Slider';
 import games from '../../utils/games';
 
@@ -95,16 +97,20 @@ const GamePage = props => {
                         <p>{selectedGame.desc}</p>
                       </div>
                       <div className={styles.aboutBottom}>
-                        <a href={selectedGame.link} target="_blank">{selectedGame.name} Website</a>
-                        <h4>Released: {selectedGame.release}</h4>
-                        <h4>Platforms: {selectedGame.platforms}</h4>
-                        <h4>Main Genre: {selectedGame.genre}</h4>
-                        <h4>Developers: {selectedGame.developers}</h4>
-                        <h4>Publishers: {selectedGame.publishers}</h4>
+                        <div>
+                            <a href={selectedGame.link} target="_blank">{selectedGame.name} Website</a>
+                            <h4>Released: {selectedGame.release}</h4>
+                            <h4>Platforms: {selectedGame.platforms}</h4>
+                            <h4>Main Genre: {selectedGame.genre}</h4>
+                            <h4>Developers: {selectedGame.developers}</h4>
+                            <h4>Publishers: {selectedGame.publishers}</h4>
+                        </div>
 
                         <button>
-
                           Hide
+                          <Up 
+                            className={styles.up}
+                          />
                         </button>
                       </div>
                     </div>

@@ -114,16 +114,24 @@ header h1 {
 }
 
 .aboutBottom {
-    height: 250px;
+    height: 264px;
     background-color: #262626;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 110%;
     border-bottom-left-radius: 16px;
     border-bottom-right-radius: 16px;
-    padding: 30px 70px 30px 34px;
+    padding: 30px 35px 20px 34px;
     box-sizing: border-box;
 }
 
-.aboutBottom a {
+.aboutBottom div {
+    display: flex;
+    flex-direction: column;
+}
+
+.aboutBottom div a {
     text-decoration: none;
     color: white;
     margin-bottom: 11px;
@@ -131,12 +139,31 @@ header h1 {
     font-family: "GT Medium";
 }
 
-.aboutBottom h4 {
+.aboutBottom div h4 {
     line-height: 1.2;
     font-size: 0.9em;
     letter-spacing: 1px;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
     color: #999999;
     font-family: "GT Light";
+}
+
+.aboutBottom button {
+    width: 20%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    align-self: flex-end;
+    background-color: transparent;
+    border: 1px transparent;
+    color: #CCCCCC;
+    font-family: "GT Medium";
+    font-size: 1.025em;
+    gap: 4px;
+}
+
+.up {
+    fill: #CCCCCC;
+    height: 16px;
 }
 
