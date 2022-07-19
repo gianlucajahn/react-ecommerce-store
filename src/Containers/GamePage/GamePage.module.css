@@ -150,6 +150,7 @@ header h1 {
 
 .aboutBottom button {
     width: 20%;
+    cursor: pointer;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -160,6 +161,11 @@ header h1 {
     font-family: "GT Medium";
     font-size: 1.025em;
     gap: 4px;
+    transition: 0.3s all;
+}
+
+.aboutBottom button:active {
+    transform: scale(0.9);
 }
 
 .up {
