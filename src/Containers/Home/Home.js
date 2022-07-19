@@ -7,7 +7,7 @@ import { ReactComponent as Reviews } from "../../Resources/image/reviews.svg";
 import { ReactComponent as Browse } from "../../Resources/image/browse.svg";
 import { hover } from '@testing-library/user-event/dist/hover';
 import { motion, AnimatePresence } from "framer-motion";
-import { Navigate, useNavigate } from 'react-router-dom';
+import { Navigate, useLocation, useNavigate } from 'react-router-dom';
 import AnimatedPage from '../AnimatedPage/AnimatedPage';
 
 const Home = props => {

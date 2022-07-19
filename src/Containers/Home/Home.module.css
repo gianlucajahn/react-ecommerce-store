@@ -9,30 +9,12 @@ body {
     min-width: 100vh;
 }
 
-::-webkit-scrollbar {
-    width: 6px;
-    display: none;
-}
-
-::-webkit-scrollbar-track {
-    background: #0f1011;
-}
-
-::-webkit-scrollbar-thumb {
-    background: #888;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: #555;
-}
-
 .parent * {
     pointer-events: none;
 }
 
 .main {
     background-color: #0f1011;
-    overflow: hidden;
 }
 
 .home {

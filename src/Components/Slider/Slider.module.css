@@ -1,0 +1,28 @@
+.slider {
+    width: 67.5%;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.currentImg {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.left,
+.right {
+    position: absolute;
+    height: 45px;
+    width: 45px;
+}
+
+.left {
+    top: 48.5%;
+    left: 1.5%;
+}
+
+.right {
+    top: 48.5%;
+    right: 1.5%;
+}

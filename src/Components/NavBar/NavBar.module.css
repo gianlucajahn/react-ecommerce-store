@@ -54,7 +54,7 @@ form button {
 .pathdiv:active,
 .cartdiv:active,
 .githubdiv:active {
-    transform: scale(0.9145);
+    transform: scale(0.945);
 }
 
 .svg {

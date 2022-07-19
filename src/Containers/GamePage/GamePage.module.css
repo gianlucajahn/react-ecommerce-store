@@ -4,8 +4,9 @@
 }
 
 .gamepageContent {
-    padding: 30px 45px;
+    padding: 30px 50px;
     display: flex;
+    flex-direction: column;
 }
 
 header {
@@ -51,3 +52,91 @@ header h1 {
 .goBack {
     transition: 0.275s all;
 }
+
+.game {
+    display: flex;
+    justify-content: flex-start;
+    gap: 30px;
+    margin-top: 30px;
+    box-sizing: border-box;
+}
+
+.gameInfo,
+.about,
+.aboutBottom {
+    display: flex;
+    flex-direction: column;
+}
+
+.gameInfo {
+    justify-content: space-between;
+    width: 28%
+}
+
+.aboutTop {
+    padding: 30px 70px 30px 34px;
+    width: 110%;
+    height: 280px;
+    box-sizing: border-box;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    border: 1px transparent;
+    background-color: #1A1A1A;
+    overflow: scroll;
+}
+
+.aboutTop::after {
+    background-image: linear-gradient(180deg, transparent, #1a1a1a);
+    bottom: -32px;
+    content: "";
+    display: block;
+    height: 50px;
+    margin-top: -20px;
+    pointer-events: none;
+    position: -webkit-sticky;
+    position: sticky;
+    width: 100%;
+}
+
+.aboutTop h2 {
+    color: white;
+    font-family: "GT Ultrabold";
+    font-size: 26px;
+    margin-bottom: 16px;
+}
+
+.aboutTop p {
+    color: #CCCCCC;
+    font-size: 15px;
+    font-family: "GT Regular";
+    word-spacing: 2px;
+    line-height: 1.65;
+}
+
+.aboutBottom {
+    height: 250px;
+    background-color: #262626;
+    width: 110%;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    padding: 30px 70px 30px 34px;
+    box-sizing: border-box;
+}
+
+.aboutBottom a {
+    text-decoration: none;
+    color: white;
+    margin-bottom: 11px;
+    font-size: 1.1em;
+    font-family: "GT Medium";
+}
+
+.aboutBottom h4 {
+    line-height: 1.2;
+    font-size: 0.9em;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+    color: #999999;
+    font-family: "GT Light";
+}
+
