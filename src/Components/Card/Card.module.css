@@ -9,7 +9,7 @@
 
 .card:hover {
     background-color: #2d2d2d;
-    transform: scale(1.035);
+    transform: scale(1.015);
 }
 
 .card:active {

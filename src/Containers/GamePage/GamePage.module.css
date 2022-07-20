@@ -83,6 +83,7 @@ header h1 {
     border: 1px transparent;
     background-color: #1A1A1A;
     overflow: scroll;
+    overflow-x: hidden;
 }
 
 .aboutTop::after {
@@ -205,4 +206,25 @@ header h1 {
 .down {
     transform: rotate(180deg);
 }
+
+::-webkit-scrollbar {
+    width: 7px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: transparent;
+
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
 

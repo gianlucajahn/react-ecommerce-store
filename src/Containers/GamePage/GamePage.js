@@ -9,6 +9,7 @@ import { ReactComponent as Up } from "../../Resources/image/up.svg";
 import { ReactComponent as Down } from "../../Resources/image/down.svg";
 import Slider from '../../Components/Slider/Slider';
 import games from '../../utils/games';
+import AnimatedText from '../AnimatedPage/AnimatedText';
 
 const GamePage = props => {
   const {
@@ -102,14 +103,16 @@ const GamePage = props => {
                         <p>{selectedGame.desc}</p>
                       </div>
                       <div className={extended ? styles.aboutBottom : styles.aboutBottomClosed}>
-                        <div className={extended ? styles.open : styles.closed}>
-                            <a href={selectedGame.link} target="_blank">{selectedGame.name} Website</a>
-                            <h4>Released: {selectedGame.release}</h4>
-                            <h4>Platforms: {selectedGame.platforms}</h4>
-                            <h4>Main Genre: {selectedGame.genre}</h4>
-                            <h4>Developers: {selectedGame.developers}</h4>
-                            <h4 className={styles.lastChild}>Publishers: {selectedGame.publishers}</h4>
-                        </div>
+                        <AnimatedText>
+                             <div className={extended ? styles.open : styles.closed}>
+                                 <a href={selectedGame.link} target="_blank">{selectedGame.name} Website</a>
+                                 <h4>Released: {selectedGame.release}</h4>
+                                 <h4>Platforms: {selectedGame.platforms}</h4>
+                                 <h4>Main Genre: {selectedGame.genre}</h4>
+                                 <h4>Developers: {selectedGame.developers}</h4>
+                                 <h4 className={styles.lastChild}>Publishers: {selectedGame.publishers}</h4>
+                             </div>
+                        </AnimatedText>
 
                         <button id="20" onClick={handleExtend} onMouseEnter={handleHover} onMouseLeave={handleHover} className={hoverState[20].hovered ? styles.buttonHovered : styles.buttonNotHovered}>
                           {extended ? "Hide" : "More"}

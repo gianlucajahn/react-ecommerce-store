@@ -3,6 +3,12 @@
     padding: 0;
 }
 
+html,
+body {
+    overflow-x: hidden;
+    background-color: #0F1011;
+}
+
 .Browse {
     background-color: #0f1011;
     min-height: 100vh;
@@ -121,3 +127,4 @@
     transform: scale(0.9);
     transition: 0.3s all;
 }
+
