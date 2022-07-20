@@ -21,6 +21,7 @@ function App() {
   const [searching, setSearching] = useState(false);
   const [browsing, setBrowsing] = useState(true);
   const [selectedGame, setSelectedGame] = useState({});
+  const [extended, setExtended] = useState(true);
   const [hoverState, setHoverState] = useState([
     {
         hovered: false,
@@ -113,16 +114,24 @@ function App() {
     {
       hovered: false,
       selected: false
+    },
+    {
+      hovered: false,
+      selected: false
     }
   ]);
 
 const navigate = useNavigate();
 
 async function handleBrowse() {
+  setExtended(false);
+  setHoverState([...hoverState, hoverState[21].hovered = false]);
   navigate('/browse');
 }
 
 const handleHome = () => {
+  setExtended(false);
+  setHoverState([...hoverState, hoverState[21].hovered = false]);
   navigate('/');
 }
 
@@ -201,15 +210,28 @@ const handleHoverGame = (e) => {
 
 const handleAddToCart = (e) => {
   let handledAddedGame = allGames.map((game, i) => {
-    if (e.target.id == i) {
-      game.inCart = true
-      let newCart = cart;
-      newCart.push(game);
-      setCart(newCart);
-      setCartAmount(cartAmount + 1);
-      return game
+    if (location.pathname === "/browse") {
+      if (e.target.id == i) {
+        game.inCart = true
+        let newCart = cart;
+        newCart.push(game);
+        setCart(newCart);
+        setCartAmount(cartAmount + 1);
+        return game
+      } else {
+        return game;
+      }
     } else {
-      return game;
+        if (selectedGame.id == i) {
+          game.inCart = true
+          let newCart = cart;
+          newCart.push(game);
+          setCart(newCart);
+          setCartAmount(cartAmount + 1);
+          return game
+        } else {
+          return game;
+        }
     }
   });
 
@@ -287,6 +309,8 @@ useEffect(() => {
                                                handleHome={handleHome}
                                                setHoverState={setHoverState}
                                                allGames={allGames}
+                                               extended={extended}
+                                               setExtended={setExtended}
                                             />} />
           </Routes>
       </AnimatePresence>

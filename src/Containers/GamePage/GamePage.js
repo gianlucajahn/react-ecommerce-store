@@ -10,6 +10,8 @@ import { ReactComponent as Down } from "../../Resources/image/down.svg";
 import Slider from '../../Components/Slider/Slider';
 import games from '../../utils/games';
 import AnimatedText from '../AnimatedPage/AnimatedText';
+import { ReactComponent as Add } from "../../Resources/image/add.svg";
+import AddedToCartBig from '../../Components/AddedToCart/AddedToCartBig';
 
 const GamePage = props => {
   const {
@@ -28,13 +30,15 @@ const GamePage = props => {
     selectedGame,
     setSelectedGame,
     setHoverState,
-    allGames
+    allGames,
+    extended,
+    setExtended,
+    handleAddToCart
   } = props;
 
   let { gameId } = useParams();
   const location = useLocation();
   const [carouselState, setCarouselState] = useState(0);
-  const [extended, setExtended] = useState(true);
 
   const incrementCarousel = (e) => {
     if (carouselState === 3) {
@@ -102,7 +106,7 @@ const GamePage = props => {
                         <h2>About</h2>
                         <p>{selectedGame.desc}</p>
                       </div>
-                      <div className={extended ? styles.aboutBottom : styles.aboutBottomClosed}>
+                      <div className={extended ? `${styles.conditionalOpen} ${styles.aboutBottom}` : `${styles.conditionalClose} ${styles.aboutBottomClosed}`}>
                         <AnimatedText>
                              <div className={extended ? styles.open : styles.closed}>
                                  <a href={selectedGame.link} target="_blank">{selectedGame.name} Website</a>
@@ -122,7 +126,11 @@ const GamePage = props => {
                     </div>
 
                     <div className={styles.addToCart}>
-
+                      <h3>{selectedGame.price}</h3>
+                      {selectedGame.inCart ? <AddedToCartBig /> : <button id="21" onMouseEnter={handleHover} onMouseLeave={handleHover} style={{ color: hoverState[21].hovered ? "#92f" : "#999999" }} onClick={handleAddToCart}>
+                        Add to cart
+                        <Add className={styles.add} style={{ fill: hoverState[21].hovered ? "#92f" : "#999999" }}/>
+                      </button>}
                     </div>
                   </div>
                 </section>
