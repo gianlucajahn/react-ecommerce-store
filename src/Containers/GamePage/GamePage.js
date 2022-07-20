@@ -33,6 +33,7 @@ const GamePage = props => {
   let { gameId } = useParams();
   const location = useLocation();
   const [carouselState, setCarouselState] = useState(0);
+  const [extended, setExtended] = useState(true);
 
   const incrementCarousel = (e) => {
     if (carouselState === 3) {
@@ -48,6 +49,10 @@ const GamePage = props => {
     } else {
       setCarouselState(carouselState - 1);
     }
+  }
+
+  const handleExtend = (e) => {
+    setExtended(!extended);
   }
 
   return (
@@ -96,21 +101,19 @@ const GamePage = props => {
                         <h2>About</h2>
                         <p>{selectedGame.desc}</p>
                       </div>
-                      <div className={styles.aboutBottom}>
-                        <div>
+                      <div className={extended ? styles.aboutBottom : styles.aboutBottomClosed}>
+                        <div className={extended ? styles.open : styles.closed}>
                             <a href={selectedGame.link} target="_blank">{selectedGame.name} Website</a>
                             <h4>Released: {selectedGame.release}</h4>
                             <h4>Platforms: {selectedGame.platforms}</h4>
                             <h4>Main Genre: {selectedGame.genre}</h4>
                             <h4>Developers: {selectedGame.developers}</h4>
-                            <h4>Publishers: {selectedGame.publishers}</h4>
+                            <h4 className={styles.lastChild}>Publishers: {selectedGame.publishers}</h4>
                         </div>
 
-                        <button>
-                          Hide
-                          <Up 
-                            className={styles.up}
-                          />
+                        <button id="20" onClick={handleExtend} onMouseEnter={handleHover} onMouseLeave={handleHover} className={hoverState[20].hovered ? styles.buttonHovered : styles.buttonNotHovered}>
+                          {extended ? "Hide" : "More"}
+                          {extended ? <Up  className={styles.up} style={{ fill: hoverState[20].hovered ? "#fff" : "#cccccc" }}/> : <Up className={styles.down} style={{ fill: hoverState[20].hovered ? "#fff" : "#cccccc" }}/>}
                         </button>
                       </div>
                     </div>
