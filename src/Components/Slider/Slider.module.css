@@ -10,21 +10,39 @@
     border-radius: 20px;
 }
 
-.left,
-.right {
+.forward,
+.backwards {
+    height: 48px;
+    width: 48px;
     position: absolute;
-    height: 45px;
-    width: 45px;
+    background-color: transparent;
+    border: 1px transparent;
 }
 
-.left {
+.forward *,
+.backwards * {
+    pointer-events: none;
+}
+
+.backwards {
     top: 48.5%;
     left: 2.5%;
     fill: #ccc;
 }
 
-.right {
+.forward {
     top: 48.5%;
     right: 2.5%;
     fill: #ccc;
+}
+
+.forward,
+.backwards {
+    cursor: pointer;
+    transition: 0.3s all;
+}
+
+.forward:active,
+.backwards:active {
+    transform: scale(0.9);
 }

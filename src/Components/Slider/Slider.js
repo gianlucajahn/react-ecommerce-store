@@ -27,13 +27,17 @@ const Slider = props => {
           src={selectedGame.footage[footageIndex] === 0 ? "" : selectedGame.footage[footageIndex]}
         />
 
-        <Left 
-          className={styles.left} 
-        />
+        <button className={styles.backwards}>
+            <Left 
+              className={styles.left} 
+            />
+        </button>
 
-        <Right
-          className={styles.right} 
-        />
+        <button className={styles.forward}>
+            <Right
+              className={styles.right} 
+            />
+        </button>
     </div>
   );
 }
