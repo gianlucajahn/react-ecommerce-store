@@ -3,7 +3,7 @@ import React from "react";
 
 const animations = {
     initial: { opacity: 0, y: -40 },
-    animate: { opacity: 1, y: 0, transition: { opacity: { type: "spring", duration: 0.2, bounce: 0.5 }, y: { type: "spring", duration: 1.25, bounce: 0.575 }} },
+    animate: { opacity: 1, y: 0, transition: { opacity: { type: "spring", duration: 0.4, bounce: 0.5, delay: 0.4 }, y: { type: "spring", duration: 1.25, bounce: 0.575, delay: 0.4 }} },
     exit: { opacity: 0, transition: { opacity: { type: "tween", duration: 0.2 }}},
 }
 

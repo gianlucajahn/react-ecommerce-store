@@ -35,7 +35,9 @@ const GamePage = props => {
     extended,
     setExtended,
     handleAddToCart,
-    handleLike
+    handleLike,
+    textExtended,
+    setTextExtended
   } = props;
 
   let { gameId } = useParams();
@@ -58,8 +60,22 @@ const GamePage = props => {
     }
   }
 
+  const extendText = () => {
+    setTextExtended(!textExtended);
+  }
+
   const handleExtend = (e) => {
+    if (document.getElementById("20").innerHTML === "More") {
+      document.getElementById("20").className="aboutBottom";
+    } else if (document.getElementById("20").innerHTML === "Hide") {
+        document.getElementById("20").className="aboutBottomClosed";
+    }
     setExtended(!extended);
+    if (textExtended === false) {
+      setTimeout(extendText, 500);
+    } else {
+        setTextExtended(!textExtended);
+    }
   }
 
   return (
@@ -114,9 +130,9 @@ const GamePage = props => {
                         <h2>About</h2>
                         <p>{selectedGame.desc}</p>
                       </div>
-                      <div className={extended ? `${styles.conditionalOpen} ${styles.aboutBottom}` : `${styles.conditionalClose} ${styles.aboutBottomClosed}`}>
+                      <div className={extended ? `${styles.conditionalOpen} ${styles.aboutBottom}` : `${styles.conditionalClose} ${styles.aboutBottomClosed}`} id="about">
                         <AnimatedText>
-                             <div className={extended ? styles.open : styles.closed}>
+                             <div className={textExtended ? styles.open : styles.closed}>
                                  <a href={selectedGame.link} target="_blank">{selectedGame.name} Website</a>
                                  <h4>Released: {selectedGame.release}</h4>
                                  <h4>Platforms: {selectedGame.platforms}</h4>
