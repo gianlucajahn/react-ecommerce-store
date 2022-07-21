@@ -7,6 +7,7 @@ import NavBar from '../../Components/NavBar/NavBar';
 import { ReactComponent as Arrow } from "../../Resources/image/arrow.svg";
 import { ReactComponent as Up } from "../../Resources/image/up.svg";
 import { ReactComponent as Down } from "../../Resources/image/down.svg";
+import { ReactComponent as Like } from "../../Resources/image/like.svg";
 import Slider from '../../Components/Slider/Slider';
 import games from '../../utils/games';
 import AnimatedText from '../AnimatedPage/AnimatedText';
@@ -33,7 +34,8 @@ const GamePage = props => {
     allGames,
     extended,
     setExtended,
-    handleAddToCart
+    handleAddToCart,
+    handleLike
   } = props;
 
   let { gameId } = useParams();
@@ -99,6 +101,12 @@ const GamePage = props => {
                     selectedGame={selectedGame}
                     setSelectedGame={setSelectedGame}
                     allGames={allGames}
+                    incrementCarousel={incrementCarousel}
+                    decrementCarousel={decrementCarousel}
+                    carouselState={carouselState}
+                    setCarouselState={setCarouselState}
+                    hoverState={hoverState}
+                    handleHover={handleHover}
                   />
                   <div className={styles.gameInfo}>
                     <div className={styles.about}>
@@ -126,7 +134,14 @@ const GamePage = props => {
                     </div>
 
                     <div className={styles.addToCart}>
-                      <h3>{selectedGame.price}</h3>
+                      <div className={styles.infos}>
+                          <h3>{selectedGame.price}</h3>
+                          <button id={selectedGame.id} onClick={handleLike}>
+                              <Like 
+                                className={selectedGame.isLiked ? styles.liked : styles.like}
+                              />
+                          </button>
+                      </div>
                       {selectedGame.inCart ? <AddedToCartBig /> : <button id="21" onMouseEnter={handleHover} onMouseLeave={handleHover} style={{ color: hoverState[21].hovered ? "#92f" : "#999999" }} onClick={handleAddToCart}>
                         Add to cart
                         <Add className={styles.add} style={{ fill: hoverState[21].hovered ? "#92f" : "#999999" }}/>

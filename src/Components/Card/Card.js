@@ -48,7 +48,7 @@ const Card = props => {
             <h2 className={styles.name}>{game.name}</h2>
             <button className={styles.like} id={game.id} onClick={handleLike}>
                 <Like 
-                  style={{ fill: game.isLiked ? "#ed4956" : "#cccccc" }} 
+                  style={{ fill: game.isLiked ? "#F53333" : "#cccccc" }} 
                   className={styles.likeSVG}
                 />
             </button>

@@ -12,11 +12,16 @@
 
 .forward,
 .backwards {
-    height: 48px;
+    height: 100%;
     width: 48px;
     position: absolute;
     background-color: transparent;
     border: 1px transparent;
+}
+
+.left,
+.right {
+    transition: 0.3s all;
 }
 
 .forward *,
@@ -25,14 +30,12 @@
 }
 
 .backwards {
-    top: 48.5%;
-    left: 2.5%;
+    left: 2%;
     fill: #ccc;
 }
 
 .forward {
-    top: 48.5%;
-    right: 2.5%;
+    right: 1.5%;
     fill: #ccc;
 }
 
@@ -45,4 +48,50 @@
 .forward:active,
 .backwards:active {
     transform: scale(0.9);
+}
+
+.selectorContainer {
+    position: absolute;
+    bottom: 1.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 136px;
+    border-radius: 10px;
+    padding: 11px 18px;
+    height: 34px;
+    box-sizing: border-box;
+    background-color: #0F1011;
+    opacity: 0.8;
+    transition: 0.75s all;
+    display: flex;
+    justify-content: space-between;
+}
+
+.selectorContainer:hover {
+    opacity: 1;
+}
+
+.selectorContainer button {
+    background-color: transparent;
+    border: 1px transparent;
+    cursor: pointer;
+}
+
+.dot {
+    width: 10px;
+    padding-bottom: 1px;
+    fill: #474747;
+    transition: 0.3s all;
+}
+
+.dot:hover {
+    fill: #999;
+    transition-duration: 0.6s;
+}
+
+.dotSelected {
+    width: 13px;
+    padding-bottom: 2px;
+    fill: #92f;
+    transition-duration: 0.6s;
 }

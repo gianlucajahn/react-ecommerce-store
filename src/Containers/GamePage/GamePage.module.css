@@ -275,3 +275,32 @@ header h1 {
     transition: 0.25s all;
     pointer-events: none;
 }
+
+.infos {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+}
+
+.infos button {
+    width: 26px;
+    height: 26px;
+}
+
+.like,
+.liked {
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+}
+
+.like {
+    fill: #999;
+
+    transition-duration: 0.3s;
+}
+
+.liked {
+    fill: #F53333;
+    transition-duration: 0.3s;
+}
