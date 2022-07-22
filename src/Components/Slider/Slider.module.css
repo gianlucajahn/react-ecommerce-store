@@ -98,26 +98,6 @@
     opacity: 1;
 }
 
-
-.dot {
-    width: 10px;
-    padding-bottom: 1px;
-    fill: #474747;
-    transition: 0.3s all;
-}
-
-.dot:hover {
-    fill: #999;
-    transition-duration: 0.6s;
-}
-
-.dotSelected {
-    width: 13px;
-    padding-bottom: 2px;
-    fill: #92f;
-    transition-duration: 0.6s;
-}
-
 .indicator {
     bottom: 20%;
     display: flex;
@@ -165,15 +145,3 @@ ul {
     height: 12px;
     transition-duration: 0.6s;
 }
-
-.indicator.active:hover {
-    background-color: #92f !important;
-    transition-duration: 0.6s;
-}
-
-div ul .active {
-    color: #92f !important;
-    background: #92f !important;
-    width: 12px !important;
-    height: 12px !important;
-  }
