@@ -17,6 +17,7 @@ function App() {
   const [cartAmount, setCartAmount] = useState(0);
   const [shownGames, setShownGames] = useState(allGames);
   const [reviewDisplay, setReviewDisplay] = useState(false);
+  const [cartDisplayed, setCartDisplayed] = useState(false);
   const [search, setSearch] = useState("");
   const [searching, setSearching] = useState(false);
   const [browsing, setBrowsing] = useState(true);
@@ -127,6 +128,7 @@ const navigate = useNavigate();
 async function handleBrowse() {
   setExtended(false);
   setTextExtended(false);
+  setCartDisplayed(false);
   setHoverState([...hoverState, hoverState[21].hovered = false]);
   navigate('/browse');
 }
@@ -134,6 +136,7 @@ async function handleBrowse() {
 const handleHome = () => {
   setExtended(false);
   setTextExtended(false);
+  setCartDisplayed(false);
   setHoverState([...hoverState, hoverState[21].hovered = false]);
   navigate('/');
 }
@@ -257,6 +260,22 @@ useEffect(() => {
   }
 }, [location.pathname])
 
+const handleOpenCart = () => {
+  setCartDisplayed(true);
+}
+
+const handleCloseCart = () => {
+  setCartDisplayed(false);
+}
+
+useEffect(() => {
+  if (cartDisplayed) {
+    document.body.style.overflow = "hidden !important";   
+  } else {
+    document.body.style.overflow = "scroll !important";
+  }
+}, [cartDisplayed])
+
   return (
       <AnimatePresence exitBeforeEnter>
           <Routes key={location.pathname} location={location}>
@@ -266,6 +285,9 @@ useEffect(() => {
                                         shownGames={shownGames} 
                                         cart={cart}
                                         cartAmount={cartAmount}
+                                        cartDisplayed={cartDisplayed}
+                                        handleOpenCart={handleOpenCart}
+                                        handleCloseCart={handleCloseCart}
                                       />} />
             <Route path="/browse" element={<Browse 
                                               cart={cart}
@@ -292,6 +314,9 @@ useEffect(() => {
                                               browsing={browsing}
                                               handleBrowse={handleBrowse}
                                               handleHome={handleHome}
+                                              cartDisplayed={cartDisplayed}
+                                              handleOpenCart={handleOpenCart}
+                                              handleCloseCart={handleCloseCart}
                                           />} />
             <Route path="/:gameId" element={<GamePage
                                                cart={cart}
@@ -316,6 +341,9 @@ useEffect(() => {
                                                setExtended={setExtended}
                                                textExtended={textExtended}
                                                setTextExtended={setTextExtended}
+                                               cartDisplayed={cartDisplayed}
+                                               handleOpenCart={handleOpenCart}
+                                               handleCloseCart={handleCloseCart}
                                             />} />
           </Routes>
       </AnimatePresence>

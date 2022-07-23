@@ -9,6 +9,7 @@ import { ReactComponent as Columns } from "../../Resources/image/columns.svg";
 import Filters from '../../Components/Filters/Filters';
 import Grid from '../../Components/Grid/Grid';
 import games from '../../utils/games';
+import Cart from '../../Components/Cart/Cart';
 
 const Browse = props => {
   const { 
@@ -35,7 +36,10 @@ const Browse = props => {
           searching,
           browsing,
           handleBrowse,
-          handleHome
+          handleHome,
+          handleOpenCart,
+          handleCloseCart,
+          cartDisplayed
         } = props;
     
     const navigate = useNavigate();
@@ -78,8 +82,24 @@ const Browse = props => {
       }
     }, [currentFilter])
 
+    useEffect(() => {
+      if (cartDisplayed) {
+        document.body.style.overflow = "hidden";   
+      } else {
+        document.body.style.overflow = "scroll";
+      }
+    }, [cartDisplayed])
+
     return (
-      <section className={styles.Browse}>
+      <section className={styles.Browse} style={{ maxHeight: cartDisplayed ? "100vh" : "1000vh", minHeight: "100vh" }}>
+        {cartDisplayed ? <Cart 
+              cartDisplayed={cartDisplayed} 
+              handleOpenCart={handleOpenCart}
+              handleCloseCart={handleCloseCart}
+              cart={cart}
+              cartAmount={cartAmount}
+        /> : null}
+
         <NavBar
           handleHover={handleHover}
           hoverState={hoverState}
@@ -92,6 +112,7 @@ const Browse = props => {
           searching={searching}
           handleSearch={handleSearch}
           handleSearchSubmit={handleSearchSubmit}
+          handleOpenCart={handleOpenCart}
         />
 
         <AnimatedPage exitBeforeEnter>
@@ -141,6 +162,7 @@ const Browse = props => {
                       search={search}
                       searching={searching}
                       handleSelectGame={handleSelectGame}
+                      cartDisplayed={cartDisplayed}
                     />
               </div>
             </div>

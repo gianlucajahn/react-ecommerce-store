@@ -225,6 +225,31 @@ const games = [
         ]
     },
     {
+        name: "The Elder Scrolls: Skyrim",
+        surname: "skyrim",
+        price: "$19.99",
+        desc: 'Two hundred years have passed since the events of The Elder Scrolls IV: Oblivion, and it is now 4E 201. The High King of Skyrim has been killed, and the threat of Civil War looms over the land of Skyrim; One side wishes to secede from the weakened Third Empire, while the other wishes to remain a part of it. To make matters worse, this schism is the final event in a prophecy foretold by the Elder Scrolls that will lead to the return of the dragons under Alduin, the Nordic god of destruction. The player starts the game on a cart heading for the chopping block after being caught with the Stormcloaks in an ambush by the Imperial Legion. As the player lays their head on the chopping block, the dragon Alduin attacks. In the midst of the chaos, Hadvar, several Stormcloaks, along with their leader and fellow prisoner, Ulfric Stormcloak, assist in the players escape. The player may choose between the assistance of Ralof, the Stormcloak who arrived with Ulfric, or Hadvar, the Imperial soldier tasked with reading off the names of the prisoners being sent to their execution. After assisting and gaining the favor of Jarl Balgruuf the Greater, The player later learns that they are Dovahkiin, or Dragonborn, a person charged with the duty of defeating Alduin and the dragons. Eventually, the player meets Delphine, and Esbern, two of the last remaining Blades, and becomes the pupil of the esteemed Greybeards of High Hrothgar.',
+        link: 'https://elderscrolls.bethesda.net/de/',
+        release: '10th of November, 2011',
+        platforms: 'Xbox 360, PC (Microsoft Windows), PlayStation 3',
+        genre: 'RPG',
+        developers: 'Bethesda Game Studios',
+        publishers: 'Bethesda Softworks',
+        inCart: false,
+        selected: false,
+        isHovered: false,
+        isLiked: false,
+        rating: 88,
+        id: 9,
+        cover: "https://res.cloudinary.com/gianlucajahn/image/upload/c_scale,q_100,w_500/v1658584215/skyrim_js5pmg.jpg",
+        footage: [
+            "https://res.cloudinary.com/gianlucajahn/image/upload/v1658584215/skyrim_js5pmg.jpg",
+            "https://res.cloudinary.com/gianlucajahn/image/upload/v1658583241/skyrim_1_ludikr.jpg",
+            "https://res.cloudinary.com/gianlucajahn/image/upload/c_scale,q_100,w_1920/v1658583241/skyrim_2_zgnhf5.jpg",
+            "https://res.cloudinary.com/gianlucajahn/image/upload/c_scale,q_100,w_1920/v1658584731/maxresdefault_mciyjz.jpg"
+        ]
+    },
+    {
         name: "Warframe",
         surname: "warframe",
         price: "$5.99",
@@ -240,7 +265,7 @@ const games = [
         isHovered: false,
         isLiked: false,
         rating: 76,
-        id: 9,
+        id: 10,
         cover: "https://res.cloudinary.com/gianlucajahn/image/upload/c_scale,q_100,w_500/v1658188601/warframe_kghu8g.jpg",
         footage: [
             "https://res.cloudinary.com/gianlucajahn/image/upload/v1658188601/warframe_kghu8g.jpg",
@@ -265,7 +290,7 @@ const games = [
         isHovered: false,
         isLiked: false,
         rating: 84,
-        id: 10,
+        id: 11,
         cover: "https://res.cloudinary.com/gianlucajahn/image/upload/c_scale,q_100,w_500/v1658188606/minecraft_iuejtm.jpg",
         footage: [
             "https://res.cloudinary.com/gianlucajahn/image/upload/v1658188606/minecraft_iuejtm.jpg",
@@ -290,7 +315,7 @@ const games = [
         isHovered: false,
         isLiked: false,
         rating: 82,
-        id: 11,
+        id: 12,
         cover: "https://res.cloudinary.com/gianlucajahn/image/upload/c_scale,q_100,w_500/v1658188610/riseofthetombraider_uq2q6t.jpg",
         footage: [
             "https://res.cloudinary.com/gianlucajahn/image/upload/v1658188610/riseofthetombraider_uq2q6t.jpg",
@@ -315,7 +340,7 @@ const games = [
         isHovered: false,
         isLiked: false,
         rating: 83,
-        id: 12,
+        id: 13,
         cover: "https://res.cloudinary.com/gianlucajahn/image/upload/c_scale,q_100,w_500/v1658188608/metro_o45ytf.jpg",
         footage: [
             "https://res.cloudinary.com/gianlucajahn/image/upload/v1658188608/metro_o45ytf.jpg",
@@ -340,7 +365,7 @@ const games = [
         isHovered: false,
         isLiked: false,
         rating: 81,
-        id: 13,
+        id: 14,
         cover: "https://res.cloudinary.com/gianlucajahn/image/upload/c_scale,q_100,w_500/v1658188609/terraria_yb3iuc.jpg",
         footage: [
             "https://res.cloudinary.com/gianlucajahn/image/upload/v1658188609/terraria_yb3iuc.jpg",
@@ -365,7 +390,7 @@ const games = [
         isHovered: false,
         isLiked: false,
         rating: 83,
-        id: 14,
+        id: 15,
         cover: "https://res.cloudinary.com/gianlucajahn/image/upload/c_scale,q_100,w_500/v1658188608/rocketleague_on6yqd.jpg",
         footage: [
             "https://res.cloudinary.com/gianlucajahn/image/upload/c_scale,w_1920/v1658188608/rocketleague_on6yqd.jpg",
@@ -390,7 +415,7 @@ const games = [
         isHovered: false,
         isLiked: false,
         rating: 95,
-        id: 15,
+        id: 16,
         cover: "https://res.cloudinary.com/gianlucajahn/image/upload/c_scale,q_100,w_500/v1658188610/thewitcher_tllr60.jpg",
         footage: [
             "https://res.cloudinary.com/gianlucajahn/image/upload/v1658188610/thewitcher_tllr60.jpg",
@@ -415,7 +440,7 @@ const games = [
         isHovered: false,
         isLiked: false,
         rating: 81,
-        id: 16,
+        id: 17,
         cover: "https://res.cloudinary.com/gianlucajahn/image/upload/c_scale,q_100,w_500/v1658188605/hitman_pqhnm6.jpg",
         footage: [
             "https://res.cloudinary.com/gianlucajahn/image/upload/v1658188605/hitman_pqhnm6.jpg",
@@ -440,7 +465,7 @@ const games = [
         isHovered: false,
         isLiked: false,
         rating: 80,
-        id: 17,
+        id: 18,
         cover: "https://res.cloudinary.com/gianlucajahn/image/upload/c_scale,q_100,w_500/v1658188603/fallout_kuxjw3.jpg",
         footage: [
             "https://res.cloudinary.com/gianlucajahn/image/upload/v1658188603/fallout_kuxjw3.jpg",
@@ -465,7 +490,7 @@ const games = [
         isHovered: false,
         isLiked: false,
         rating: 90,
-        id: 18,
+        id: 19,
         cover: "https://res.cloudinary.com/gianlucajahn/image/upload/c_scale,q_100,w_500/v1658188606/gtasanandreas_xkkyyp.jpg",
         footage: [
             "https://res.cloudinary.com/gianlucajahn/image/upload/c_scale,w_1920/v1658188606/gtasanandreas_xkkyyp.jpg",
@@ -490,7 +515,7 @@ const games = [
         isHovered: false,
         isLiked: false,
         rating: 70,
-        id: 19,
+        id: 20,
         cover: "https://res.cloudinary.com/gianlucajahn/image/upload/c_scale,q_100,w_500/v1658188609/golfwithyourfriends_rxrsbv.jpg",
         footage: [
             "https://res.cloudinary.com/gianlucajahn/image/upload/v1658188609/golfwithyourfriends_rxrsbv.jpg",
@@ -515,7 +540,7 @@ const games = [
         isHovered: false,
         isLiked: false,
         rating: 82,
-        id: 20,
+        id: 21,
         cover: "https://res.cloudinary.com/gianlucajahn/image/upload/c_scale,q_100,w_500/v1658188605/heavyrain_bljnwv.jpg",
         footage: [
             "https://res.cloudinary.com/gianlucajahn/image/upload/v1658188605/heavyrain_bljnwv.jpg",
@@ -540,7 +565,7 @@ const games = [
         isHovered: false,
         isLiked: false,
         rating: 79,
-        id: 21,
+        id: 22,
         cover: "https://res.cloudinary.com/gianlucajahn/image/upload/c_scale,q_100,w_500/v1658188603/dota_gdjxqx.jpg",
         footage: [
             "https://res.cloudinary.com/gianlucajahn/image/upload/v1658188603/dota_gdjxqx.jpg",
@@ -565,7 +590,7 @@ const games = [
         isHovered: false,
         isLiked: false,
         rating: 92,
-        id: 22,
+        id: 23,
         cover: "https://res.cloudinary.com/gianlucajahn/image/upload/c_scale,q_100,w_500/v1658188606/portal2_eugfiq.jpg",
         footage: [
             "https://res.cloudinary.com/gianlucajahn/image/upload/v1658188606/portal2_eugfiq.jpg",
@@ -590,7 +615,7 @@ const games = [
         isHovered: false,
         isLiked: false,
         rating: 82,
-        id: 23,
+        id: 24,
         cover: "https://res.cloudinary.com/gianlucajahn/image/upload/c_scale,q_100,w_500/v1658188603/civilization_jcuqap.jpg",
         footage: [
             "https://res.cloudinary.com/gianlucajahn/image/upload/v1658188603/civilization_jcuqap.jpg",
@@ -615,7 +640,7 @@ const games = [
         isHovered: false,
         isLiked: false,
         rating: 94,
-        id: 24,
+        id: 25,
         cover: "https://res.cloudinary.com/gianlucajahn/image/upload/c_scale,q_100,w_500/v1658188602/godofwar_cbqzk1.jpg",
         footage: [
             "https://res.cloudinary.com/gianlucajahn/image/upload/v1658188602/godofwar_cbqzk1.jpg",
@@ -640,7 +665,7 @@ const games = [
         isHovered: false,
         isLiked: false,
         rating: 80,
-        id: 25,
+        id: 26,
         cover: "https://res.cloudinary.com/gianlucajahn/image/upload/c_scale,q_100,w_500/v1658188603/fifa_zb6ook.jpg",
         footage: [
             "https://res.cloudinary.com/gianlucajahn/image/upload/v1658188603/fifa_zb6ook.jpg",
@@ -665,7 +690,7 @@ const games = [
         isHovered: false,
         isLiked: false,
         rating: 91,
-        id: 26,
+        id: 27,
         cover: "https://res.cloudinary.com/gianlucajahn/image/upload/c_scale,q_100,w_500/v1658188604/halflife_fiorjc.jpg",
         footage: [
             "https://res.cloudinary.com/gianlucajahn/image/upload/v1658188604/halflife_fiorjc.jpg",
@@ -690,7 +715,7 @@ const games = [
         isHovered: false,
         isLiked: false,
         rating: 86,
-        id: 27,
+        id: 28,
         cover: "https://res.cloudinary.com/gianlucajahn/image/upload/c_scale,q_100,w_500/v1658188600/twd_dmycxx.jpg",
         footage: [
             "https://res.cloudinary.com/gianlucajahn/image/upload/v1658188600/twd_dmycxx.jpg",
@@ -715,7 +740,7 @@ const games = [
         isHovered: false,
         isLiked: false,
         rating: 85,
-        id: 28,
+        id: 29,
         cover: "https://res.cloudinary.com/gianlucajahn/image/upload/c_scale,q_100,w_500/v1658188601/crusaderkings_fpz1te.jpg",
         footage: [
             "https://res.cloudinary.com/gianlucajahn/image/upload/v1658188601/crusaderkings_fpz1te.jpg",
@@ -740,7 +765,7 @@ const games = [
         isHovered: false,
         isLiked: false,
         rating: 82,
-        id: 29,
+        id: 30,
         cover: "https://res.cloudinary.com/gianlucajahn/image/upload/c_scale,q_100,w_500/v1658188600/csgo_o9whdd.jpg",
         footage: [
             "https://res.cloudinary.com/gianlucajahn/image/upload/v1658188600/csgo_o9whdd.jpg",
@@ -765,7 +790,7 @@ const games = [
         isHovered: false,
         isLiked: false,
         rating: 89,
-        id: 30,
+        id: 31,
         cover: "https://res.cloudinary.com/gianlucajahn/image/upload/c_scale,q_100,w_500/v1658188602/detroit_a4kqkx.jpg",
         footage: [
             "https://res.cloudinary.com/gianlucajahn/image/upload/v1658188602/detroit_a4kqkx.jpg",
@@ -790,7 +815,7 @@ const games = [
         isHovered: false,
         isLiked: false,
         rating: 85,
-        id: 31,
+        id: 32,
         cover: "https://res.cloudinary.com/gianlucajahn/image/upload/c_scale,q_100,w_500/v1658188613/tombraider_qx2xiy.jpg",
         footage: [
             "https://res.cloudinary.com/gianlucajahn/image/upload/c_scale,q_100,w_1920/v1658188613/tombraider_qx2xiy.jpg",

@@ -47,12 +47,20 @@ const Slider = props => {
   ];
 
   const back = () => {
-    setCarouselState(carouselState - 1);
+    if (carouselState > 0) {
+      setCarouselState(carouselState - 1);
+    } else {
+      setCarouselState(3);
+    }
     slideRef.current.goBack();
   }
 
   const next = () => {
-    setCarouselState(carouselState + 1);
+    if (carouselState < 3) {
+      setCarouselState(carouselState + 1);
+    } else {
+      setCarouselState(0);
+    }
     slideRef.current.goNext();
   }
 

@@ -1,0 +1,25 @@
+.cartWindow {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,.6);
+    z-index: 10;
+}
+
+.back {
+    position: absolute;
+    left: 0%;
+    width: 77.5%;
+    height: 100%;
+}
+
+.cart {
+    position: absolute;
+    right: 0%;
+    background-color: #1A1A1A;
+    width: 22.5%;
+    height: 100%;
+    z-index: 12;
+    padding: 25px 40px;
+    box-sizing: border-box;
+}

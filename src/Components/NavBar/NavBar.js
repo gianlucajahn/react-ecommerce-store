@@ -21,7 +21,9 @@ const NavBar = props => {
         search,
         searching,
         handleSearch,
-        handleSearchSubmit
+        handleSearchSubmit,
+        handleOpenCart,
+        handleCloseCart
     } = props;
     
     const variants = {
@@ -114,9 +116,10 @@ const NavBar = props => {
             <div className={styles.cartdiv} id="3"
               onMouseEnter={handleHover}
               onMouseLeave={handleHover}
+              onClick={handleOpenCart}
             >
-                <Cart className={styles.svg2} style={{ fill: cartAmount ? "#90ee90" : "#0f1011", stroke: cartAmount ? "" : "#fff", strokeWidth: "34px" }}/>
-                <h3 style={{ color: hoverState[3].hovered ? "#fff" : "#cccccc" }}>Cart: {cartAmount}</h3>
+                <Cart onClick={handleOpenCart} className={styles.svg2} style={{ fill: cartAmount ? "#90ee90" : "#0f1011", stroke: cartAmount ? "" : "#fff", strokeWidth: "34px" }}/>
+                <h3 style={{ color: hoverState[3].hovered ? "#fff" : "#cccccc" }} onClick={handleOpenCart}>Cart: {cartAmount}</h3>
             </div>
         </div>
       </motion.div>

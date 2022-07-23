@@ -20,6 +20,11 @@
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
     max-width: 100%;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
 }
 
 .card div {
