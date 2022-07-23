@@ -645,7 +645,7 @@ const games = [
         footage: [
             "https://res.cloudinary.com/gianlucajahn/image/upload/v1658188603/fifa_zb6ook.jpg",
             "https://res.cloudinary.com/gianlucajahn/image/upload/v1658238407/fifa_1_tt7wm8.jpg",
-            "https://res.cloudinary.com/gianlucajahn/image/upload/v1658238407/fifa_2_bmdtzm.jpg",
+            "https://res.cloudinary.com/gianlucajahn/image/upload/v1658582251/fifa3_faiswk.jpg",
             "https://res.cloudinary.com/gianlucajahn/image/upload/v1658238406/fifa_3_rwnx2k.jpg"
         ]
     },
