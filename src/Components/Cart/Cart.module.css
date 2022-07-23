@@ -15,11 +15,80 @@
 
 .cart {
     position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     right: 0%;
     background-color: #1A1A1A;
     width: 22.5%;
     height: 100%;
     z-index: 12;
-    padding: 25px 40px;
+    padding: 30px 28px;
     box-sizing: border-box;
+}
+
+.topHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topHeader h2 {
+    color: white;
+    font-size: 28px;
+    font-family: "GT Ultrabold";
+}
+
+.topHeader h3 {
+    padding-top: 4px;
+    font-size: 16px;
+    font-family: "GT Light";
+    color: #ccc;
+    transform: scaleY(0.95);
+    transition: 0.3s all;
+    cursor: pointer;
+}
+
+.right {
+    transition: 0.3s all;
+}
+
+.topHeader h3:hover {
+    color: white;
+}
+
+.topHeader h3:active {
+    transform: scale(0.9);
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bottom h3 {
+    color: #999;
+    font-size: 16px;
+}
+
+.bottom button {
+    background-color: transparent;
+    border: 1px transparent;
+    color: white;
+    font-family: "GT Medium";
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    transition: 0.3s all;
+}
+
+.bottom button:active {
+    transform: scale(0.925);
+}
+
+.bottom button * {
+    pointer-events: none;
 }

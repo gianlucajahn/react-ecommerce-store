@@ -41,7 +41,8 @@ const GamePage = props => {
     setTextExtended,
     handleOpenCart,
     handleCloseCart,
-    cartDisplayed
+    cartDisplayed,
+    clearCart
   } = props;
 
   let { gameId } = useParams();
@@ -91,6 +92,9 @@ const GamePage = props => {
               handleCloseCart={handleCloseCart}
               cart={cart}
               cartAmount={cartAmount}
+              handleHover={handleHover}
+              hoverState={hoverState}
+              clearCart={clearCart}
             /> : null}
 
             <NavBar

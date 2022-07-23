@@ -15,6 +15,7 @@ function App() {
   const [allGames, setAllGames] = useState(games);
   const [cart, setCart] = useState([]);
   const [cartAmount, setCartAmount] = useState(0);
+  const [total, setTotal] = useState(0);
   const [shownGames, setShownGames] = useState(allGames);
   const [reviewDisplay, setReviewDisplay] = useState(false);
   const [cartDisplayed, setCartDisplayed] = useState(false);
@@ -120,6 +121,10 @@ function App() {
     {
       hovered: false,
       selected: false
+    },
+    {
+      hovered: false,
+      selected: false
     }
   ]);
 
@@ -141,14 +146,17 @@ const handleHome = () => {
   navigate('/');
 }
 
+useEffect(() => {
+  
+}, [cart])
+
 const handleSearch = (e) => {
   setSearch(e.target.value);
   setSearching(false);
-
-  console.log(location.pathname);
 }
 
 const handleSearchSubmit = (e) => {
+  setCurrentFilter("none");
   e.preventDefault();
   setSearching(true);
 
@@ -164,7 +172,7 @@ const handleSelect = (e) => {
 const handleSelectGame = (e) => {
   if (e.target.tagName === "BUTTON") {
     return
-  } else {
+  } else if (e.target.classList[0] != "AddToCart_addToCart__zbJPe") {
         setSelectedGame(games[e.target.parentNode.id]);
         navigate(`/${games[e.target.parentNode.id].surname}`);
   }
@@ -185,6 +193,7 @@ const handleLike = (e) => {
 
 const clearFilter = () => {
   setCurrentFilter("none");
+  setSearch("");
   setReviewDisplay(false);
 }
 
@@ -244,6 +253,22 @@ const handleAddToCart = (e) => {
   setAllGames(handledAddedGame);
 }
 
+const clearCart = () => {
+  setCart([]);
+  setCartAmount(0);
+  const defaultGames = allGames.map((game, i) => {
+    game.inCart = false;
+    game.isHovered = false;
+    return game;
+  });
+  setAllGames(defaultGames);
+  let newHoverState = hoverState[21];
+  newHoverState.hovered = false;
+  setHoverState([
+    ...hoverState, hoverState[21] = newHoverState
+  ]);
+}
+
 const location = useLocation();
 useEffect(() => {
   if (location.pathname === "/") {
@@ -288,6 +313,7 @@ useEffect(() => {
                                         cartDisplayed={cartDisplayed}
                                         handleOpenCart={handleOpenCart}
                                         handleCloseCart={handleCloseCart}
+                                        clearCart={clearCart}
                                       />} />
             <Route path="/browse" element={<Browse 
                                               cart={cart}
@@ -317,6 +343,7 @@ useEffect(() => {
                                               cartDisplayed={cartDisplayed}
                                               handleOpenCart={handleOpenCart}
                                               handleCloseCart={handleCloseCart}
+                                              clearCart={clearCart}
                                           />} />
             <Route path="/:gameId" element={<GamePage
                                                cart={cart}
@@ -344,6 +371,7 @@ useEffect(() => {
                                                cartDisplayed={cartDisplayed}
                                                handleOpenCart={handleOpenCart}
                                                handleCloseCart={handleCloseCart}
+                                               clearCart={clearCart}
                                             />} />
           </Routes>
       </AnimatePresence>

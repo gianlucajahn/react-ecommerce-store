@@ -2,7 +2,7 @@ const games = [
     {
         name: "Cyberpunk 2077",
         surname: "cyberpunk",
-        price: "$59.99",
+        price: "59.99",
         desc: 'Cyberpunk 2077 is a continuation of the events of Cyberpunk 2020, taking an alternate path to that of Cyberpunk V3.0. The game is set in the dystopian metropolis of Night City. It is set in the Free State of Northern California. Night City is located south of San Francisco around the area of Morro Bay, CA. During Cyberpunk 2020, Night City is said to have a population of more than five million inhabitants. However, this number is suspected to be considerably larger in 2077. Following an economic collapse sometime during the early 21st century, the United States is forced to rely on large corporations to survive. These corporations deal in a wide range of areas, such as weapons, robotics, cybernetics, pharmaceuticals, communications, and biotechnology; many of these companies operate above the law. The game follows the story of V — a hired gun on the rise in Night City, the most violent and dangerous metropolis of the corporate-ruled future. A robust character creator will allow players to choose Vs gender, visual appearance, as well as historical background — all of which may influence the shape of the game. The world is inspired by the works of authors such as William Gibson (author of Neuromancer) and Phillip K Dick, whose novel Do Androids Dream of Electric Sheep? and subsequent movie adaption Blade Runner heavily influenced the creator, Mike Pondsmith, in creating the original tabletop RPG.',
         link: 'https://www.cyberpunk.net/',
         release: '10th of December, 2020',
@@ -27,7 +27,7 @@ const games = [
     {
         name: "Battlefield V",
         surname: "battlefield",
-        price: "$29.99",
+        price: "29.99",
         desc: 'The Battlefield series goes back to its roots in a never-before-seen portrayal of World War 2. Take on physical, all-out multiplayer with your squad in modes like the vast Grand Operations and the cooperative Combined Arms, or witness human drama set against global combat in the single player War Stories. As you fight in epic, unexpected locations across the globe, enjoy the richest and most immersive Battlefield yet.',
         link: 'https://www.origin.com/store/battlefield/battlefield-v',
         release: '9th of November, 2018',
@@ -52,7 +52,7 @@ const games = [
     {
         name: "Life is Strange",
         surname: "lis",
-        price: "$14.99",
+        price: "14.99",
         desc: 'Life Is Strange is a five-part episodic game that sets out to revolutionize story-based choice and consequence games by allowing the player to rewind time and affect the past, present, and future. You are Max, a photography senior who saves her old friend Chloe by discovering she can rewind time. The pair soon find themselves exposed to the darker side of Arcadia Bay as they uncover the disturbing truth behind the sudden disappearance of a fellow student. Meanwhile, Max begins to have premonitions as she struggles to understand the implications of her power. She must quickly learn that changing the past can sometimes lead to a devastating future.',
         link: 'https://lifeisstrange.square-enix-games.com/',
         release: '30th of January, 2015',
@@ -77,7 +77,7 @@ const games = [
     {
         name: "Mario Kart 8: Deluxe",
         surname: "mariokart",
-        price: "$24.99",
+        price: "24.99",
         desc: 'Hit the road with the definitive version of Mario Kart 8 and play anytime, anywhere! Race your friends or battle them in a revised battle mode on new and returning battle courses. Play locally in up to 4-player multiplayer in 1080p while playing in TV Mode. Every track from the Wii U version, including DLC, makes a glorious return. Plus, the Inklings appear as all-new guest characters, along with returning favorites, such as King Boo, Dry Bones, and Bowser Jr.!',
         link: 'https://mariokart8deluxe.nintendo.com/',
         release: '28th of April, 2017',
@@ -102,7 +102,7 @@ const games = [
     {
         name: "BioShock Infinite",
         surname: "bioshockinfinite",
-        price: "$18.99",
+        price: "18.99",
         desc: 'This first-person story-driven shooter and entry in the Bioshock franchise follows Booker DeWitt as he enters the floating independent (formerly US) city of Columbia in 1912 and attempts to retrieve a girl trapped in a tower by the citys self-proclaimed despot/prophet in order to erase his financial debt. Throughout the story, themes of violence, racism and fatalism are brought up. Viewer & User Discretion is advised.',
         link: 'https://2k.com/en-US/game/bioshock-infinite/',
         release: '26th of February, 2013',
@@ -127,7 +127,7 @@ const games = [
     {
         name: "Anno: 1800",
         surname: "anno",
-        price: "$12.99",
+        price: "12.99",
         desc: 'Anno 1800 takes place in the 19th century at the dawn of the Industrial Age. Like other Anno games, Anno 1800 is a city-building and strategy game. While it is set in the context of colonial trade, the featured architecture is Victorian Era and the economic engine is factory labor. The core gameplay of Anno 1800 takes place in the Old World, where the needs of the citizens, workers and artisans are central to the management of production and supply chains. A parallel New World city exists, which produces products that laborers in the Old World want to purchase, thus trade routes need to be established. Unlike its colonial 18th century predecessor Anno 1701, the game has a blueprint feature that helps the player to plan out the city.',
         link: 'https://anno-union.com/',
         release: '16th of April, 2019',
@@ -152,7 +152,7 @@ const games = [
     {
         name: "Red Dead Redemption 2",
         surname: "rdr",
-        price: "$34.99",
+        price: "34.99",
         desc: 'America, 1899. The end of the Wild West era has begun. After a robbery goes badly wrong in the western town of Blackwater, Arthur Morgan and the Van der Linde gang are forced to flee. With federal agents and the best bounty hunters in the nation massing on their heels, the gang must rob, steal and fight their way across the rugged heartland of America in order to survive. As deepening internal divisions threaten to tear the gang apart, Arthur must make a choice between his own ideals and loyalty to the gang who raised him.',
         link: 'https://www.rockstargames.com/reddeadredemption2',
         release: '26th of October, 2018',
@@ -177,7 +177,7 @@ const games = [
     {
         name: "Horizon Zero Dawn",
         surname: "horizon",
-        price: "$29.99",
+        price: "29.99",
         desc: 'Horizon Zero Dawn takes place in the 31st century, in a post-apocalyptic world where colossal machines dominate the land. Human civilization has regressed to tribal societies of hunters and gatherers who survive in immense forests, imposing mountain ranges, and the atmospheric ruins of their ancestors – all while the machines become increasingly powerful. The player controls Aloy, a huntress who uses her speed, cunning, and agility to stay alive and protect herself and others against the force, size, and power of the machines. The game features sci-fi and mythical elements.',
         link: 'https://www.guerrilla-games.com/games',
         release: '28th of February, 2017',
@@ -202,7 +202,7 @@ const games = [
     {
         name: "Grand Theft Auto: V",
         surname: "gtav",
-        price: "$39.99",
+        price: "39.99",
         desc: 'Grand Theft Auto V is a vast open world game set in Los Santos, a sprawling sun-soaked metropolis struggling to stay afloat in an era of economic uncertainty and cheap reality TV. The game blends storytelling and gameplay in new ways as players repeatedly jump in and out of the lives of the games three lead characters, playing all sides of the games interwoven story.',
         link: 'https://www.rockstargames.com/gta-v',
         release: '17th of September, 2013',
@@ -227,7 +227,7 @@ const games = [
     {
         name: "The Elder Scrolls: Skyrim",
         surname: "skyrim",
-        price: "$19.99",
+        price: "19.99",
         desc: 'Two hundred years have passed since the events of The Elder Scrolls IV: Oblivion, and it is now 4E 201. The High King of Skyrim has been killed, and the threat of Civil War looms over the land of Skyrim; One side wishes to secede from the weakened Third Empire, while the other wishes to remain a part of it. To make matters worse, this schism is the final event in a prophecy foretold by the Elder Scrolls that will lead to the return of the dragons under Alduin, the Nordic god of destruction. The player starts the game on a cart heading for the chopping block after being caught with the Stormcloaks in an ambush by the Imperial Legion. As the player lays their head on the chopping block, the dragon Alduin attacks. In the midst of the chaos, Hadvar, several Stormcloaks, along with their leader and fellow prisoner, Ulfric Stormcloak, assist in the players escape. The player may choose between the assistance of Ralof, the Stormcloak who arrived with Ulfric, or Hadvar, the Imperial soldier tasked with reading off the names of the prisoners being sent to their execution. After assisting and gaining the favor of Jarl Balgruuf the Greater, The player later learns that they are Dovahkiin, or Dragonborn, a person charged with the duty of defeating Alduin and the dragons. Eventually, the player meets Delphine, and Esbern, two of the last remaining Blades, and becomes the pupil of the esteemed Greybeards of High Hrothgar.',
         link: 'https://elderscrolls.bethesda.net/de/',
         release: '10th of November, 2011',
@@ -252,7 +252,7 @@ const games = [
     {
         name: "Warframe",
         surname: "warframe",
-        price: "$5.99",
+        price: "5.99",
         desc: 'Warframe situates players as members of the Tenno race, newly awoken after years of cryo-sleep into a solar system at war. Reborn into a corrupt era, the Tenno are sought by the oppressive Grineer Empire for annihilation. Warframe armor is the key to overthrowing the Grineer by providing players with unique offensive and defensive powers to explore, upgrade and master during purpose-driven radical raids.',
         link: 'https://www.warframe.com/de/landing',
         release: '25th of March, 2013',
@@ -277,7 +277,7 @@ const games = [
     {
         name: "Minecraft",
         surname: "minecraft",
-        price: "$25.99",
+        price: "25.99",
         desc: 'Minecraft focuses on allowing the player to explore, interact with, and modify a dynamically-generated map made of one-cubic-meter-sized blocks. In addition to blocks, the environment features plants, mobs, and items. Some activities in the game include mining for ore, fighting hostile mobs, and crafting new blocks and tools by gathering various resources found in the game. The games open-ended model allows players to create structures, creations, and artwork on various multiplayer servers or their single-player maps. Other features include redstone circuits for logic computations and remote actions, minecarts and tracks, and a mysterious underworld called the Nether. A designated but completely optional goal of the game is to travel to a dimension called the End, and defeat the ender dragon.',
         link: 'https://www.minecraft.net',
         release: '15th of August, 2011',
@@ -302,7 +302,7 @@ const games = [
     {
         name: "Rise of the Tomb Raider",
         surname: "riseofthetombraider",
-        price: "$12.99",
+        price: "12.99",
         desc: 'Rise of the Tomb Raider is a third-person action-adventure game in which players control Lara Croft, who is on a quest to discover the legendary city of Kitezh. Combat is a major gameplay mechanic; Lara has a large variety of weapons at her disposal (including assault rifles, shotguns, and pistols), some of which have an alternate firing mode. Players may also utilize stealth to progress through portions of the game, using bows and arrows to take out enemies, creating distractions to draw enemy attention away from Lara, or hiding in bushes to evade enemies. Lara can use the environment to fight enemies, shooting explosive barrels, tearing down rope-wrapped structures with rope arrows, or ambushing enemies from high ground. She can also use her ice axe and combat knife to engage in melee combat with enemies.',
         link: 'https://tombraider.square-enix-games.com/en-us',
         release: '10th of November, 2015',
@@ -327,7 +327,7 @@ const games = [
     {
         name: "Metro Exodus",
         surname: "metro",
-        price: "$37.99",
+        price: "37.99",
         desc: 'Metro Exodus is an epic, story-driven first person shooter from 4A Games that blends deadly combat and stealth with exploration and survival horror in one of the most immersive game worlds ever created. Explore the Russian wilderness across vast, non-linear levels and follow a thrilling story-line that spans an entire year through spring, summer and autumn to the depths of nuclear winter. Inspired by the novels of Dmitry Glukhovsky, Metro Exodus continues Artyoms story in the greatest Metro adventure yet.',
         link: 'https://www.metrothegame.com/de/',
         release: '15th of February, 2019',
@@ -352,7 +352,7 @@ const games = [
     {
         name: "Terraria",
         surname: "terraria",
-        price: "$14.99",
+        price: "14.99",
         desc: 'Dig, Fight, Explore, Build: The very world is at your fingertips as you fight for survival, fortune, and glory. Will you delve deep into cavernous expanses in search of treasure and raw materials with which to craft ever-evolving gear, machinery, and aesthetics? Perhaps you will choose instead to seek out ever-greater foes to test your mettle in combat? Maybe you will decide to construct your own city to house the host of mysterious allies you may encounter along your travels? In the World of Terraria, the choice is yours!',
         link: 'https://terraria.org/',
         release: '16th of May, 2011',
@@ -377,7 +377,7 @@ const games = [
     {
         name: "Rocket League",
         surname: "rocketleague",
-        price: "$23.99",
+        price: "23.99",
         desc: 'Rocket League is a high-powered hybrid of arcade-style soccer and vehicular mayhem with easy-to-understand controls and fluid, physics-driven competition. Rocket League includes casual and competitive Online Matches, a fully-featured offline Season Mode, special “Mutators” that let you change the rules entirely, hockey and basketball-inspired Extra Modes, and more than 500 trillion possible cosmetic customization combinations.',
         link: 'https://www.rocketleague.com/',
         release: '7th of July, 2015',
@@ -402,7 +402,7 @@ const games = [
     {
         name: "The Witcher 3: Wild Hunt",
         surname: "thewitcher",
-        price: "$19.99",
+        price: "19.99",
         desc: 'RPG and sequel to The Witcher 2 (2011), The Witcher 3 follows witcher Geralt of Rivia as he seeks out his former lover and his young subject while intermingling with the political workings of the wartorn Northern Kingdoms. Geralt has to fight monsters and deal with people of all sorts in order to solve complex problems and settle contentious disputes, each ranging from the personal to the world-changing.',
         link: 'https://www.thewitcher.com/en',
         release: '19th of May, 2015',
@@ -427,7 +427,7 @@ const games = [
     {
         name: "Hitman",
         surname: "hitman",
-        price: "$12.99",
+        price: "12.99",
         desc: 'Become the Master Assassin in an intense spy-thriller story. As Agent 47, you perform contract hits on powerful, high-profile targets in exotic locations around the world. Gameplay focuses on taking out targets in huge and intricate sandbox levels with complete freedom of approach. Where to go, when to strike and who to kill – it is all up to you.',
         link: 'https://hitman.com/global/',
         release: '11th of March, 2016',
@@ -452,7 +452,7 @@ const games = [
     {
         name: "Fallout 4",
         surname: "fallout",
-        price: "$26.99",
+        price: "26.99",
         desc: 'The story of Fallout 4 focuses on a spouse, the Sole Survivor of Vault 111, as they search for their missing child, Shaun. Fallout 4 is set in and around the Boston area in 2287, 10 years after Fallout 3. Along the way, the Sole Survivor discovers a world in fear of a mysterious organization known as the Institute, consumed by paranoia of a race of robotic yet also biological human-like beings known as synths. As a result of the synth-focused narrative, the Sole Survivor, as well as the player, are faced with ethical questions such as how far people should experiment with science, the morality of creating sentient living machines that express emotions and suffering, and what it means to be human.',
         link: 'https://fallout.bethesda.net/en/games/fallout-4',
         release: '10th of November, 2015',
@@ -477,7 +477,7 @@ const games = [
     {
         name: "GTA: San Andreas",
         surname: "gtasanandreas",
-        price: "$3.99",
+        price: "3.99",
         desc: 'Returning after his mothers murder to the semi-fictional city of Los Santos (based on Los Angeles), Carl Johnson, a former gang banger, must take back the streets for his family and friends by gaining respect and once again gaining control over the streets. However, a story filled with crime, lies and corruption will lead him to trudge the entire state of San Andreas (based on California and Nevada) to rebuild his life.',
         link: 'https://www.rockstargames.com/games/sanandreas',
         release: '26th of October, 2004',
@@ -502,7 +502,7 @@ const games = [
     {
         name: "Golf with your Friends",
         surname: "golfwithyourfriends",
-        price: "$7.99",
+        price: "7.99",
         desc: 'Golf With Your Friends is an entertaining, challenging, multiplayer mini golf game for up to 12 players. The controls are simple and the game is designed for the user to be able to host or join a game within a few seconds. The game will be hosted on our servers where the user has the ability to add a password if so required or leave it open to the public. Players on PC, have the ability to access the level editor to create your own or test thousands of community made maps.',
         link: 'http://www.blacklightinteractive.com/',
         release: '29th of January, 2016',
@@ -527,7 +527,7 @@ const games = [
     {
         name: "Heavy Rain",
         surname: "heavyrain",
-        price: "$23.99",
+        price: "23.99",
         desc: 'Heavy Rain is a cinematic psychological thriller from game developer Quantic Dream exclusively for the PlayStation 3. Dealing with a range of adult themes, the game revolves around a sophisticated plot and strong narrative threads that explore a complex moral proposition. You assume the role of multiple characters with very different backgrounds, motivations, and skills in a world where each player decision affects what will follow.',
         link: 'https://www.www.quanticdream.com/en/#!/en/category/heavy-rain',
         release: '18th of February, 2010',
@@ -552,7 +552,7 @@ const games = [
     {
         name: "Dota 2",
         surname: "dota",
-        price: "$12.99",
+        price: "12.99",
         desc: 'Dota 2 is an RTS-styled MOBA-type competitive team game with RPG elements. Two competing teams (Radiant and Dire) consist of five players each. The main objective in Dota 2 is to destroy the enemy Ancient inside their stronghold. These strongholds are protected by multiple towers down 3 lanes. Instead of building armies of units like in classical RTS games, each player controls a single Hero, a strategically-powerful unit with unique abilities and characteristics which can be improved over the course of the game. Experience is earned when nearby creeps and heroes die, and once collecting enough experience, the hero gains a level, which increases the heros stats, and at most levels the hero gains a skill point which can be spent to unlock or upgrade one of the heros abilities. Alongside a heros fixed abilities, each hero has 6 inventory slots which can be filled with Items which provide various benefits and abilities. To purchase these items, Gold is gained passively over time, by killing creeps, by killing enemy heroes and by destroying buildings.',
         link: 'https://www.dota2.com/home',
         release: '9th of July, 2013',
@@ -577,7 +577,7 @@ const games = [
     {
         name: "Portal 2",
         surname: "portal2",
-        price: "$44.99",
+        price: "44.99",
         desc: 'Sequel to the acclaimed Portal (2007), Portal 2 pits the protagonist of the original game, Chell, and her new robot friend, Wheatley, against more puzzles conceived by GLaDOS, an A.I. with the sole purpose of testing the Portal Guns mechanics and taking revenge on Chell for the events of Portal. As a result of several interactions and revelations, Chell once again pushes to escape Aperture Science Labs.',
         link: 'https://www.thinkwithportals.com/',
         release: '19th of April, 2011',
@@ -602,7 +602,7 @@ const games = [
     {
         name: "Sid Meier's Civilization VI",
         surname: "civilization",
-        price: "$27.99",
+        price: "27.99",
         desc: 'Civilization is a turn-based strategy game in which you attempt to build an empire to stand the test of time. Become Ruler of the World by establishing and leading a civilization from the Stone Age to the Information Age. Wage war, conduct diplomacy, advance your culture, and go head-to-head with historys greatest leaders as you attempt to build the greatest civilization the world has ever known.',
         link: 'https://www.civilization.com/',
         release: '20th of October, 2016',
@@ -627,7 +627,7 @@ const games = [
     {
         name: "God of War",
         surname: "godofwar",
-        price: "$41.99",
+        price: "41.99",
          desc: 'Many years have passed since Kratos took his vengeance against the Olympian gods. Having survived his final encounter with his father Zeus, Kratos has since travelled to Midgard in Ancient Norway and now lives with his young son Atreus in the world of the Norse gods, a savage land inhabited by many ferocious monsters and warriors. In order to teach his son, whose mother (and Kratoss second wife) has recently died, how to survive in such a world, Kratos must master the rage that has driven him for many years and embrace his newfound role as a father and a mentor.',
         link: 'https://www.playstation.com/de-de/god-of-war/',
         release: '20th of April, 2018',
@@ -652,7 +652,7 @@ const games = [
     {
         name: "FIFA 22",
         surname: "fifa",
-        price: "$15.99",
+        price: "15.99",
         desc: 'Powered by Football, FIFA 22 brings the game even closer to the real thing with fundamental gameplay advances and a new season of innovation across every mode. Play with 17,000+ players, over 700 teams in 90+ stadiums and more than 30 leagues from all over the globe.',
         link: 'https://www.ea.com/de-de/games/fifa/fifa-22',
         release: '30th of September, 2021',
@@ -677,7 +677,7 @@ const games = [
     {
         name: "Half-Life 2",
         surname: "halflife",
-        price: "$11.99",
+        price: "11.99",
         desc: '1998. HALF-LIFE sends a shock through the game industry with its combination of pounding action and continuous, immersive storytelling. By taking the suspense, challenge and visceral charge of the original, and adding startling new realism and responsiveness, Half-Life 2 opens the door to a world where the players presence affects everything around them, from the physical environment to the behaviors even the emotions of both friends and enemies.',
         link: 'https://www.half-life.com/en/halflife2',
         release: '16th of November, 2004',
@@ -702,7 +702,7 @@ const games = [
     {
         name: "The Walking Dead: S1",
         surname: "twd",
-        price: "$6.99",
+        price: "6.99",
         desc: 'The Walking Dead: Season One (also known as The Walking Dead: The Game) is an episodic interactive drama graphic adventure video game developed and published by Telltale Games. Based on Robert Kirkmans The Walking Dead comic book series, the game consists of five episodes, released between April and November 2012. It is available for Android, iOS, Kindle Fire HDX, Microsoft Windows, Mac OS X, PlayStation 3, PlayStation Vita, Xbox 360, PlayStation 4 and Xbox One. The game is the first of The Walking Dead video game series published by Telltale.',
         link: 'http://www.thewalkingdeadgame.com/',
         release: '24th of April, 2012',
@@ -727,7 +727,7 @@ const games = [
     {
         name: "Crusader Kings III",
         surname: "crusaderkings",
-        price: "$22.99",
+        price: "22.99",
         desc: 'Like its predecessors Crusader Kings and Crusader Kings II, Crusader Kings III is a grand strategy game and dynasty simulator set in the Middle Ages. Players begin as a character in either 867 or 1066. The game map is about four times more detailed than the one in Crusader Kings II and slightly larger, incorporating Europe, Africa roughly as far south as the Equator, and Asia as far East as Tibet. Upon the death or deposition of a players character they may continue to play as that characters heir. Overall, players develop a dynasty over the centuries, with the game ending in 1453.',
         link: 'https://www.paradoxinteractive.com/games/crusader-kings-iii/about',
         release: '1st of September, 2020',
@@ -752,7 +752,7 @@ const games = [
     {
         name: "Counter Strike: GO",
         surname: "csgo",
-        price: "$4.99",
+        price: "4.99",
         desc: 'Counter-Strike: Global Offensive (CS:GO) is a first-person shooter video game which is a part of the Counter-Strike series. It was announced to the public on August 12, 2011, and is developed by Valve Corporation and their partner, Hidden Path Entertainment. The game was later released on August 21, 2012 for the Playstation 3, Xbox 360, Microsoft Windows, macOS and later Linux as a downloadable title.',
         link: 'https://blog.counter-strike.net/',
         release: '21st of August, 2012',
@@ -777,7 +777,7 @@ const games = [
     {
         name: "Detroit: Become Human",
         surname: "detroit",
-        price: "$65.99",
+        price: "65.99",
         desc: 'Set in Detroit during the year 2038, the city has been revitalized by the invention and introduction of androids into everyday life. But when androids start behaving as if they are alive, events begin to spin out of control. Step into the roles of the story’s pivotal three playable characters (Kara, Connor, and Markus), each with unique perspectives, motivations and abilities as they face their true selves and question their values. These three androids are present throughout the game as they follow through an emotional journey with choices that must be taken in order for their ultimate cause, which can be defined many different ways depending on the values of the player. The plot of the game deals with a variety of mature themes that explore moral ground and each player decision affects what will happen.',
         link: 'https://www.www.quanticdream.com/en/detroit-become-human',
         release: '25th of May, 2018',
@@ -802,7 +802,7 @@ const games = [
     {
         name: "Tomb Raider",
         surname: "tombraider",
-        price: "$17.99",
+        price: "17.99",
         desc: 'Tomb Raider (often referred to as: Tomb Raider: A Survivor is Born) is the tenth game in the Tomb Raider series and the first game in Crystal Dynamics second reboot of the game series. A new intense and gritty origin story of Lara Croft and her ascent from a frightened young woman to a hardened survivor. Armed only with raw instincts and the ability to push beyond the limits of human endurance, Lara must fight to unravel the dark history of a forgotten island to escape its relentless hold.',
         link: 'https://tombraider.square-enix-games.com/en-us',
         release: '4th of March, 2013',

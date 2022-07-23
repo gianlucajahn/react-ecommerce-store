@@ -18,7 +18,8 @@ const Home = props => {
     cart,
     cartDisplayed,
     handleOpenCart,
-    handleCloseCart
+    handleCloseCart,
+    clearCart
   } = props;
 
   const [browsing, setBrowsing] = useState(false);
@@ -91,6 +92,9 @@ const Home = props => {
               handleCloseCart={handleCloseCart}
               cart={cart}
               cartAmount={cartAmount}
+              handleHover={handleHover}
+              hoverState={hoverState}
+              clearCart={clearCart}
       /> : null}
         <div className={styles.home}>
             <NavBar 

@@ -39,7 +39,8 @@ const Browse = props => {
           handleHome,
           handleOpenCart,
           handleCloseCart,
-          cartDisplayed
+          cartDisplayed,
+          clearCart
         } = props;
     
     const navigate = useNavigate();
@@ -98,6 +99,9 @@ const Browse = props => {
               handleCloseCart={handleCloseCart}
               cart={cart}
               cartAmount={cartAmount}
+              handleHover={handleHover}
+              hoverState={hoverState}
+              clearCart={clearCart}
         /> : null}
 
         <NavBar
