@@ -1,6 +1,7 @@
 import styles from './Cart.module.css';
 import React, { useState } from 'react';
 import { ReactComponent as Right } from "../../Resources/image/arrowRight.svg";
+import { ReactComponent as Cross } from "../../Resources/image/cross.svg";
 
 const Cart = props => {
     const {
@@ -39,7 +40,17 @@ const Cart = props => {
                     </div>
     
                     <div className={styles.topGames}>
-    
+                        {cart.map((item, i) => {
+                            return <div className={styles.item}>
+                                <h3>{item.name}</h3>
+                                <div>
+                                    ${item.price}
+                                    <button>
+                                        <Cross className={styles.cross} />
+                                    </button>
+                                </div>
+                            </div>
+                        })}
                     </div>
                 </div>
     

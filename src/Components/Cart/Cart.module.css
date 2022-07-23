@@ -49,6 +49,10 @@
     cursor: pointer;
 }
 
+.topGames {
+    padding-top: 10px;
+}
+
 .right {
     transition: 0.3s all;
 }
@@ -91,4 +95,65 @@
 
 .bottom button * {
     pointer-events: none;
+}
+
+.item {
+    margin-top: 13px;
+    background-color: #262626;
+    border-radius: 10px;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    padding: 17px 20px;
+}
+
+.item h3 {
+    font-size: 16px;
+    font-family: "GT Regular";
+    transition: 0.3s all;
+    cursor: pointer;
+}
+
+.item h3:hover {
+    color: #fff;
+}
+
+.item h3:active {
+    transform: scale(0.915);
+}
+
+.item div {
+    display: flex;
+    gap: 16px;
+    color: #999999;
+    font-size: 14px;
+    font-family: "GT Medium";
+    align-items: center;
+}
+
+.item div button {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 1px transparent;
+    background-color: #2e2e2e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.2s all;
+}
+
+.item div button:hover {
+    background-color: #353535;
+}
+
+.item div button:active {
+    transform: scale(0.92);
+}
+
+.cross {
+    width: 9px;
+    height: 9px;
+    fill: #fff;
 }
