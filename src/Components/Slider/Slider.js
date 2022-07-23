@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from "framer-motion";
 import { ReactComponent as Left } from "../../Resources/image/left.svg";
 import { ReactComponent as Right } from "../../Resources/image/right.svg";
+import { ReactComponent as Dot } from "../../Resources/image/dot.svg";
 import { useLocation } from 'react-router-dom';
 import "react-slideshow-image/dist/styles.css";
 import { Slide } from "react-slideshow-image";
@@ -23,7 +24,6 @@ const Slider = props => {
   const [footageIndex, setFootageIndex] = useState(0);
   const slideRef = React.createRef();
   const location = useLocation();
-  let indicatorList = document.getElementsByClassName('indicator');
 
   useEffect(() => {
     const selectedGameIndex = allGames.findIndex(game => "/" + game.surname === location.pathname);
@@ -36,10 +36,7 @@ const Slider = props => {
     transitionDuration: 800,
     arrows: false,
     infinite: true,
-    easing: "ease",
-    indicators: (i) => <div className={styles.indicator}>
-                           {i + 1}
-                       </div>
+    easing: "ease"
   };
 
   const slideImages = [
@@ -50,11 +47,21 @@ const Slider = props => {
   ];
 
   const back = () => {
+    setCarouselState(carouselState - 1);
     slideRef.current.goBack();
   }
 
   const next = () => {
+    setCarouselState(carouselState + 1);
     slideRef.current.goNext();
+  }
+
+  const jumpToIndex = (e) => {
+    console.log(e.target.id);
+    let index = parseInt(e.target.id);
+    console.log(index);
+    setCarouselState(index);
+    slideRef.current.goTo(index);
   }
 
   return (
@@ -81,7 +88,14 @@ const Slider = props => {
                 />
             </button>
             <div className={styles.selectorContainer}>
-
+                <button id="0" onClick={jumpToIndex} className={carouselState === 0 ? styles.buttonSelected : styles.button}>
+                </button>
+                <button id="1" onClick={jumpToIndex} className={carouselState === 1 ? styles.buttonSelected : styles.button}>
+                </button>
+                <button id="2" onClick={jumpToIndex} className={carouselState === 2 ? styles.buttonSelected : styles.button}>
+                </button>
+                <button id="3" onClick={jumpToIndex} className={carouselState === 3 ? styles.buttonSelected : styles.button}>
+                </button>
             </div>
         </div>
   );

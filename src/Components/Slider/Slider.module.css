@@ -1,27 +1,24 @@
 .slider {
     width: 67.5%;
-    height: 675px;
     position: relative;
     box-sizing: border-box;
-    overflow: hidden;
-    border-radius: 20px;
-}
-
-.slide {
-    width: 100%;
-    height: 100%;
-    z-index: 1;
 }
 
 .currentImg {
     width: 100%;
     height: 100%;
     border-radius: 20px;
+}
+
+.currentImg {
     -webkit-user-drag: none;
     user-select: none;
     -moz-user-select: none;
     -webkit-user-select: none;
     -ms-user-select: none;
+}
+
+.currentImg {
     cursor: move; 
     cursor: grab;
     cursor: -moz-grab;
@@ -32,23 +29,25 @@
     cursor: grabbing;
     cursor: -moz-grabbing;
     cursor: -webkit-grabbing;
-    
 }
 
 .forward,
 .backwards {
     height: 100%;
+    top: 0%;
     width: 48px;
-    bottom: 0%;
     position: absolute;
     background-color: transparent;
     border: 1px transparent;
-    z-index: 10;
 }
 
 .left,
 .right {
     transition: 0.3s all;
+}
+
+.selectorContainer button * {
+    pointer-events: none;
 }
 
 .forward *,
@@ -57,7 +56,7 @@
 }
 
 .backwards {
-    left: 1.75%;
+    left: 2%;
     fill: #ccc;
 }
 
@@ -91,6 +90,7 @@
     opacity: 0.8;
     transition: 0.75s all;
     display: flex;
+    align-items: center;
     justify-content: space-between;
 }
 
@@ -98,50 +98,29 @@
     opacity: 1;
 }
 
-.indicator {
-    bottom: 20%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
+.button {
     width: 10px;
     height: 10px;
-    box-sizing: border-box;
+    border-radius: 50%;
+    padding-bottom: 1px;
     background-color: #474747;
-    opacity: 0.8;
-    transition: 0.75s all;
-    display: flex;
-    font-size: 0px;
-    transition-duration: 0.6s;
+    transition: 0.3s all;
+    border: 1px transparent;
     cursor: pointer;
 }
 
-.indicator:active {
-    transform: scale(0.7);
+.button:hover {
+    background-color: #999;
+    transition-duration: 0.6s;
 }
 
-.indicator * {
-    pointer-events: none;
-}
-
-.react-slideshow-container {
-    position: relative;
-}
-
-ul {
-    position: absolute;
-    bottom: 5%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    gap: 16px;
-    z-index: 20;
-    align-items: center;
-}
-
-.indicator:hover {
-    background-color: #92f !important;
+.buttonSelected {
     width: 12px;
     height: 12px;
+    border-radius: 50%;
+    border: 1px transparent;
+    padding-bottom: 2px;
+    background-color: #92f;
     transition-duration: 0.6s;
+    cursor: pointer;
 }
