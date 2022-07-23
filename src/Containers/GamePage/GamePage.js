@@ -169,7 +169,7 @@ const GamePage = props => {
 
                     <div className={styles.addToCart}>
                       <div className={styles.infos}>
-                          <h3>{selectedGame.price}</h3>
+                          <h3>${selectedGame.price}</h3>
                           <button id={selectedGame.id} onClick={handleLike}>
                               <Like 
                                 className={selectedGame.isLiked ? styles.liked : styles.like}
