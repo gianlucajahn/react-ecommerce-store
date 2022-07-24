@@ -25,7 +25,7 @@ body {
 }
 
 .home_content {
-    margin-top: 6vh;
+    margin-top: 4.5vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -70,7 +70,7 @@ body {
     margin-right: auto;
     left: 0;
     right: 0;
-    top: 70%;
+    top: 68%;
     display: flex;
     justify-content: center;
     gap: 100px;
@@ -117,7 +117,7 @@ button div {
 }
 
 .home_cred button {
-    margin-top: 50px;
+    margin-top: 35px;
     display: flex;
     justify-content: center;
     align-items: center;
