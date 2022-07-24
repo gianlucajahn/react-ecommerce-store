@@ -314,6 +314,10 @@ useEffect(() => {
                                         handleOpenCart={handleOpenCart}
                                         handleCloseCart={handleCloseCart}
                                         clearCart={clearCart}
+                                        handleAddToCart={handleAddToCart}
+                                        handleLike={handleLike}
+                                        handleHoverGame={handleHoverGame}
+                                        handleSelectGame={handleSelectGame}
                                       />} />
             <Route path="/browse" element={<Browse 
                                               cart={cart}

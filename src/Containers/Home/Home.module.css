@@ -18,24 +18,19 @@ body {
 }
 
 .home {
-    background: url("../../Resources/image/background.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     height: 70vh;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
     padding-bottom: 6.5vh;
 }
 
-.home:after {
-    clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 100%);
-}
-
 .home_content {
-    margin-top: 31.5vh;
+    margin-top: 6vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .home_content h1 {
@@ -45,10 +40,27 @@ body {
     text-shadow: 14px 10px 40px black
 }
 
-.home_content h2 {
+.home_content div {
+    margin-top: 14px;
+    padding: 11px 38px;
+    display: flex;
+    gap: 14px;
+    align-items: center;
+    justify-content: center;
+    background-color: #2d2d2d;
+    border-radius: 20px;
+    border: 1px transparent;
+}
+
+.ign {
+    width: 23px;
+    height: 23px;
+}
+
+.home_content div h2 {
     color: white;
     font-family: "GT Bold";
-    text-shadow: 4px 4px 7px black
+    font-size: 20px;
 }
 
 .buttons {
@@ -58,7 +70,7 @@ body {
     margin-right: auto;
     left: 0;
     right: 0;
-    top: 66%;
+    top: 70%;
     display: flex;
     justify-content: center;
     gap: 100px;
@@ -105,20 +117,26 @@ button div {
 }
 
 .home_cred button {
-    margin-top: 20px;
+    margin-top: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 14px;
-    height: 110px;
-    width: 330px;
+    gap: 18px;
+    height: 100px;
+    width: 320px;
     border: 1px transparent;
     border-radius: 30px;
-    background-color: #79d2b5;
+    background-color: #2d2d2d;
     font-family: "GT Bold";
     font-size: 48px;
     cursor: pointer;
     transition: ease-in-out 0.2s;
+    color: #fff;
+}
+
+
+.home_cred button:hover {
+    background-color: #363636;
 }
 
 .home_cred button:active {
@@ -126,12 +144,43 @@ button div {
 }
 
 .browse {
-    stroke: #000000;
-    stroke-width: 2px;
+    stroke: #fff;
+    stroke-width: 1px;
+    fill: #fff;
 }
 
 h3,
 p {
     transition: all 0.2s;
 }
+
+.home_cred button div {
+    width: 35px;
+    height: 35px;
+    position: relative;
+    transform:rotate(45deg);
+    -ms-transform:rotate(45deg); 
+    -webkit-transform:rotate(45deg); 
+}
+ 
+.home_cred button div:before, .home_cred button div:after {
+   content: "";
+   position: absolute;
+   z-index: -1;
+   background: #99a6ec;
+ }
+ 
+.home_cred button div:before {
+   left: 55%;
+   width: 20%;
+   margin-left: -15%;
+   height: 100%;
+ }
+ 
+ .home_cred button div:after {
+   top: 53%;
+   height: 20%;
+   margin-top: -15%;
+   width: 100%;
+ }
 

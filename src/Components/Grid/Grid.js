@@ -10,6 +10,7 @@ const Grid = props => {
         reviewDisplay,
         handleLike,
         handleHoverGame,
+        hoverState,
         handleAddToCart,
         grid,
         search,
@@ -48,6 +49,7 @@ const Grid = props => {
                     handleHoverGame={handleHoverGame} 
                     handleAddToCart={handleAddToCart} 
                     handleSelectGame={handleSelectGame}
+                    hoverState={hoverState}
                   />
                 }
             }) : shownGames.map((game, i) => {
@@ -58,6 +60,7 @@ const Grid = props => {
                          handleHoverGame={handleHoverGame} 
                          handleAddToCart={handleAddToCart} 
                          handleSelectGame={handleSelectGame}
+                         hoverState={hoverState}
                        />
             }) : cartDisplayed ? shownGames.map((game, i) => {
                 if (i <= 7) {
@@ -68,6 +71,7 @@ const Grid = props => {
                     handleHoverGame={handleHoverGame} 
                     handleAddToCart={handleAddToCart} 
                     handleSelectGame={handleSelectGame}
+                    hoverState={hoverState}
                   />
                 }
             }) : shownGames.map((game, i) => {
@@ -79,6 +83,7 @@ const Grid = props => {
                                  handleHoverGame={handleHoverGame} 
                                  handleAddToCart={handleAddToCart} 
                                  handleSelectGame={handleSelectGame}
+                                 hoverState={hoverState}
                                />
                     }
             })}

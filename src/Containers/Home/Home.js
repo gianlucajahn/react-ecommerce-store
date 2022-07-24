@@ -8,8 +8,11 @@ import { ReactComponent as Browse } from "../../Resources/image/browse.svg";
 import { hover } from '@testing-library/user-event/dist/hover';
 import { motion, AnimatePresence } from "framer-motion";
 import { Navigate, useLocation, useNavigate } from 'react-router-dom';
-import AnimatedPage from '../AnimatedPage/AnimatedPage';
+import AnimatedHome from '../AnimatedPage/AnimatedHome';
+import AnimatedHomeBottom from '../AnimatedPage/AnimatedHomeBottom';
 import Cart from '../../Components/Cart/Cart';
+import Card from '../../Components/Card/Card';
+import games from '../../utils/games';
 
 const Home = props => {
   const {
@@ -19,35 +22,115 @@ const Home = props => {
     cartDisplayed,
     handleOpenCart,
     handleCloseCart,
-    clearCart
+    clearCart,
+    handleAddToCart,
+    handleLike,
+    handleHoverGame,
+    handleSelectGame
   } = props;
 
   const [browsing, setBrowsing] = useState(false);
   const [landingPage, setLandingPage] = useState(true);
   const [hoverState, setHoverState] = useState([
     {
-        hovered: false
+        hovered: false,
+        selected: false
     },
     {
-        hovered: false
+        hovered: false,
+        selected: true
     },
     {
-        hovered: false
+        hovered: false,
+        selected: false
     },
     {
-        hovered: false
+        hovered: false,
+        selected: false
     },
     {
-        hovered: false
+        hovered: false,
+        selected: false
     },
     {
-        hovered: false
+        hovered: false,
+        selected: false
     },
     {
-        hovered: false
+        hovered: false,
+        selected: false
     },
     {
-        hovered: false
+        hovered: false,
+        selected: false
+    },
+    {
+        hovered: false,
+        selected: false
+    },
+    {
+        hovered: false,
+        selected: false
+    },
+    {
+        hovered: false,
+        selected: false
+    },
+    {
+        hovered: false,
+        selected: false
+    },
+    {
+        hovered: false,
+        selected: false
+    },
+    {
+        hovered: false,
+        selected: false
+    },
+    {
+        hovered: false,
+        selected: false
+    },
+    {
+        hovered: false,
+        selected: false
+    },
+    {
+        hovered: false,
+        selected: false
+    },
+    {
+        hovered: false,
+        selected: false
+    },
+    {
+        hovered: false,
+        selected: false
+    },
+    {
+      hovered: false,
+      selected: false
+    },
+    {
+      hovered: false,
+      selected: false
+    },
+    {
+      hovered: false,
+      selected: false
+    },
+    {
+      hovered: false,
+      selected: false
+    },
+    {
+      hovered: false,
+      selected: false
+    },
+    {
+      hovered: false,
+      selected: false
     }
   ]);
 
@@ -79,9 +162,9 @@ const Home = props => {
   }
 
   const buttonVariants = {
-    hidden: { opacity: 0, x: 150 },
-    visible: { opacity: 1, x: 0 },
-    exit: { opacity: 0, x: -150 },
+    hidden: { opacity: 0 },
+    visible: { opacity: 1 },
+    exit: { opacity: 0 },
   }
 
   return (
@@ -108,12 +191,67 @@ const Home = props => {
               handleOpenCart={handleOpenCart}
               handleCloseCart={handleCloseCart}
             />
-              <AnimatedPage>
+              <AnimatedHome>
                 <motion.div className={styles.home_content}>
                     <h1>Game Store</h1>
-                    <h2>„Heaven for gaming deals“ — IGN</h2>
+                    <div>
+                      <img className={styles.ign} src={require("../../Resources/image/ign.png")} />
+                      <h2>Heaven for gaming deals</h2>
+                    </div>
                 </motion.div>
-              </AnimatedPage>
+              </AnimatedHome>
+
+              <motion.div>
+                  <Card         
+                    game={games[0]}
+                    handleAddToCart={handleAddToCart}
+                    handleHover={handleHover}
+                    handleLike={handleLike}
+                    handleHoverGame={handleHoverGame}
+                    handleSelectGame={handleSelectGame}
+                    hoverState={hoverState}
+                  />
+
+                  <Card         
+                    game={games[3]}
+                    handleAddToCart={handleAddToCart}
+                    handleHover={handleHover}
+                    handleLike={handleLike}
+                    handleHoverGame={handleHoverGame}
+                    handleSelectGame={handleSelectGame}
+                    hoverState={hoverState}
+                  />
+    
+                  <Card         
+                    game={games[26]}
+                    handleAddToCart={handleAddToCart}
+                    handleHover={handleHover}
+                    handleLike={handleLike}
+                    handleHoverGame={handleHoverGame}
+                    handleSelectGame={handleSelectGame}
+                    hoverState={hoverState}
+                  />
+    
+                  <Card         
+                    game={games[12]}
+                    handleAddToCart={handleAddToCart}
+                    handleHover={handleHover}
+                    handleLike={handleLike}
+                    handleHoverGame={handleHoverGame}
+                    handleSelectGame={handleSelectGame}
+                    hoverState={hoverState}
+                  />
+                                
+                  <Card         
+                    game={games[11]}
+                    handleAddToCart={handleAddToCart}
+                    handleHover={handleHover}
+                    handleLike={handleLike}
+                    handleHoverGame={handleHoverGame}
+                    handleSelectGame={handleSelectGame}
+                    hoverState={hoverState}
+                  />
+              </motion.div>
         </div>
 
             <motion.div 
@@ -156,19 +294,19 @@ const Home = props => {
                     </div>
                 </button>
             </motion.div>
+
+            <AnimatedHomeBottom>
+                <motion.div 
+                  className={styles.home_cred}
+                >
+                    <button onClick={handleBrowse}>
+                        <div>
     
-            <motion.div 
-              className={styles.home_cred}
-              initial="hidden"
-              animate="visible"
-              variants={variants}
-              transition={{ x: { type: "spring" }, duration: 1 }}
-            >
-                <button onClick={handleBrowse}>
-                    <Browse className={styles.browse} />
-                    Browse
-                </button>
-            </motion.div>
+                        </div>
+                        Browse
+                    </button>
+                </motion.div>
+            </AnimatedHomeBottom>
     </div>
   );
 }

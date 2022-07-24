@@ -7,6 +7,206 @@
     position: relative;
 }
 
+.cardHome {
+    background-color: #202020;
+    grid-column: auto;
+    border: 1px transparent;
+    border-radius: 12px;
+    transition: 0.3s all;
+    position: absolute;
+    width: 285px;
+    left: 25.95%;
+    top: 38.25%;
+}
+
+.cardHome:hover {
+    background-color: #2d2d2d;
+    transform: scale(1.015);
+}
+
+.cardHome:active {
+    transform: scale(0.975);
+}
+
+.cardHome img {
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    max-width: 100%;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.cardHome div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 15px 3px 7px;
+    cursor: pointer;
+}
+
+.fifa {
+    background-color: #202020;
+    grid-column: auto;
+    border: 1px transparent;
+    border-radius: 12px;
+    transition: 0.3s all;
+    position: absolute;
+    width: 285px;
+    left: 42.5%;
+    top: 38.25%;
+}
+
+.fifa:hover {
+    background-color: #2d2d2d;
+    transform: scale(1.015);
+}
+
+.fifa:active {
+    transform: scale(0.975);
+}
+
+.fifa img {
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    max-width: 100%;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.fifa div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 15px 3px 7px;
+    cursor: pointer;
+}
+
+.mariokart {
+    background-color: #202020;
+    grid-column: auto;
+    border: 1px transparent;
+    border-radius: 12px;
+    transition: 0.3s all;
+    position: absolute;
+    width: 285px;
+    left: 75.6%;
+    top: 38.25%;
+}
+
+.mariokart:hover {
+    background-color: #2d2d2d;
+    transform: scale(1.015);
+}
+
+.mariokart:active {
+    transform: scale(0.975);
+}
+
+.mariokart img {
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    max-width: 100%;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.mariokart div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 15px 3px 7px;
+    cursor: pointer;
+}
+
+.minecraft {
+    background-color: #202020;
+    grid-column: auto;
+    border: 1px transparent;
+    border-radius: 12px;
+    transition: 0.3s all;
+    position: absolute;
+    width: 285px;
+    left: 9.4%;
+    top: 38.25%;
+}
+
+.minecraft:hover {
+    background-color: #2d2d2d;
+    transform: scale(1.015);
+}
+
+.minecraft:active {
+    transform: scale(0.975);
+}
+
+.minecraft img {
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    max-width: 100%;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.minecraft div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 15px 3px 7px;
+    cursor: pointer;
+}
+
+.tombraider {
+    background-color: #202020;
+    grid-column: auto;
+    border: 1px transparent;
+    border-radius: 12px;
+    transition: 0.3s all;
+    position: absolute;
+    width: 285px;
+    left: 59.05%;
+    top: 38.25%;
+}
+
+.tombraider:hover {
+    background-color: #2d2d2d;
+    transform: scale(1.015);
+}
+
+.tombraider:active {
+    transform: scale(0.975);
+}
+
+.tombraider img {
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    max-width: 100%;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.tombraider div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 15px 3px 7px;
+    cursor: pointer;
+}
+
 .card:hover {
     background-color: #2d2d2d;
     transform: scale(1.015);
@@ -34,11 +234,16 @@
     padding: 6px 15px 3px 7px;
 }
 
+.tombraider .name {
+    font-size: 23px;
+}
+
 .name {
     color: white;
     padding-left: 14px;
     font-family: "GT Bold";
     padding-bottom: 40px;
+    cursor: pointer;
 }
 
 .name,

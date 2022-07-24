@@ -110,7 +110,7 @@ const NavBar = props => {
               onMouseLeave={handleHover}
             >
                 <GitHub className={styles.gh} style={{ fill: hoverState[2].hovered ? "#fff" : "#cccccc" }}/>
-                <h3 style={{ color: hoverState[2].hovered ? "#fff" : "#cccccc" }}>GitHub</h3>
+                <h3 style={{ color: hoverState[2].hovered ? "#fff" : "#cccccc" }}>gianlucajahn</h3>
             </div>
 
             <div className={styles.cartdiv} id="3"
