@@ -1,0 +1,66 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: #202020;
+    width: 700px;
+    height: 300px;
+    box-sizing: border-box;
+    padding: 50px 50px 0px 50px;
+    margin: 0 auto;
+    border-radius: 30px;
+    overflow: hidden;
+    margin-bottom: 30px;
+    margin-top: 200px;
+    position: relative;
+}
+
+.notFoundContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    background-color: #202020;
+
+}
+
+.notFoundImg {
+    height: 170px;
+}
+
+.notFoundText {
+    align-self: flex-start;
+    margin-top: 35px;
+}
+
+.notFoundText h2 {
+    font-family: "GT Bold";
+    color: white;
+    margin-bottom: 8px;
+}
+
+.notFoundText h2 span {
+    color: #29f39a;
+}
+
+.notFoundText p {
+    width: 94.5%;
+    color: #ccc;
+    font-family: "GT Regular";
+    font-size: 1.03em;
+}
+
+.notFoundText p span {
+    font-family: "GT Bold";
+}
+
+.progressBar {
+    position: absolute;
+    left: 1px;
+    bottom: 0;
+    width: 700px;
+    height: 8px;
+    background-color: #29f39a;
+    border-bottom-left-radius: 100px;
+}

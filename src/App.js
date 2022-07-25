@@ -129,6 +129,15 @@ function App() {
   ]);
 
 const navigate = useNavigate();
+const location = useLocation();
+
+if (location.pathname != "/" && location.pathname != "/browse" && selectedGame.surname == undefined) {
+  let surname = location.pathname.substring(7);
+  let currentGame = games.find(game => game.surname === surname);
+  if (currentGame != undefined) {
+    setSelectedGame(currentGame);
+  }
+}
 
 async function handleBrowse() {
   setExtended(false);
@@ -174,7 +183,7 @@ const handleSelectGame = (e) => {
     return
   } else if (e.target.classList[0] != "AddToCart_addToCart__zbJPe") {
         setSelectedGame(games[e.target.parentNode.id]);
-        navigate(`/${games[e.target.parentNode.id].surname}`);
+        navigate(`/games/${games[e.target.parentNode.id].surname}`);
   }
 }
 
@@ -269,7 +278,6 @@ const clearCart = () => {
   ]);
 }
 
-const location = useLocation();
 useEffect(() => {
   if (location.pathname === "/") {
     setBrowsing(false);
@@ -349,7 +357,7 @@ useEffect(() => {
                                               handleCloseCart={handleCloseCart}
                                               clearCart={clearCart}
                                           />} />
-            <Route path="/:gameId" element={<GamePage
+            <Route path="/games/:gameId" element={<GamePage
                                                cart={cart}
                                                cartAmount={cartAmount}
                                                handleHover={handleHover}
@@ -377,6 +385,23 @@ useEffect(() => {
                                                handleCloseCart={handleCloseCart}
                                                clearCart={clearCart}
                                             />} />
+            <Route path="*" element={<NotFound 
+                            cartDisplayed={cartDisplayed}
+                            handleCloseCart={handleCloseCart}
+                            handleOpenCart={handleOpenCart}
+                            cartAmount={cartAmount}
+                            clearCart={clearCart}
+                            hoverState={hoverState}
+                            handleHome={handleHome}
+                            handleHover={handleHover}
+                            cart={cart}
+                            browsing={browsing}
+                            search={search}
+                            searching={searching}
+                            handleSearch={handleSearch}
+                            handleSearchSubmit={handleSearchSubmit}
+                            handleBrowse={handleBrowse}
+          />} />
           </Routes>
       </AnimatePresence>
   );

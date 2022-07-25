@@ -1,6 +1,6 @@
 import styles from './GamePage.module.css';
 import React, { useEffect, useState } from 'react';
-import { useLocation, useParams } from 'react-router-dom';
+import { useLocation, useNavigate, useParams } from 'react-router-dom';
 import { motion, AnimatePresence } from "framer-motion";
 import AnimatedGamePage from '../AnimatedPage/AnimatedGamePage';
 import NavBar from '../../Components/NavBar/NavBar';
@@ -82,7 +82,7 @@ const GamePage = props => {
         setTextExtended(!textExtended);
     }
   }
-
+  
   return (
     <>
         <div className={styles.gamepage}>
@@ -131,7 +131,7 @@ const GamePage = props => {
                 </header>
 
                 <section className={styles.game}>
-                  <Slider 
+                  {selectedGame != undefined ? <Slider 
                     selectedGame={selectedGame}
                     setSelectedGame={setSelectedGame}
                     allGames={allGames}
@@ -141,7 +141,7 @@ const GamePage = props => {
                     setCarouselState={setCarouselState}
                     hoverState={hoverState}
                     handleHover={handleHover}
-                  />
+                  /> : null}
                   <div className={styles.gameInfo}>
                     <div className={styles.about}>
                       <div className={styles.aboutTop}>
