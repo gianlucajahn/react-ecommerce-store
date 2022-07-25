@@ -9,6 +9,10 @@ body {
     background-color: #0F1011;
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 .Browse {
     background-color: #0f1011;
 }

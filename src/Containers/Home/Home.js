@@ -8,11 +8,10 @@ import { ReactComponent as Browse } from "../../Resources/image/browse.svg";
 import { hover } from '@testing-library/user-event/dist/hover';
 import { motion, AnimatePresence } from "framer-motion";
 import { Navigate, useLocation, useNavigate } from 'react-router-dom';
+import AnimatedPage from '../AnimatedPage/AnimatedPage';
+import Cart from '../../Components/Cart/Cart';
 import AnimatedHome from '../AnimatedPage/AnimatedHome';
 import AnimatedHomeBottom from '../AnimatedPage/AnimatedHomeBottom';
-import Cart from '../../Components/Cart/Cart';
-import Card from '../../Components/Card/Card';
-import games from '../../utils/games';
 
 const Home = props => {
   const {
@@ -22,11 +21,7 @@ const Home = props => {
     cartDisplayed,
     handleOpenCart,
     handleCloseCart,
-    clearCart,
-    handleAddToCart,
-    handleLike,
-    handleHoverGame,
-    handleSelectGame
+    clearCart
   } = props;
 
   const [browsing, setBrowsing] = useState(false);
@@ -38,7 +33,7 @@ const Home = props => {
     },
     {
         hovered: false,
-        selected: true
+        selected: false
     },
     {
         hovered: false,
@@ -162,9 +157,9 @@ const Home = props => {
   }
 
   const buttonVariants = {
-    hidden: { opacity: 0 },
-    visible: { opacity: 1 },
-    exit: { opacity: 0 },
+    hidden: { opacity: 0, x: 150 },
+    visible: { opacity: 1, x: 0 },
+    exit: { opacity: 0, x: -150 },
   }
 
   return (
@@ -194,72 +189,13 @@ const Home = props => {
               <AnimatedHome>
                 <motion.div className={styles.home_content}>
                     <h1>Game Store</h1>
-                    <div>
-                      <img className={styles.ign} src={require("../../Resources/image/ign.png")} />
-                      <h2>Heaven for gaming deals</h2>
-                    </div>
+                    <h2>„Heaven for gaming deals“ — IGN</h2>
                 </motion.div>
               </AnimatedHome>
-
-              <motion.div>
-                  <Card         
-                    game={games[0]}
-                    handleAddToCart={handleAddToCart}
-                    handleHover={handleHover}
-                    handleLike={handleLike}
-                    handleHoverGame={handleHoverGame}
-                    handleSelectGame={handleSelectGame}
-                    hoverState={hoverState}
-                  />
-
-                  <Card         
-                    game={games[3]}
-                    handleAddToCart={handleAddToCart}
-                    handleHover={handleHover}
-                    handleLike={handleLike}
-                    handleHoverGame={handleHoverGame}
-                    handleSelectGame={handleSelectGame}
-                    hoverState={hoverState}
-                  />
-    
-                  <Card         
-                    game={games[26]}
-                    handleAddToCart={handleAddToCart}
-                    handleHover={handleHover}
-                    handleLike={handleLike}
-                    handleHoverGame={handleHoverGame}
-                    handleSelectGame={handleSelectGame}
-                    hoverState={hoverState}
-                  />
-    
-                  <Card         
-                    game={games[12]}
-                    handleAddToCart={handleAddToCart}
-                    handleHover={handleHover}
-                    handleLike={handleLike}
-                    handleHoverGame={handleHoverGame}
-                    handleSelectGame={handleSelectGame}
-                    hoverState={hoverState}
-                  />
-                                
-                  <Card         
-                    game={games[11]}
-                    handleAddToCart={handleAddToCart}
-                    handleHover={handleHover}
-                    handleLike={handleLike}
-                    handleHoverGame={handleHoverGame}
-                    handleSelectGame={handleSelectGame}
-                    hoverState={hoverState}
-                  />
-              </motion.div>
         </div>
 
             <motion.div 
               className={styles.buttons}
-              initial="hidden"
-              animate="visible"
-              variants={buttonVariants}
-              transition={{ x: { type: "spring" }, duration: 1.5 }}
             >
                 <button id="4" className={styles.parent}
                       onMouseEnter={handleHover}
@@ -300,9 +236,7 @@ const Home = props => {
                   className={styles.home_cred}
                 >
                     <button onClick={handleBrowse}>
-                        <div>
-    
-                        </div>
+                        <img className={styles.triangle} src={require("../../Resources/image/triangle.png")} />
                         Browse
                     </button>
                 </motion.div>

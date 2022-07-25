@@ -6,7 +6,7 @@ import { ReactComponent as Cart } from "../../Resources/image/cart.svg";
 import { ReactComponent as GitHub } from "../../Resources/image/github.svg";
 import { ReactComponent as Search } from "../../Resources/image/search.svg";
 import { motion } from "framer-motion";
-import { useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 
 const NavBar = props => { 
     const {
@@ -36,6 +36,8 @@ const NavBar = props => {
         visible: { opacity: 1 },
     }
 
+  const location = useLocation();
+
   return (
     <>
       <motion.div 
@@ -63,7 +65,7 @@ const NavBar = props => {
                   <>
                     <motion.div 
                       animate="visible"
-                      initial="hidden"
+                      initial={location.pathname === "/browse" ? "hidden" : "visible"}
                       variants={searchVariants}
                       transition={{ opacity: { type: "spring" }, duration: 0.01, delay: 0.4 }}
                       className={styles.searchdiv}
