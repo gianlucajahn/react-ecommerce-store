@@ -23,6 +23,10 @@ body {
     font-family: "GT Medium";
 }
 
+a {
+    text-decoration: none;
+}
+
 .left,
 .right {
     width: 50vw;

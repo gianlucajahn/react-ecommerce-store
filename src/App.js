@@ -297,6 +297,12 @@ const handleNavNotFoundQuery = () => {
   navigate('/games/404');
 }
 
+const handlePlayDice = () => {
+  let randomIndex = Math.floor(Math.random() * 32);
+  let randomSurname = allGames[randomIndex].surname;
+  navigate(`games/${randomSurname}`);
+}
+
 const handleRemoveFromCart = (e) => {
   let removedIndex = cart.findIndex(game => game.id == e.target.id);
   let newAllGames = allGames.map((game, i) => {
@@ -369,6 +375,7 @@ useEffect(() => {
                                         handleNavGamePage={handleNavGamePage}
                                         handleNavNotFoundPage={handleNavNotFoundPage}
                                         handleNavNotFoundQuery={handleNavNotFoundQuery}
+                                        handlePlayDice={handlePlayDice}
                                       />} />
             <Route path="/browse" element={<Browse 
                                               cart={cart}

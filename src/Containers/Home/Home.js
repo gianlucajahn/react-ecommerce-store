@@ -28,7 +28,8 @@ const Home = props => {
     handleRemoveFromCart,
     handleNavGamePage,
     handleNavNotFoundPage,
-    handleNavNotFoundQuery
+    handleNavNotFoundQuery,
+    handlePlayDice
   } = props;
 
   const [browsing, setBrowsing] = useState(false);
@@ -211,18 +212,18 @@ const Home = props => {
                                 <Enter className={styles.ctaSVG} />
                                 Browse
                               </button>
-                              <button className={styles.cta}>
+                              <button className={styles.cta} onClick={handlePlayDice}>
                                 <Dice className={styles.ctaSVG} />
                                 Play Dice
                               </button>
-                              <button className={styles.cta}>
+                              <a href="https://github.com/gianlucajahn/react-ecommerce-store" target="_blank"><button className={styles.cta}>
                                 <GitHubLogo className={styles.ctaSVG} />
                                 GitHub
-                              </button>
-                              <button className={`${styles.cta} ${styles.lastChild}`}>
+                              </button></a>
+                              <a href="https://www.linkedin.com/in/gianlucajahn/" target="_blank"><button className={`${styles.cta} ${styles.lastChild}`}>
                                 <LinkedIn className={`${styles.ctaSVG} ${styles.linkedin}`} />
                                 <span>LinkedIn</span>
-                              </button>
+                              </button></a>
                         </div>
                     </div>
     
@@ -241,22 +242,22 @@ const Home = props => {
                               <NotFoundQuery className={`${styles.ctaSVG}`} />
                               404 Query
                             </button>
-                            <button className={styles.cta}>
+                            <a href='https://github.com/gianlucajahn/react-ecommerce-store/commits/main' target="_blank"><button className={styles.cta}>
                               <Git className={styles.ctaSVG} />
                               Commit Log
-                            </button>
-                            <button className={`${styles.cta} ${styles.lastChild}`}>
+                            </button></a>
+                            <a href="" target="_blank"><button className={`${styles.cta} ${styles.lastChild}`}>
                               <Performance className={`${styles.ctaSVG}`} />
                               Performance
-                            </button>
-                            <button className={`${styles.cta} ${styles.lastChild}`}>
+                            </button></a>
+                            <a href="" target="_blank"><button className={`${styles.cta} ${styles.lastChild}`}>
                               <img className={styles.technologies} src={require("../../Resources/image/whatruns.png")} />
                               Technologies
-                            </button>
-                            <button className={`${styles.cta} ${styles.lastChild}`}>
+                            </button></a>
+                            <a href="" target="_blank"><button className={`${styles.cta} ${styles.lastChild}`}>
                               <Sources className={`${styles.ctaSVG}`} />
                               Our Sources
-                            </button>
+                            </button></a>
                         </div>
                     </div>
                 </div>
