@@ -6,7 +6,6 @@
 html,
 body {
     overflow-x: hidden;
-    background-color: #0F1011;
 }
 
 ::-webkit-scrollbar {
@@ -22,6 +21,7 @@ body {
     display: flex;
     padding-top: 25px;
     width: 100vw;
+    margin-bottom: 140px;
 }
 
 .filters {

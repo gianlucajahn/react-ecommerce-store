@@ -16,6 +16,11 @@
     position: relative;
 }
 
+.notFound {
+    background-color: #0f1011;
+    height: 100vh;
+}
+
 .notFoundContent {
     display: flex;
     justify-content: center;

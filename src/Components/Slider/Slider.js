@@ -7,6 +7,7 @@ import { ReactComponent as Dot } from "../../Resources/image/dot.svg";
 import { useLocation } from 'react-router-dom';
 import "react-slideshow-image/dist/styles.css";
 import { Slide } from "react-slideshow-image";
+import templateGame from '../../utils/templateGame';
 
 const Slider = props => {
   const {
@@ -40,11 +41,18 @@ const Slider = props => {
   };
 
   const slideImages = [
-    selectedGame.footage[0],
-    selectedGame.footage[1],
-    selectedGame.footage[2],
-    selectedGame.footage[3]
+    selectedGame ? selectedGame.footage[0] : null,
+    selectedGame ? selectedGame.footage[1] : null,
+    selectedGame ? selectedGame.footage[2] : null,
+    selectedGame ? selectedGame.footage[3] : null,
   ];
+
+  const templateImages = [
+    templateGame.footage[0],
+    templateGame.footage[1],
+    templateGame.footage[2],
+    templateGame.footage[3]
+  ]
 
   const back = () => {
     if (carouselState > 0) {
@@ -75,7 +83,11 @@ const Slider = props => {
   return (
         <div className={styles.slider}>
           <Slide ref={slideRef} {...properties}>
-            {slideImages.map((each, index) => (
+            {selectedGame ? slideImages.map((each, index) => (
+              <div key={index} className={styles.slide}>
+                <img className={styles.currentImg} src={each} alt="sample" />
+              </div>
+            )) : templateImages.map((each, index) => (
               <div key={index} className={styles.slide}>
                 <img className={styles.currentImg} src={each} alt="sample" />
               </div>

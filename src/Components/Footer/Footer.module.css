@@ -1,0 +1,132 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 250px 0px 250px;
+    background-color: black;
+}
+
+.footerTop {
+    display: flex;
+    gap: 8px;
+    border: 1px transparent;
+    border-radius: 6px;
+    background-color: transparent;
+    box-sizing: border-box;
+    margin-bottom: 40px;
+    align-items: center;
+    justify-content: flex-start
+}
+
+.footerTop h2 {
+    padding-bottom: 4px;
+    color: white;
+}
+
+.logo {
+    fill: white;
+}
+
+.sections {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.sections::after {
+    content: "";
+    height: 2px;
+    opacity: 0.7;
+    background-color: #999;
+    color: red;
+    width: 100%;
+    position: absolute;
+    bottom: -50%;
+}
+
+.section4 {
+    margin-right: 250px;
+}
+
+.section h3 {
+    margin-bottom: 14px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+    color: #ccc;
+    transition: 0.3s all;
+    cursor: pointer;
+}
+
+.section h3:hover {
+    color: white;
+}
+
+.footer .sections .section .first {
+    font-weight: 1000;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.footerInfo {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 106px;
+}
+
+.infoLeft p span {
+    text-decoration: underline;
+    color: white;
+    text-underline-offset: 2px;
+    cursor: pointer;
+}
+
+.infoLeft p {
+    color: #ccc;
+}
+
+.infoRight {
+    display: flex;
+    gap: 0px;
+}
+
+.apple,
+.google {
+    height: 37px;
+    cursor: pointer;
+    transition: 0.2s all;
+}
+
+.apple:active,
+.google:active {
+    transform: scale(0.95);
+}
+
+.footerEnd {
+    display: flex;
+    justify-content: space-between;
+}
+
+.endLeft {
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    gap: 40px;
+    color: #ccc;
+    font-family: "GT Light";
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+.endLeft h4 {
+    cursor: pointer;
+}
+
+.endRight {
+    display: flex;
+    gap: 16px;
+}
+
+.social {
+    margin-top: 40px;
+    height: 20px;
+    cursor: pointer;
+}

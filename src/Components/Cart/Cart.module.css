@@ -27,6 +27,10 @@
     box-sizing: border-box;
 }
 
+.removeButton * {
+    pointer-events: none;
+}
+
 .topHeader {
     display: flex;
     justify-content: space-between;
@@ -121,6 +125,7 @@
     font-family: "GT Regular";
     transition: 0.3s all;
     cursor: pointer;
+    color: #ccc;
 }
 
 .item h3:hover {

@@ -8,6 +8,9 @@
     justify-content: space-between;
     align-items: center;
     padding: 5px 40px 2px 30px;
+    backdrop-filter: blur(6px);
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
 }
 
 form {
@@ -42,6 +45,7 @@ form button {
     gap: 6px;
     cursor: pointer;
     transition: ease-in-out 0.2s;
+    z-index: 9;
 }
 
 .logodiv *,
@@ -77,30 +81,17 @@ form button {
 .gh {
     padding-bottom: 3px;
     transform: scale(1.5);
-    fill: #CCCCCC;
+    fill: white;
     padding-top: 3px;
     transition: 0.3s;
 }
 
-.gh:hover {
-    fill: #fff;
-}
-
-.svg:hover {
-    fill: #fff;
-}
-
-h3 {
-    color: #CCCCCC;
+.cartdiv h3,
+.logodiv h3,
+.pathdiv h3,
+.githubdiv h3 {
+    color: white;
     font-family: "GT Bold";
-    transition: 0.3s;
-}
-
-.logodiv h3:hover,
-.pathdiv h3:hover,
-.githubdiv h3:hover,
-.cartdiv h3:hover {
-    color: #fff;
 }
 
 .pathdiv h3,

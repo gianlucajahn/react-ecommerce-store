@@ -15,7 +15,9 @@ const Cart = props => {
         cartDisplayed,
         handleHover,
         hoverState,
-        clearCart
+        clearCart,
+        handleRemoveFromCart,
+        handleOpenGamePage
     } = props;
 
     const [total, setTotal] = useState(0);
@@ -55,7 +57,7 @@ const Cart = props => {
                                         <h3>{item.name}</h3>
                                         <div>
                                             ${item.price}
-                                            <button>
+                                            <button id={item.id} onClick={handleRemoveFromCart} className={styles.removeButton}>
                                                 <Cross className={styles.cross} />
                                             </button>
                                         </div>

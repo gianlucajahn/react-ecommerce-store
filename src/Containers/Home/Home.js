@@ -21,7 +21,8 @@ const Home = props => {
     cartDisplayed,
     handleOpenCart,
     handleCloseCart,
-    clearCart
+    clearCart,
+    handleRemoveFromCart
   } = props;
 
   const [browsing, setBrowsing] = useState(false);
@@ -173,74 +174,38 @@ const Home = props => {
               handleHover={handleHover}
               hoverState={hoverState}
               clearCart={clearCart}
+              handleRemoveFromCart={handleRemoveFromCart}
       /> : null}
         <div className={styles.home}>
-            <NavBar 
-              handleHover={handleHover} 
-              hoverState={hoverState}
-              browsing={browsing}
-              handleBrowse={handleBrowse}
-              handleHome={handleHome}
-              landingPage={landingPage}
-              cartAmount={cartAmount}
-              handleOpenCart={handleOpenCart}
-              handleCloseCart={handleCloseCart}
-            />
-              <AnimatedHome>
-                <motion.div className={styles.home_content}>
-                    <h1>Game Store</h1>
-                    <h2>„Heaven for gaming deals“ — IGN</h2>
-                </motion.div>
-              </AnimatedHome>
+
+                <video autoPlay muted loop className={styles.video}>
+                  <source src={require("../../Resources/image/piltover.mp4")} type="video/mp4" />
+                </video>
+
+                <NavBar 
+                  handleHover={handleHover} 
+                  hoverState={hoverState}
+                  browsing={browsing}
+                  handleBrowse={handleBrowse}
+                  handleHome={handleHome}
+                  landingPage={landingPage}
+                  cartAmount={cartAmount}
+                  handleOpenCart={handleOpenCart}
+                  handleCloseCart={handleCloseCart}
+                />
+
+                <div className={styles.home_content}>
+                  <h1>Game Store</h1>
+                  <p className={styles.intro}>The best destination to buy new games to competitive prices. 24 hour support, "best price" guarantee and a flawless UX. Wish for more? Tell us <span className={styles.here}>here</span> or checkout our <span className={styles.careers}>careers.</span></p>
+                </div>
+
+                <div className={styles.buttons}>
+                  <h2>Explore our store</h2>
+                  <button>Browse</button>
+                  <button>Play Dice</button>
+                  <button>GitHub</button>
+                </div>
         </div>
-
-            <motion.div 
-              className={styles.buttons}
-            >
-                <button id="4" className={styles.parent}
-                      onMouseEnter={handleHover}
-                      onMouseLeave={handleHover}
-                >
-                    <Credibility className={styles.svg} style={{ fill: hoverState[4].hovered ? "#000000" : "#cccccc" }}/>
-                    <div>
-                        <h3 style={{ color: hoverState[4].hovered ? "#000000" : "#cccccc" }}>Credible Shop</h3>
-                        <p style={{ color: hoverState[4].hovered ? "#000000" : "#cccccc" }}>Excellenct Score</p>
-                    </div>
-                </button>
-    
-                <button id="5" className={styles.parent}
-                    onMouseEnter={handleHover}
-                    onMouseLeave={handleHover}
-                >
-                    <Availability className={styles.svg} style={{ fill: hoverState[5].hovered ? "#000000" : "#cccccc" }}/>
-                    <div>
-                        <h3 style={{ color: hoverState[5].hovered ? "#000000" : "#cccccc" }}>High Availability</h3>
-                        <p style={{ color: hoverState[5].hovered ? "#000000" : "#cccccc" }}>24-hour Support</p>
-                    </div>
-                </button>
-    
-                <button id="6" className={styles.parent}
-                    onMouseEnter={handleHover}
-                    onMouseLeave={handleHover}
-                >
-                    <Reviews className={styles.svg} style={{ fill: hoverState[6].hovered ? "#000000" : "#cccccc" }}/>
-                    <div>
-                        <h3 style={{ color: hoverState[6].hovered ? "#000000" : "#cccccc" }}>Great Reviews</h3>
-                        <p style={{ color: hoverState[6].hovered ? "#000000" : "#cccccc" }}>9.4 / 10 Avg. Score</p>
-                    </div>
-                </button>
-            </motion.div>
-
-            <AnimatedHomeBottom>
-                <motion.div 
-                  className={styles.home_cred}
-                >
-                    <button onClick={handleBrowse}>
-                        <img className={styles.triangle} src={require("../../Resources/image/triangle.png")} />
-                        Browse
-                    </button>
-                </motion.div>
-            </AnimatedHomeBottom>
     </div>
   );
 }

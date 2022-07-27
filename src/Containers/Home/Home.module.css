@@ -13,131 +13,62 @@ body {
     pointer-events: none;
 }
 
-.main {
-    background-color: #0f1011;
-}
-
-.home {
-    background: url("../../Resources/image/background.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 70vh;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
-    padding-bottom: 6.5vh;
-}
-
-.home:after {
-    clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 100%);
-}
+.video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    background-attachment: fixed;
+  }
 
 .home_content {
-    margin-top: 31.5vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    position: relative;
+    width: 630px;
+    height: 240px;
     align-items: center;
+    box-sizing: border-box;
+    padding: 22px 35px 55px 20px;
+    margin-left: 44px;
+    margin-top: 14.5%;
+    border-radius: 30px;
+    z-index: 6;
+    backdrop-filter: blur(8px);
+}
+
+.home_content::after {
+    content: "";
+    position: absolute;
+    border-radius: 30px;
+    inset: 0.01%;
+    height: inherit;
+    width: inherit;
+    z-index: -1;
+    background-color: white;
+    opacity: 0.285;
+  }
+
+.intro {
+    color: white;
+    font-family: "GT Regular";
+    padding-left: 40px;
+    font-size: 19px;
+    opacity: 1;
 }
 
 .home_content h1 {
     font-family: "GT Bold";
-    font-size: 110px;
-    color: #fff;
-    text-shadow: 14px 10px 40px black
+    font-size: 90px;
+    color: white;
 }
 
-.home_content h2 {
+.home h2 {
     color: white;
     font-family: "GT Bold";
-    text-shadow: 4px 4px 7px black
 }
 
-.buttons {
-    z-index: 10;
-    position: absolute;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
-    top: 66%;
-    display: flex;
-    justify-content: center;
-    gap: 100px;
-}
 
-.buttons button {
-    background-color: black;
-    border: 1px transparent;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    padding: 4px 26px 5px 16px;
-    transition: 0.3s ease-in-out;
-}
-
-.buttons button:hover {
-    background-color: #79d2b5;
-}
-
-.svg {
-    transform: scale(0.85);
-    fill: rgb(219, 219, 219);
-    transition: 0.3s;
-}
-
-.svg:hover {
-    fill: #fff
-}
-
-.home_cred {
-    display: flex;
-    justify-content: center;
-    background-color: #0f1011;
-    height: 23.5vh;
-    display: flex;
-}
-
-button div {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-.home_cred button {
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 14px;
-    height: 110px;
-    width: 325px;
-    border: 1px transparent;
-    border-radius: 30px;
-    background-color: #79d2b5;
-    font-family: "GT Bold";
-    font-size: 48px;
-    cursor: pointer;
-    transition: ease-in-out 0.2s;
-}
-
-.home_cred button:active {
-    transform: scale(0.9);
-}
-
-.browse {
-    stroke: #000000;
-    stroke-width: 2px;
-}
-
-h3,
-p {
-    transition: all 0.2s;
-}
-
-.triangle {
-    width: 45x;
-    height: 45px;
-}
-  
 

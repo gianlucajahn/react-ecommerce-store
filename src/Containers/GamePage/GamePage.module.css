@@ -316,6 +316,11 @@ header h1 {
     align-items: center;
 }
 
+.infos h3 {
+    color: #ccc;
+    font-family: "GT Light";
+}
+
 .infos button {
     width: 26px;
     height: 26px;

@@ -23,7 +23,8 @@ const NotFound = props => {
     search,
     searching,
     handleSearch,
-    handleSearchSubmit
+    handleSearchSubmit,
+    handleRemoveFromCart
   } = props;
   const location = useLocation();
 
@@ -53,6 +54,7 @@ useEffect(() => {
             handleHover={handleHover}
             hoverState={hoverState}
             clearCart={clearCart}
+            handleRemoveFromCart={handleRemoveFromCart}
           /> : null}
 
           <NavBar
