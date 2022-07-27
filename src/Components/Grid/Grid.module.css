@@ -34,6 +34,10 @@
     color: white;
 }
 
+.reviews h3 {
+    color: #ccc;
+}
+
 @media (max-width: 1700px) {
     .gridContainer {
         grid-template-rows: 290px;

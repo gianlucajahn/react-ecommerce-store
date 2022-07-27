@@ -8,9 +8,6 @@
     justify-content: space-between;
     align-items: center;
     padding: 5px 40px 2px 30px;
-    backdrop-filter: blur(6px);
-    border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 25px;
 }
 
 form {

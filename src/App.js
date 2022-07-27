@@ -281,6 +281,22 @@ const clearCart = () => {
   ]);
 }
 
+const handleNavGamePage = () => {
+  setExtended(false);
+  setTextExtended(false);
+  setCartDisplayed(false);
+  setHoverState([...hoverState, hoverState[21].hovered = false]);
+  navigate('/games/riseofthetombraider');
+}
+
+const handleNavNotFoundPage = () => {
+  navigate('/this-page');
+}
+
+const handleNavNotFoundQuery = () => {
+  navigate('/games/404');
+}
+
 const handleRemoveFromCart = (e) => {
   let removedIndex = cart.findIndex(game => game.id == e.target.id);
   let newAllGames = allGames.map((game, i) => {
@@ -350,6 +366,9 @@ useEffect(() => {
                                         handleHoverGame={handleHoverGame}
                                         handleSelectGame={handleSelectGame}
                                         handleRemoveFromCart={handleRemoveFromCart}
+                                        handleNavGamePage={handleNavGamePage}
+                                        handleNavNotFoundPage={handleNavNotFoundPage}
+                                        handleNavNotFoundQuery={handleNavNotFoundQuery}
                                       />} />
             <Route path="/browse" element={<Browse 
                                               cart={cart}

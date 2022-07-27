@@ -1,17 +1,20 @@
 import React, { useState } from 'react';
 import styles from './Home.module.css';
 import NavBar from '../../Components/NavBar/NavBar';
-import { ReactComponent as Credibility } from "../../Resources/image/credible.svg";
-import { ReactComponent as Availability } from "../../Resources/image/available.svg";
-import { ReactComponent as Reviews } from "../../Resources/image/reviews.svg";
-import { ReactComponent as Browse } from "../../Resources/image/browse.svg";
-import { hover } from '@testing-library/user-event/dist/hover';
+import { ReactComponent as GitHubLogo } from "../../Resources/image/githublogo.svg";
+import { ReactComponent as Enter } from "../../Resources/image/enter.svg";
+import { ReactComponent as Dice } from "../../Resources/image/dice.svg";
+import { ReactComponent as LinkedIn } from "../../Resources/image/linkedin.svg";
+import { ReactComponent as Game } from "../../Resources/image/game.svg";
+import { ReactComponent as NotFound } from "../../Resources/image/notfound.svg";
+import { ReactComponent as NotFoundQuery } from "../../Resources/image/notfoundquery.svg";
+import { ReactComponent as Git } from "../../Resources/image/git.svg";
+import { ReactComponent as Performance } from "../../Resources/image/performance.svg";
+import { ReactComponent as Sources } from "../../Resources/image/sources.svg";
 import { motion, AnimatePresence } from "framer-motion";
 import { Navigate, useLocation, useNavigate } from 'react-router-dom';
-import AnimatedPage from '../AnimatedPage/AnimatedPage';
+
 import Cart from '../../Components/Cart/Cart';
-import AnimatedHome from '../AnimatedPage/AnimatedHome';
-import AnimatedHomeBottom from '../AnimatedPage/AnimatedHomeBottom';
 
 const Home = props => {
   const {
@@ -22,7 +25,10 @@ const Home = props => {
     handleOpenCart,
     handleCloseCart,
     clearCart,
-    handleRemoveFromCart
+    handleRemoveFromCart,
+    handleNavGamePage,
+    handleNavNotFoundPage,
+    handleNavNotFoundQuery
   } = props;
 
   const [browsing, setBrowsing] = useState(false);
@@ -179,7 +185,7 @@ const Home = props => {
         <div className={styles.home}>
 
                 <video autoPlay muted loop className={styles.video}>
-                  <source src={require("../../Resources/image/piltover.mp4")} type="video/mp4" />
+                  <source src={require("../../Resources/image/pyke.mp4")} type="video/mp4" />
                 </video>
 
                 <NavBar 
@@ -193,17 +199,66 @@ const Home = props => {
                   handleOpenCart={handleOpenCart}
                   handleCloseCart={handleCloseCart}
                 />
-
-                <div className={styles.home_content}>
-                  <h1>Game Store</h1>
-                  <p className={styles.intro}>The best destination to buy new games to competitive prices. 24 hour support, "best price" guarantee and a flawless UX. Wish for more? Tell us <span className={styles.here}>here</span> or checkout our <span className={styles.careers}>careers.</span></p>
-                </div>
-
-                <div className={styles.buttons}>
-                  <h2>Explore our store</h2>
-                  <button>Browse</button>
-                  <button>Play Dice</button>
-                  <button>GitHub</button>
+                <div className={styles.container}>
+                    <div className={styles.left}>
+                        <div className={styles.splash}>
+                          <h1>Game Store</h1>
+                          <p className={styles.intro}>The best destination to buy new games to competitive prices. 24 hour support, "best price" guarantee and a flawless UX. Wish for more? Tell us <span className={styles.here}>below</span> — or check out our <span className={styles.careers}>careers.</span></p>
+                        </div>
+    
+                        <div className={styles.buttons}>
+                              <button className={`${styles.cta} ${styles.browseBtn}`} onClick={handleBrowse}>
+                                <Enter className={styles.ctaSVG} />
+                                Browse
+                              </button>
+                              <button className={styles.cta}>
+                                <Dice className={styles.ctaSVG} />
+                                Play Dice
+                              </button>
+                              <button className={styles.cta}>
+                                <GitHubLogo className={styles.ctaSVG} />
+                                GitHub
+                              </button>
+                              <button className={`${styles.cta} ${styles.lastChild}`}>
+                                <LinkedIn className={`${styles.ctaSVG} ${styles.linkedin}`} />
+                                <span>LinkedIn</span>
+                              </button>
+                        </div>
+                    </div>
+    
+                    <div className={styles.right}>
+                        <div className={styles.buttonsRight}>
+                            <h2>Quick Navigation</h2>
+                            <button className={styles.cta} onClick={handleNavGamePage}>
+                              <Game className={styles.ctaSVG} />
+                              Game Page
+                            </button>
+                            <button className={styles.cta} onClick={handleNavNotFoundPage}>
+                              <NotFound className={styles.ctaSVG} />
+                              404 Page
+                            </button>
+                            <button className={`${styles.cta} ${styles.lastChild}`} onClick={handleNavNotFoundQuery}>
+                              <NotFoundQuery className={`${styles.ctaSVG}`} />
+                              404 Query
+                            </button>
+                            <button className={styles.cta}>
+                              <Git className={styles.ctaSVG} />
+                              Commit Log
+                            </button>
+                            <button className={`${styles.cta} ${styles.lastChild}`}>
+                              <Performance className={`${styles.ctaSVG}`} />
+                              Performance
+                            </button>
+                            <button className={`${styles.cta} ${styles.lastChild}`}>
+                              <img className={styles.technologies} src={require("../../Resources/image/whatruns.png")} />
+                              Technologies
+                            </button>
+                            <button className={`${styles.cta} ${styles.lastChild}`}>
+                              <Sources className={`${styles.ctaSVG}`} />
+                              Our Sources
+                            </button>
+                        </div>
+                    </div>
                 </div>
         </div>
     </div>
