@@ -210,6 +210,7 @@ const clearFilter = () => {
 }
 
 const handleHover = (e) => {
+  console.log(e.target);
   if (hoverState[e.target.id].selected) {
     return;
   }

@@ -42,7 +42,8 @@ const Browse = props => {
           handleCloseCart,
           cartDisplayed,
           clearCart,
-          handleRemoveFromCart
+          handleRemoveFromCart,
+          setHoverState
         } = props;
     
     const navigate = useNavigate();
@@ -94,8 +95,17 @@ const Browse = props => {
     }, [cartDisplayed])
 
     useEffect(() => {
-      
-    })
+      let unhoveredState = hoverState.map((element, i) => {
+        if (i >= 25) {
+          return
+        } else {
+             element.hovered = false;
+             return element;
+        }
+      });
+
+      setHoverState(unhoveredState);
+    }, []);
 
     return (
       <section className={styles.Browse} style={{ maxHeight: cartDisplayed ? "100vh" : "1000vh", minHeight: "100vh" }}>
