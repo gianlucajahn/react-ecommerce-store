@@ -210,6 +210,7 @@ const clearFilter = () => {
 }
 
 const openGamePage = (e) => {
+  setCartDisplayed(false);
   let selectedGameSurname = e.target.id;
   navigate(`/games/${selectedGameSurname}`);
 }

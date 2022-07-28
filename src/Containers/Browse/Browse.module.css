@@ -21,7 +21,8 @@ body {
     display: flex;
     padding-top: 25px;
     width: 100vw;
-    margin-bottom: 280px;
+    padding-bottom: 280px;
+    background-color: #0f1011;
 }
 
 .filters {
