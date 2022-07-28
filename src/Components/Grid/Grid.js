@@ -62,7 +62,7 @@ const Grid = props => {
                          handleSelectGame={handleSelectGame}
                          hoverState={hoverState}
                        />
-            }) : cartDisplayed ? shownGames.map((game, i) => {
+            }) : shownGames.map((game, i) => {
                 if (game.name.toLowerCase().includes(search.toLowerCase())) {
                     return <Card 
                              game={game} 
@@ -74,18 +74,6 @@ const Grid = props => {
                              hoverState={hoverState}
                            />
                 }
-            }) : shownGames.map((game, i) => {
-                    if (game.name.toLowerCase().includes(search.toLowerCase())) {
-                        return <Card 
-                                 game={game} 
-                                 key={game.name} 
-                                 handleLike={handleLike} 
-                                 handleHoverGame={handleHoverGame} 
-                                 handleAddToCart={handleAddToCart} 
-                                 handleSelectGame={handleSelectGame}
-                                 hoverState={hoverState}
-                               />
-                    }
             })}
           </div>
     </>
