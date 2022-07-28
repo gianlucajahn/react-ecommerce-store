@@ -16,12 +16,11 @@ function App() {
   const [allGames, setAllGames] = useState(games);
   const [cart, setCart] = useState([]);
   const [cartAmount, setCartAmount] = useState(0);
-  const [total, setTotal] = useState(0);
   const [shownGames, setShownGames] = useState(allGames);
   const [reviewDisplay, setReviewDisplay] = useState(false);
   const [cartDisplayed, setCartDisplayed] = useState(false);
-  const [overlap, setOverlap] = useState(false);
   const [search, setSearch] = useState("");
+  const [overlap, setOverlap] = useState(false);
   const [searching, setSearching] = useState(false);
   const [browsing, setBrowsing] = useState(true);
   const [selectedGame, setSelectedGame] = useState(false);
@@ -287,28 +286,6 @@ const clearCart = () => {
   ]);
 }
 
-const handleNavGamePage = () => {
-  setExtended(false);
-  setTextExtended(false);
-  setCartDisplayed(false);
-  setHoverState([...hoverState, hoverState[21].hovered = false]);
-  navigate('/games/riseofthetombraider');
-}
-
-const handleNavNotFoundPage = () => {
-  navigate('/this-page');
-}
-
-const handleNavNotFoundQuery = () => {
-  navigate('/games/404');
-}
-
-const handlePlayDice = () => {
-  let randomIndex = Math.floor(Math.random() * 32);
-  let randomSurname = allGames[randomIndex].surname;
-  navigate(`games/${randomSurname}`);
-}
-
 const handleRemoveFromCart = (e) => {
   let removedIndex = cart.findIndex(game => game.id == e.target.id);
   let newAllGames = allGames.map((game, i) => {
@@ -330,6 +307,8 @@ const handleRemoveFromCart = (e) => {
 }
 
 useEffect(() => {
+  setOverlap(false);
+
   if (location.pathname === "/") {
     setBrowsing(false);
   } else {
@@ -378,10 +357,6 @@ useEffect(() => {
                                         handleHoverGame={handleHoverGame}
                                         handleSelectGame={handleSelectGame}
                                         handleRemoveFromCart={handleRemoveFromCart}
-                                        handleNavGamePage={handleNavGamePage}
-                                        handleNavNotFoundPage={handleNavNotFoundPage}
-                                        handleNavNotFoundQuery={handleNavNotFoundQuery}
-                                        handlePlayDice={handlePlayDice}
                                         setHoverState={setHoverState}
                                         overlap={overlap}
                                         setOverlap={setOverlap}

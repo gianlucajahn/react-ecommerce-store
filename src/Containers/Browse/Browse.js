@@ -43,7 +43,8 @@ const Browse = props => {
           cartDisplayed,
           clearCart,
           handleRemoveFromCart,
-          setHoverState
+          setHoverState,
+          overlap
         } = props;
     
     const navigate = useNavigate();

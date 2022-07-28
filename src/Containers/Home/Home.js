@@ -11,11 +11,11 @@ import { ReactComponent as NotFoundQuery } from "../../Resources/image/notfoundq
 import { ReactComponent as Git } from "../../Resources/image/git.svg";
 import { ReactComponent as Performance } from "../../Resources/image/performance.svg";
 import { ReactComponent as Sources } from "../../Resources/image/sources.svg";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence, m } from "framer-motion";
 import { Navigate, useLocation, useNavigate } from 'react-router-dom';
-
 import Cart from '../../Components/Cart/Cart';
 import AnimatedScroll from '../AnimatedPage/AnimatedScroll';
+import games from '../../utils/games';
 
 const Home = props => {
   const {
@@ -27,16 +27,13 @@ const Home = props => {
     handleCloseCart,
     clearCart,
     handleRemoveFromCart,
-    handleNavGamePage,
-    handleNavNotFoundPage,
-    handleNavNotFoundQuery,
-    handlePlayDice,
     hoverState,
-    setHoverState
+    setHoverState,
+    overlap,
+    setOverlap
   } = props;
 
   const [browsing, setBrowsing] = useState(false);
-  const [overlap, setOverlap] = useState(false);
   const [landingPage, setLandingPage] = useState(true);
 
   const navigate = useNavigate();
@@ -54,7 +51,6 @@ const Home = props => {
     setOverlap(true);
     setTimeout(() => {
       setBrowsing(true);
-      setOverlap(false);
       navigate('/browse');
     }, 1500);
   }
@@ -62,6 +58,29 @@ const Home = props => {
   const handleHome = () => {
     setBrowsing(false);
     navigate('/');
+  }
+
+  const handleNavGamePage = () => {
+    setHoverState([...hoverState, hoverState[21].hovered = false]);
+    navigate('/games/riseofthetombraider');
+  }
+  
+  const handleNavNotFoundPage = () => {
+    navigate('/this-page');
+  }
+  
+  const handleNavNotFoundQuery = () => {
+    navigate('/games/404');
+  }
+  
+  const handlePlayDice = () => {
+    let randomIndex = Math.floor(Math.random() * 32);
+    let randomSurname = games[randomIndex].surname;
+    setOverlap(true);
+    setTimeout(() => {
+      setBrowsing(true);
+      navigate(`games/${randomSurname}`);
+    }, 1500);
   }
 
   const variants = {
@@ -73,7 +92,6 @@ const Home = props => {
   const buttonVariants = {
     hidden: { opacity: 0, y: 900 },
     visible: { opacity: 1, y: 0, transition: {  y: { type: "tween", duration: 1.5, bounce: 0.3 }} },
-    exit: { opacity: 1, y: 0 },
   }
 
   return (
@@ -84,7 +102,6 @@ const Home = props => {
             variants={buttonVariants}
             initial="hidden"
             animate="visible"
-            exit="exit"
           >
     
           </motion.div> 
