@@ -53,9 +53,9 @@ const Home = props => {
   const handleBrowse = () => {
     setOverlap(true);
     setTimeout(() => {
-      navigate('/browse');
       setBrowsing(true);
       setOverlap(false);
+      navigate('/browse');
     }, 1500);
   }
 

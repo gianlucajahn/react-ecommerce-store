@@ -8,7 +8,7 @@
     width: 100%;
     height: 100%;
     background-color: #0f1011;
-    z-index: 500;
+    z-index: 10;
 }
 
 html, 
@@ -29,6 +29,7 @@ body {
 .careers {
     color: #45c1bc;
     font-family: "GT Medium";
+    cursor: pointer;
 }
 
 a {

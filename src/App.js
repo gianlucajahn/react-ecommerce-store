@@ -20,6 +20,7 @@ function App() {
   const [shownGames, setShownGames] = useState(allGames);
   const [reviewDisplay, setReviewDisplay] = useState(false);
   const [cartDisplayed, setCartDisplayed] = useState(false);
+  const [overlap, setOverlap] = useState(false);
   const [search, setSearch] = useState("");
   const [searching, setSearching] = useState(false);
   const [browsing, setBrowsing] = useState(true);
@@ -382,6 +383,8 @@ useEffect(() => {
                                         handleNavNotFoundQuery={handleNavNotFoundQuery}
                                         handlePlayDice={handlePlayDice}
                                         setHoverState={setHoverState}
+                                        overlap={overlap}
+                                        setOverlap={setOverlap}
                                       />} />
             <Route path="/browse" element={<Browse 
                                               cart={cart}
