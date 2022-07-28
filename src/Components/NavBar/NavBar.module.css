@@ -36,7 +36,8 @@ form button {
 .pathdiv,
 .cartdiv,
 .githubdiv,
-.searchdiv {
+.searchdiv,
+.browsediv {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -53,8 +54,8 @@ form button {
 }
 
 .logodiv:active,
-.pathdiv:active,
 .cartdiv:active,
+.browsediv:active,
 .githubdiv:active {
     transform: scale(0.945);
 }
@@ -118,4 +119,16 @@ form button {
 
 .searchdiv input:focus {
     background-color: #333;
+}
+
+form input:active {
+    transform: scale(0.97);
+}
+
+form button {
+    transition: 0.2s all;
+}
+
+form button:active {
+    transform: scale(0.9);
 }

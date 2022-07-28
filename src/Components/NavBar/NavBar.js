@@ -98,10 +98,10 @@ const NavBar = props => {
                   
                   :
                   
-                  <>
+                  <div className={styles.browsediv}>
                     <Browse className={styles.svg} style={{ fill: "#fff" }}/>
                     <h3 onClick={handleBrowse}>Browse Store</h3>
-                  </>
+                  </div>
                 }
             </div>
         </div>
