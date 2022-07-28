@@ -44,7 +44,7 @@ const Browse = props => {
           clearCart,
           handleRemoveFromCart,
           setHoverState,
-          overlap
+          openGamePage
         } = props;
     
     const navigate = useNavigate();
@@ -120,6 +120,7 @@ const Browse = props => {
               hoverState={hoverState}
               clearCart={clearCart}
               handleRemoveFromCart={handleRemoveFromCart}
+              openGamePage={openGamePage}
         /> : null}
 
         <NavBar

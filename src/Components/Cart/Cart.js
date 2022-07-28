@@ -17,7 +17,7 @@ const Cart = props => {
         hoverState,
         clearCart,
         handleRemoveFromCart,
-        handleOpenGamePage
+        openGamePage
     } = props;
 
     const [total, setTotal] = useState(0);
@@ -54,7 +54,7 @@ const Cart = props => {
                             <div className={styles.topGames}>
                                 {cart.map((item, i) => {
                                     return <motion.div className={styles.item} key={i} variants={variants} initial="initial" animate="animate" exit="exit">
-                                        <h3 id={item.surname}>{item.name}</h3>
+                                        <h3 id={item.surname} onClick={openGamePage}>{item.name}</h3>
                                         <div>
                                             ${item.price}
                                             <button id={item.id} onClick={handleRemoveFromCart} className={styles.removeButton}>

@@ -30,7 +30,8 @@ const Home = props => {
     hoverState,
     setHoverState,
     overlap,
-    setOverlap
+    setOverlap,
+    openGamePage
   } = props;
 
   const [browsing, setBrowsing] = useState(false);
@@ -117,6 +118,7 @@ const Home = props => {
               hoverState={hoverState}
               clearCart={clearCart}
               handleRemoveFromCart={handleRemoveFromCart}
+              openGamePage={openGamePage}
       /> : null}
         <div className={styles.home}>
 

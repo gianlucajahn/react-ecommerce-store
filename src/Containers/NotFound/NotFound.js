@@ -24,7 +24,8 @@ const NotFound = props => {
     searching,
     handleSearch,
     handleSearchSubmit,
-    handleRemoveFromCart
+    handleRemoveFromCart,
+    openGamePage
   } = props;
   const location = useLocation();
 
@@ -55,6 +56,7 @@ useEffect(() => {
             hoverState={hoverState}
             clearCart={clearCart}
             handleRemoveFromCart={handleRemoveFromCart}
+            openGamePage={openGamePage}
           /> : null}
 
           <NavBar
