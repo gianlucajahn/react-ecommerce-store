@@ -53,8 +53,8 @@ const Cart = props => {
             
                             <div className={styles.topGames}>
                                 {cart.map((item, i) => {
-                                    return <motion.div className={styles.item} variants={variants} initial="initial" animate="animate" exit="exit">
-                                        <h3>{item.name}</h3>
+                                    return <motion.div className={styles.item} key={i} variants={variants} initial="initial" animate="animate" exit="exit">
+                                        <h3 id={item.surname}>{item.name}</h3>
                                         <div>
                                             ${item.price}
                                             <button id={item.id} onClick={handleRemoveFromCart} className={styles.removeButton}>

@@ -209,8 +209,12 @@ const clearFilter = () => {
   setReviewDisplay(false);
 }
 
+const openGamePage = (e) => {
+  let selectedGameSurname = e.target.id;
+  navigate(`/games/${selectedGameSurname}`);
+}
+
 const handleHover = (e) => {
-  console.log(e.target);
   if (hoverState[e.target.id].selected) {
     return;
   }
@@ -360,6 +364,7 @@ useEffect(() => {
                                         setHoverState={setHoverState}
                                         overlap={overlap}
                                         setOverlap={setOverlap}
+                                        openGamePage={openGamePage}
                                       />} />
             <Route path="/browse" element={<Browse 
                                               cart={cart}
@@ -392,6 +397,7 @@ useEffect(() => {
                                               clearCart={clearCart}
                                               handleRemoveFromCart={handleRemoveFromCart}
                                               setHoverState={setHoverState}
+                                              openGamePage={openGamePage}
                                           />} />
             <Route path="/games/:gameId" element={<GamePage
                                                cart={cart}
@@ -421,6 +427,7 @@ useEffect(() => {
                                                handleCloseCart={handleCloseCart}
                                                clearCart={clearCart}
                                                handleRemoveFromCart={handleRemoveFromCart}
+                                               openGamePage={openGamePage}
                                             />} />
             <Route path="*" element={<NotFound 
                             cartDisplayed={cartDisplayed}
@@ -439,6 +446,7 @@ useEffect(() => {
                             handleSearchSubmit={handleSearchSubmit}
                             handleBrowse={handleBrowse}
                             handleRemoveFromCart={handleRemoveFromCart}
+                            openGamePage={openGamePage}
           />} />
           </Routes>
       </AnimatePresence>
