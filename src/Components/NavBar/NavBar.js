@@ -67,7 +67,7 @@ const NavBar = props => {
                       animate="visible"
                       initial={location.pathname === "/browse" ? "hidden" : "visible"}
                       variants={searchVariants}
-                      transition={{ opacity: { type: "spring" }, duration: 0.01, delay: 0.4 }}
+                      transition={{ opacity: { type: "spring" }, duration: 0.01, delay: 0.25 }}
                       className={styles.searchdiv}
                     >
                       <form onSubmit={handleSearchSubmit}>

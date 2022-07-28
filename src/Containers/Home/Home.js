@@ -15,6 +15,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Navigate, useLocation, useNavigate } from 'react-router-dom';
 
 import Cart from '../../Components/Cart/Cart';
+import AnimatedScroll from '../AnimatedPage/AnimatedScroll';
 
 const Home = props => {
   const {
@@ -29,113 +30,14 @@ const Home = props => {
     handleNavGamePage,
     handleNavNotFoundPage,
     handleNavNotFoundQuery,
-    handlePlayDice
+    handlePlayDice,
+    hoverState,
+    setHoverState
   } = props;
 
   const [browsing, setBrowsing] = useState(false);
+  const [overlap, setOverlap] = useState(false);
   const [landingPage, setLandingPage] = useState(true);
-  const [hoverState, setHoverState] = useState([
-    {
-        hovered: false,
-        selected: false
-    },
-    {
-        hovered: false,
-        selected: false
-    },
-    {
-        hovered: false,
-        selected: false
-    },
-    {
-        hovered: false,
-        selected: false
-    },
-    {
-        hovered: false,
-        selected: false
-    },
-    {
-        hovered: false,
-        selected: false
-    },
-    {
-        hovered: false,
-        selected: false
-    },
-    {
-        hovered: false,
-        selected: false
-    },
-    {
-        hovered: false,
-        selected: false
-    },
-    {
-        hovered: false,
-        selected: false
-    },
-    {
-        hovered: false,
-        selected: false
-    },
-    {
-        hovered: false,
-        selected: false
-    },
-    {
-        hovered: false,
-        selected: false
-    },
-    {
-        hovered: false,
-        selected: false
-    },
-    {
-        hovered: false,
-        selected: false
-    },
-    {
-        hovered: false,
-        selected: false
-    },
-    {
-        hovered: false,
-        selected: false
-    },
-    {
-        hovered: false,
-        selected: false
-    },
-    {
-        hovered: false,
-        selected: false
-    },
-    {
-      hovered: false,
-      selected: false
-    },
-    {
-      hovered: false,
-      selected: false
-    },
-    {
-      hovered: false,
-      selected: false
-    },
-    {
-      hovered: false,
-      selected: false
-    },
-    {
-      hovered: false,
-      selected: false
-    },
-    {
-      hovered: false,
-      selected: false
-    }
-  ]);
 
   const navigate = useNavigate();
 
@@ -149,8 +51,12 @@ const Home = props => {
   }
 
   const handleBrowse = () => {
-    setBrowsing(true);
-    navigate('/browse');
+    setOverlap(true);
+    setTimeout(() => {
+      navigate('/browse');
+      setBrowsing(true);
+      setOverlap(false);
+    }, 1500);
   }
 
   const handleHome = () => {
@@ -165,13 +71,25 @@ const Home = props => {
   }
 
   const buttonVariants = {
-    hidden: { opacity: 0, x: 150 },
-    visible: { opacity: 1, x: 0 },
-    exit: { opacity: 0, x: -150 },
+    hidden: { opacity: 0, y: 900 },
+    visible: { opacity: 1, y: 0, transition: {  y: { type: "tween", duration: 1.5, bounce: 0.3 }} },
+    exit: { opacity: 1, y: 0 },
   }
 
   return (
     <div className={styles.main}>
+      {overlap ? 
+          <motion.div 
+            className={styles.overlap}
+            variants={buttonVariants}
+            initial="hidden"
+            animate="visible"
+            exit="exit"
+          >
+    
+          </motion.div> 
+      : null}
+
       {cartDisplayed ? <Cart 
               cartDisplayed={cartDisplayed} 
               handleOpenCart={handleOpenCart}

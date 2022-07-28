@@ -3,6 +3,14 @@
     padding: 0;
 }
 
+.overlap {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #0f1011;
+    z-index: 500;
+}
+
 html, 
 body {
     margin: 0; 

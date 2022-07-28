@@ -214,12 +214,16 @@ const handleHover = (e) => {
     return;
   }
 
-  let newHoverState = hoverState[e.target.id];
-  newHoverState.hovered = !newHoverState.hovered;
+  let newHoverState = hoverState.map((element, i) => {
+    if (e.target.id == i) {
+      element.hovered = !element.hovered;
+      return element
+    } else {
+      return element;
+    }
+  });
     
-  setHoverState([
-    ...hoverState, hoverState[e.target.id] = newHoverState
-  ]);
+  setHoverState(newHoverState);
 }
 
 const handleHoverGame = (e) => {
@@ -376,6 +380,7 @@ useEffect(() => {
                                         handleNavNotFoundPage={handleNavNotFoundPage}
                                         handleNavNotFoundQuery={handleNavNotFoundQuery}
                                         handlePlayDice={handlePlayDice}
+                                        setHoverState={setHoverState}
                                       />} />
             <Route path="/browse" element={<Browse 
                                               cart={cart}
@@ -407,6 +412,7 @@ useEffect(() => {
                                               handleCloseCart={handleCloseCart}
                                               clearCart={clearCart}
                                               handleRemoveFromCart={handleRemoveFromCart}
+                                              setHoverState={setHoverState}
                                           />} />
             <Route path="/games/:gameId" element={<GamePage
                                                cart={cart}

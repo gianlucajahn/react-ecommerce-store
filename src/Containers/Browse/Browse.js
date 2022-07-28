@@ -93,6 +93,10 @@ const Browse = props => {
       }
     }, [cartDisplayed])
 
+    useEffect(() => {
+      
+    })
+
     return (
       <section className={styles.Browse} style={{ maxHeight: cartDisplayed ? "100vh" : "1000vh", minHeight: "100vh" }}>
         {cartDisplayed ? <Cart 
