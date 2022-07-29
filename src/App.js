@@ -133,7 +133,7 @@ const navigate = useNavigate();
 const location = useLocation();
 
 if (location.pathname != "/react-ecommerce-store/" && location.pathname != "/react-ecommerce-store/browse" && selectedGame === false) {
-  let surname = location.pathname.substring(7);
+  let surname = location.pathname.substring(29);
   let currentGame = games.find(game => game.surname === surname);
   if (currentGame != undefined) {
     setSelectedGame(currentGame);
@@ -157,10 +157,6 @@ const handleHome = () => {
   setHoverState([...hoverState, hoverState[21].hovered = false]);
   navigate('/react-ecommerce-store/');
 }
-
-useEffect(() => {
-  
-}, [cart])
 
 const handleSearch = (e) => {
   setSearch(e.target.value);
@@ -247,7 +243,7 @@ const handleHoverGame = (e) => {
 
 const handleAddToCart = (e) => {
   let handledAddedGame = allGames.map((game, i) => {
-    if (location.pathname === "/browse") {
+    if (location.pathname === "/react-ecommerce-store/browse") {
       if (e.target.id == i) {
         game.inCart = true
         let newCart = cart;
@@ -335,6 +331,10 @@ const handleOpenCart = () => {
 const handleCloseCart = () => {
   setCartDisplayed(false);
 }
+
+useEffect(() => {
+  console.log(selectedGame);
+}, [selectedGame])
 
 useEffect(() => {
   if (cartDisplayed) {
