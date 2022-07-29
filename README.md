@@ -6,7 +6,7 @@
 </p>
 
 ## Short Description
-An e-commerce store, imitating a Game Store, built with React. Includes dedicated game pages, a search functionality, genre and rating filters, a like feature and a wishlist. Responsive to the bone and tested with Jest. You can find a list of features, performance tests and technologies used below.
+An e-commerce store, imitating a Game Store, built with React. Includes dedicated game pages, a search functionality, genre and rating filters, a like feature and a wishlist. Responsive to the bone and tested with Jest. You can find a list of [features](#features), [performance tests](#performance) and [technologies used](#technologies) below.
 
 ## 🔴 Demo
 🧪 [Live Demo](https://gianlucajahn.github.io/react-ecommerce-store)
