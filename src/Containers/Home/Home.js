@@ -191,7 +191,7 @@ const Home = props => {
                               <img className={styles.technologies} src={require("../../Resources/image/whatruns.png")} />
                               Technologies
                             </button></a>
-                            <a href="" target="_blank"><button className={`${styles.cta} ${styles.lastChild}`}>
+                            <a href="https://github.com/gianlucajahn/react-ecommerce-store#sources" target="_blank"><button className={`${styles.cta} ${styles.lastChild}`}>
                               <Sources className={`${styles.ctaSVG}`} />
                               Our Sources
                             </button></a>
