@@ -153,20 +153,42 @@ const Browse = props => {
 
                 <div className={styles.applied}>
                   <div className={styles.filterList}>
-                    <button className={styles.filterButton} aria-label="Current Filter">Filter by: <span>{currentFilter}</span></button>
-                    <button className={`${styles.filterButton} ${styles.clearButton}`} onClick={clearFilter} aria-label="Clear Filters">Clear Filter</button>
+                    <button 
+                      className={styles.filterButton} 
+                      aria-label="Current Filter"
+                    >
+                      Filter by: 
+                      <span>{currentFilter}</span>
+                    </button>
+                    <button 
+                      className={`${styles.filterButton} ${styles.clearButton}`}
+                      onClick={clearFilter} 
+                      aria-label="Clear Filters"
+                    >
+                      Clear Filter
+                    </button>
                   </div>
                   
                   <div className={styles.displayStyle}>
                     <p>Display options:</p>
-                    <button className={styles.displayBtn} onClick={handleLayoutSwitch} id="grid" aria-label='Display grids'>
+                    <button 
+                      className={styles.displayBtn} 
+                      onClick={handleLayoutSwitch} 
+                      id="grid" 
+                      aria-label='Display grids'
+                    >
                       <Grids 
                         className={styles.displayItem} 
                         style={{ fill: grid ? "#e5e5e5" : "#6f6f6f" }}
                       />
                     </button>
 
-                    <button className={styles.displayBtn} onClick={handleLayoutSwitch} id="columns" aria-label='Display columns'> 
+                    <button 
+                      className={styles.displayBtn} 
+                      onClick={handleLayoutSwitch} 
+                      id="columns" 
+                      aria-label='Display columns'
+                    > 
                       <Columns 
                         className={styles.displayItem} 
                         style={{ fill: grid ? "#6f6f6f" : "#e5e5e5" }}

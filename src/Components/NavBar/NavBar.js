@@ -100,7 +100,9 @@ const NavBar = props => {
                   :
                   
                   <div className={styles.browsediv}>
-                    <Browse className={styles.svg} style={{ fill: "#fff" }}/>
+                    <Browse 
+                      className={styles.svg} 
+                      style={{ fill: "#fff" }}/>
                     <h3 onClick={handleBrowse}>Browse Store</h3>
                   </div>
                 }
@@ -108,7 +110,9 @@ const NavBar = props => {
         </div>
 
         <div className={styles.navbar_right}>
-            <div className={styles.githubdiv} id="2"
+            <div 
+              className={styles.githubdiv} 
+              id="2"
               onMouseEnter={handleHover}
               onMouseLeave={handleHover}
             >
@@ -116,12 +120,18 @@ const NavBar = props => {
                 <h3>gianlucajahn</h3>
             </div>
 
-            <div className={styles.cartdiv} id="3"
+            <div 
+              className={styles.cartdiv} 
+              id="3"
               onMouseEnter={handleHover}
               onMouseLeave={handleHover}
               onClick={handleOpenCart}
             >
-                <Cart onClick={handleOpenCart} className={styles.svg2} style={{ fill: cartAmount ? "#90ee90" : "transparent", stroke: cartAmount ? "" : "#fff", strokeWidth: "34px" }}/>
+                <Cart 
+                  onClick={handleOpenCart} 
+                  className={styles.svg2} 
+                  style={{ fill: cartAmount ? "#90ee90" : "transparent", stroke: cartAmount ? "" : "#fff", strokeWidth: "34px" }}
+                />
                 <h3 onClick={handleOpenCart}>Cart: {cartAmount}</h3>
             </div>
         </div>

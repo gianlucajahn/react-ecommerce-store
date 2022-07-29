@@ -32,7 +32,6 @@ const GamePage = props => {
     handleBrowse,
     selectedGame,
     setSelectedGame,
-    setHoverState,
     allGames,
     extended,
     setExtended,
@@ -154,7 +153,10 @@ const GamePage = props => {
                         <h2>About</h2>
                         <p>{selectedGame ? selectedGame.desc : templateGame.desc}</p>
                       </div>
-                      <div className={extended ? `${styles.conditionalOpen} ${styles.aboutBottom}` : `${styles.conditionalClose} ${styles.aboutBottomClosed}`} id="about">
+                      <div 
+                        className={extended ? `${styles.conditionalOpen} ${styles.aboutBottom}` : `${styles.conditionalClose} ${styles.aboutBottomClosed}`} 
+                        id="about"
+                      >
                         <AnimatedText>
                              <div className={textExtended ? styles.open : styles.closed}>
                                  <a href={selectedGame ? selectedGame.link : templateGame.link} target="_blank">{selectedGame ? selectedGame.name : "No"} Website</a>
@@ -166,7 +168,14 @@ const GamePage = props => {
                              </div>
                         </AnimatedText>
 
-                        <button id="20" onClick={handleExtend} onMouseEnter={handleHover} onMouseLeave={handleHover} className={hoverState[20].hovered ? styles.buttonHovered : styles.buttonNotHovered} aria-label="Extend">
+                        <button 
+                          id="20" 
+                          onClick={handleExtend} 
+                          onMouseEnter={handleHover} 
+                          onMouseLeave={handleHover} 
+                          className={hoverState[20].hovered ? styles.buttonHovered : styles.buttonNotHovered} 
+                          aria-label="Extend"
+                        >
                           {extended ? "Hide" : "More"}
                           {extended ? <Up  className={styles.up} style={{ fill: hoverState[20].hovered ? "#fff" : "#cccccc" }}/> : <Up className={styles.down} style={{ fill: hoverState[20].hovered ? "#fff" : "#cccccc" }}/>}
                         </button>
@@ -182,12 +191,35 @@ const GamePage = props => {
                               />
                           </button>
                       </div>
-                      {selectedGame ? selectedGame.inCart ? <AddedToCartBig /> : <button id="21" onMouseEnter={handleHover} onMouseLeave={handleHover} style={{ color: hoverState[21].hovered ? "#92f" : "#999999" }} onClick={handleAddToCart} aria-label="Add">
+                      {selectedGame ? selectedGame.inCart ? <AddedToCartBig /> : 
+                      <button 
+                        id="21" 
+                        onMouseEnter={handleHover} 
+                        onMouseLeave={handleHover} 
+                        style={{ color: hoverState[21].hovered ? "#92f" : "#999999" }} 
+                        onClick={handleAddToCart} 
+                        aria-label="Add"
+                      >
                         Add to cart
-                        <Add className={styles.add} style={{ fill: hoverState[21].hovered ? "#92f" : "#999999" }}/>
-                      </button> : <button id="21" onMouseEnter={handleHover} onMouseLeave={handleHover} style={{ color: hoverState[21].hovered ? "#D2042D" : "#999999" }} onClick={handleAddToCart} aria-label="Add">
+                        <Add 
+                          className={styles.add} 
+                          style={{ fill: hoverState[21].hovered ? "#92f" : "#999999" }}
+                        />
+                      </button> : 
+
+                      <button 
+                        id="21" 
+                        onMouseEnter={handleHover} 
+                        onMouseLeave={handleHover} 
+                        style={{ color: hoverState[21].hovered ? "#D2042D" : "#999999" }} 
+                        onClick={handleAddToCart} 
+                        aria-label="Add"
+                      >
                         Not available
-                        <Add className={styles.add} style={{ fill: hoverState[21].hovered ? "#D2042D" : "#999999" }}/>
+                        <Add 
+                          className={styles.add} 
+                          style={{ fill: hoverState[21].hovered ? "#D2042D" : "#999999" }}
+                        />
                       </button>}
                     </div>
                   </div>

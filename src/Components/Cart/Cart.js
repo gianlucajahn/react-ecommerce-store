@@ -44,7 +44,10 @@ const Cart = props => {
     
                 </div>
             <AnimatedCart>
-                    <div className={styles.cart} style={{ backgroundColor: "#1A1A1A", height: "100vh" }}>
+                    <div 
+                      className={styles.cart} 
+                      style={{ backgroundColor: "#1A1A1A", height: "100vh" }}
+                    >
                         <div className={styles.top}>
                             <div className={styles.topHeader}>
                                 <h2>{cartAmount >= 1 ? cartAmount > 1 ? `${cartAmount} games` : "1 game" : "No games added"}</h2>
@@ -53,22 +56,38 @@ const Cart = props => {
             
                             <div className={styles.topGames}>
                                 {cart.map((item, i) => {
-                                    return <motion.div className={styles.item} key={i} variants={variants} initial="initial" animate="animate" exit="exit">
-                                        <h3 id={item.surname} onClick={openGamePage}>{item.name}</h3>
-                                        <div>
-                                            ${item.price}
-                                            <button id={item.id} onClick={handleRemoveFromCart} className={styles.removeButton} aria-label="Close">
-                                                <Cross className={styles.cross} />
-                                            </button>
-                                        </div>
-                                    </motion.div>
+                                    return <motion.div 
+                                             className={styles.item} 
+                                             key={i} 
+                                             variants={variants} 
+                                             initial="initial" 
+                                             animate="animate" 
+                                             exit="exit"
+                                            >
+                                              <h3 id={item.surname} onClick={openGamePage}>{item.name}</h3>
+                                              <div>
+                                                  ${item.price}
+                                                  <button id={item.id} onClick={handleRemoveFromCart} className={styles.removeButton} aria-label="Close">
+                                                      <Cross className={styles.cross} />
+                                                  </button>
+                                              </div>
+                                            </motion.div>
                                 })}
                             </div>
                         </div>
             
-                        <div className={styles.bottom}  style={{ marginTop: "850px", width: "87.5%" , display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+                        <div 
+                          className={styles.bottom}  
+                          style={{ marginTop: "850px", width: "87.5%" , display: "flex", justifyContent: "space-between", alignItems: "center" }}
+                        >
                                 <h3>Total: ${newTotal}</h3>
-                                <button id="24" onMouseEnter={handleHover} onMouseLeave={handleHover} style={{ color: hoverState[24].hovered ? "#92f" : "#fff" }} aria-label="Checkout">
+                                <button 
+                                  id="24" 
+                                  onMouseEnter={handleHover} 
+                                  onMouseLeave={handleHover} 
+                                  style={{ color: hoverState[24].hovered ? "#92f" : "#fff" }} 
+                                  aria-label="Checkout"
+                                >
                                     Checkout
                                     <Right 
                                       className={styles.right}

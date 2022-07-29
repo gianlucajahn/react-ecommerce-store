@@ -84,37 +84,84 @@ const Slider = props => {
         <div className={styles.slider}>
           <Slide ref={slideRef} {...properties}>
             {selectedGame ? slideImages.map((each, index) => (
-              <div key={index} className={styles.slide}>
-                <img className={styles.currentImg} src={each} alt="sample" />
+              <div 
+                key={index} 
+                className={styles.slide}
+              >
+                <img 
+                  className={styles.currentImg} 
+                  src={each} 
+                  alt="sample" 
+                />
               </div>
             )) : templateImages.map((each, index) => (
-              <div key={index} className={styles.slide}>
-                <img className={styles.currentImg} src={each} alt="sample" />
+              <div 
+                key={index} 
+                className={styles.slide}
+              >
+                <img 
+                  className={styles.currentImg} 
+                  src={each} 
+                  alt="sample" 
+                />
               </div>
             ))}
           </Slide>
     
-            <button className={styles.backwards} onClick={back} id="22" onMouseEnter={handleHover} onMouseLeave={handleHover} aria-label="Previous Picture">
+            <button 
+              className={styles.backwards} 
+              onClick={back} 
+              id="22" 
+              onMouseEnter={handleHover} 
+              onMouseLeave={handleHover} 
+              aria-label="Previous Picture"
+            >
                 <Left 
                   className={styles.left} 
                   style={{ fill: hoverState[22].hovered ? "#fff" : "#ccc" }}
                 />
             </button>
     
-            <button className={styles.forward} onClick={next} id="23" onMouseEnter={handleHover} onMouseLeave={handleHover} aria-label="Next Picture">
+            <button 
+              className={styles.forward} 
+              onClick={next} id="23" 
+              onMouseEnter={handleHover} 
+              onMouseLeave={handleHover} 
+              aria-label="Next Picture"
+            >
                 <Right
                   className={styles.right} 
                   style={{ fill: hoverState[23].hovered ? "#fff" : "#ccc" }}
                 />
             </button>
             <div className={styles.selectorContainer}>
-                <button id="0" onClick={jumpToIndex} className={carouselState === 0 ? styles.buttonSelected : styles.button} aria-label="Jump to picture">
+                <button 
+                  id="0" 
+                  onClick={jumpToIndex} 
+                  className={carouselState === 0 ? styles.buttonSelected : styles.button} 
+                  aria-label="Jump to picture"
+                >
                 </button>
-                <button id="1" onClick={jumpToIndex} className={carouselState === 1 ? styles.buttonSelected : styles.button} aria-label="Jump to picture">
+                <button 
+                  id="1" 
+                  onClick={jumpToIndex} 
+                  className={carouselState === 1 ? styles.buttonSelected : styles.button} 
+                  aria-label="Jump to picture"
+                >
                 </button>
-                <button id="2" onClick={jumpToIndex} className={carouselState === 2 ? styles.buttonSelected : styles.button} aria-label="Jump to picture">
+                <button 
+                  id="2" 
+                  onClick={jumpToIndex} 
+                  className={carouselState === 2 ? styles.buttonSelected : styles.button} 
+                  aria-label="Jump to picture"
+                >
                 </button>
-                <button id="3" onClick={jumpToIndex} className={carouselState === 3 ? styles.buttonSelected : styles.button} aria-label="Jump to picture">
+                <button 
+                  id="3" 
+                  onClick={jumpToIndex} 
+                  className={carouselState === 3 ? styles.buttonSelected : styles.button} 
+                  aria-label="Jump to picture"
+                >
                 </button>
             </div>
         </div>
