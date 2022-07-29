@@ -188,7 +188,7 @@ const Home = props => {
                               Performance
                             </button></a>
                             <a href="" target="_blank"><button className={`${styles.cta} ${styles.lastChild}`}>
-                              <img className={styles.technologies} src={require("../../Resources/image/whatruns.png")} />
+                              <img className={styles.technologies} src={require("../../Resources/image/whatruns.png")} alt="WhatRuns logo"/>
                               Technologies
                             </button></a>
                             <a href="https://github.com/gianlucajahn/react-ecommerce-store#sources" target="_blank"><button className={`${styles.cta} ${styles.lastChild}`}>
