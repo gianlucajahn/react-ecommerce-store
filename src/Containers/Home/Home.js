@@ -145,19 +145,19 @@ const Home = props => {
                         </div>
     
                         <div className={styles.buttons}>
-                              <button className={`${styles.cta} ${styles.browseBtn}`} onClick={handleBrowse}>
+                              <button className={`${styles.cta} ${styles.browseBtn}`} onClick={handleBrowse} aria-label="Browse">
                                 <Enter className={styles.ctaSVG} />
                                 Browse
                               </button>
-                              <button className={styles.cta} onClick={handlePlayDice}>
+                              <button className={styles.cta} onClick={handlePlayDice} aria-label="Open random game page">
                                 <Dice className={styles.ctaSVG} />
                                 Play Dice
                               </button>
-                              <a href="https://github.com/gianlucajahn/react-ecommerce-store" target="_blank"><button className={styles.cta}>
+                              <a href="https://github.com/gianlucajahn/react-ecommerce-store" target="_blank"><button className={styles.cta} aria-label="View Repository">
                                 <GitHubLogo className={styles.ctaSVG} />
                                 GitHub
                               </button></a>
-                              <a href="https://www.linkedin.com/in/gianlucajahn/" target="_blank"><button className={`${styles.cta} ${styles.lastChild}`}>
+                              <a href="https://www.linkedin.com/in/gianlucajahn/" target="_blank"><button className={`${styles.cta} ${styles.lastChild}`} aria-label="Open LinkedIn">
                                 <LinkedIn className={`${styles.ctaSVG} ${styles.linkedin}`} />
                                 <span>LinkedIn</span>
                               </button></a>
@@ -167,31 +167,31 @@ const Home = props => {
                     <div className={styles.right}>
                         <div className={styles.buttonsRight}>
                             <h2>Quick Navigation</h2>
-                            <button className={styles.cta} onClick={handleNavGamePage}>
+                            <button className={styles.cta} onClick={handleNavGamePage} aria-label="Open a game page">
                               <Game className={styles.ctaSVG} />
                               Game Page
                             </button>
-                            <button className={styles.cta} onClick={handleNavNotFoundPage}>
+                            <button className={styles.cta} onClick={handleNavNotFoundPage} aria-label="Open 404 page">
                               <NotFound className={styles.ctaSVG} />
                               404 Page
                             </button>
-                            <button className={`${styles.cta} ${styles.lastChild}`} onClick={handleNavNotFoundQuery}>
+                            <button className={`${styles.cta} ${styles.lastChild}`} onClick={handleNavNotFoundQuery} aria-label="open 404 query page">
                               <NotFoundQuery className={`${styles.ctaSVG}`} />
                               404 Query
                             </button>
-                            <a href='https://github.com/gianlucajahn/react-ecommerce-store/commits/main' target="_blank"><button className={styles.cta}>
+                            <a href='https://github.com/gianlucajahn/react-ecommerce-store/commits/main' target="_blank"><button className={styles.cta} aria-label="Open commit log">
                               <Git className={styles.ctaSVG} />
                               Commit Log
                             </button></a>
-                            <a href="" target="_blank"><button className={`${styles.cta} ${styles.lastChild}`}>
+                            <a href="" target="_blank"><button className={`${styles.cta} ${styles.lastChild}`} aria-label="Open performance test results">
                               <Performance className={`${styles.ctaSVG}`} />
                               Performance
                             </button></a>
-                            <a href="" target="_blank"><button className={`${styles.cta} ${styles.lastChild}`}>
+                            <a href="" target="_blank"><button className={`${styles.cta} ${styles.lastChild}`} aria-label="View technologies used"> 
                               <img className={styles.technologies} src={require("../../Resources/image/whatruns.png")} alt="WhatRuns logo"/>
                               Technologies
                             </button></a>
-                            <a href="https://github.com/gianlucajahn/react-ecommerce-store#sources" target="_blank"><button className={`${styles.cta} ${styles.lastChild}`}>
+                            <a href="https://github.com/gianlucajahn/react-ecommerce-store#sources" target="_blank"><button className={`${styles.cta} ${styles.lastChild}`} aria-label="View Sources">
                               <Sources className={`${styles.ctaSVG}`} />
                               Our Sources
                             </button></a>

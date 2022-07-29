@@ -127,6 +127,7 @@ const GamePage = props => {
                       onMouseLeave={handleHover}
                       onClick={handleBrowse}
                       id="19"
+                      aria-label='Back'
                     >
                         <Arrow style={{ fill: hoverState[19].hovered ? "#92f" : "#cccccc" }} className={styles.arrow} />
                         Store
@@ -165,7 +166,7 @@ const GamePage = props => {
                              </div>
                         </AnimatedText>
 
-                        <button id="20" onClick={handleExtend} onMouseEnter={handleHover} onMouseLeave={handleHover} className={hoverState[20].hovered ? styles.buttonHovered : styles.buttonNotHovered}>
+                        <button id="20" onClick={handleExtend} onMouseEnter={handleHover} onMouseLeave={handleHover} className={hoverState[20].hovered ? styles.buttonHovered : styles.buttonNotHovered} aria-label="Extend">
                           {extended ? "Hide" : "More"}
                           {extended ? <Up  className={styles.up} style={{ fill: hoverState[20].hovered ? "#fff" : "#cccccc" }}/> : <Up className={styles.down} style={{ fill: hoverState[20].hovered ? "#fff" : "#cccccc" }}/>}
                         </button>
@@ -175,16 +176,16 @@ const GamePage = props => {
                     <div className={styles.addToCart}>
                       <div className={styles.infos}>
                           <h3>${selectedGame ? selectedGame.price : templateGame.price}</h3>
-                          <button id={selectedGame ? selectedGame.id : templateGame.id} onClick={handleLike}>
+                          <button id={selectedGame ? selectedGame.id : templateGame.id} onClick={handleLike} aria-label="Like">
                               <Like 
                                 className={selectedGame ? selectedGame.isLiked ? styles.liked : styles.like : styles.like}
                               />
                           </button>
                       </div>
-                      {selectedGame ? selectedGame.inCart ? <AddedToCartBig /> : <button id="21" onMouseEnter={handleHover} onMouseLeave={handleHover} style={{ color: hoverState[21].hovered ? "#92f" : "#999999" }} onClick={handleAddToCart}>
+                      {selectedGame ? selectedGame.inCart ? <AddedToCartBig /> : <button id="21" onMouseEnter={handleHover} onMouseLeave={handleHover} style={{ color: hoverState[21].hovered ? "#92f" : "#999999" }} onClick={handleAddToCart} aria-label="Add">
                         Add to cart
                         <Add className={styles.add} style={{ fill: hoverState[21].hovered ? "#92f" : "#999999" }}/>
-                      </button> : <button id="21" onMouseEnter={handleHover} onMouseLeave={handleHover} style={{ color: hoverState[21].hovered ? "#D2042D" : "#999999" }} onClick={handleAddToCart}>
+                      </button> : <button id="21" onMouseEnter={handleHover} onMouseLeave={handleHover} style={{ color: hoverState[21].hovered ? "#D2042D" : "#999999" }} onClick={handleAddToCart} aria-label="Add">
                         Not available
                         <Add className={styles.add} style={{ fill: hoverState[21].hovered ? "#D2042D" : "#999999" }}/>
                       </button>}

@@ -57,7 +57,7 @@ const Cart = props => {
                                         <h3 id={item.surname} onClick={openGamePage}>{item.name}</h3>
                                         <div>
                                             ${item.price}
-                                            <button id={item.id} onClick={handleRemoveFromCart} className={styles.removeButton}>
+                                            <button id={item.id} onClick={handleRemoveFromCart} className={styles.removeButton} aria-label="Close">
                                                 <Cross className={styles.cross} />
                                             </button>
                                         </div>
@@ -68,7 +68,7 @@ const Cart = props => {
             
                         <div className={styles.bottom}  style={{ marginTop: "850px", width: "87.5%" , display: "flex", justifyContent: "space-between", alignItems: "center" }}>
                                 <h3>Total: ${newTotal}</h3>
-                                <button id="24" onMouseEnter={handleHover} onMouseLeave={handleHover} style={{ color: hoverState[24].hovered ? "#92f" : "#fff" }}>
+                                <button id="24" onMouseEnter={handleHover} onMouseLeave={handleHover} style={{ color: hoverState[24].hovered ? "#92f" : "#fff" }} aria-label="Checkout">
                                     Checkout
                                     <Right 
                                       className={styles.right}

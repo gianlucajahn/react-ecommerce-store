@@ -90,6 +90,7 @@ const NavBar = props => {
                               onMouseEnter={handleHover}
                               onMouseLeave={handleHover}
                               id="7"
+                              aria-label='Search'
                             />
                         </button>
                       </form>

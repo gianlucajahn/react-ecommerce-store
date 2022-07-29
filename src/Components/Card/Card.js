@@ -50,7 +50,7 @@ const Card = props => {
                 ${game.price}
             </div>
             <h2 className={styles.name}>{game.name}</h2>
-            <button className={styles.like} id={game.id} onClick={handleLike}>
+            <button className={styles.like} id={game.id} onClick={handleLike} aria-label="Like">
                 <Like 
                   style={{ fill: game.isLiked ? "#F53333" : "#cccccc" }} 
                   className={styles.likeSVG}
