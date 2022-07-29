@@ -132,7 +132,7 @@ function App() {
 const navigate = useNavigate();
 const location = useLocation();
 
-if (location.pathname != "/" && location.pathname != "/browse" && selectedGame === false) {
+if (location.pathname != "/react-ecommerce-store/" && location.pathname != "/react-ecommerce-store/browse" && selectedGame === false) {
   let surname = location.pathname.substring(7);
   let currentGame = games.find(game => game.surname === surname);
   if (currentGame != undefined) {
@@ -147,7 +147,7 @@ async function handleBrowse() {
   setTextExtended(false);
   setCartDisplayed(false);
   setHoverState([...hoverState, hoverState[21].hovered = false]);
-  navigate('/browse');
+  navigate('/react-ecommerce-store/browse');
 }
 
 const handleHome = () => {
@@ -155,7 +155,7 @@ const handleHome = () => {
   setTextExtended(false);
   setCartDisplayed(false);
   setHoverState([...hoverState, hoverState[21].hovered = false]);
-  navigate('/');
+  navigate('/react-ecommerce-store/');
 }
 
 useEffect(() => {
@@ -172,8 +172,8 @@ const handleSearchSubmit = (e) => {
   e.preventDefault();
   setSearching(true);
 
-  if (location.pathname != "/browse") {
-    navigate('/browse');
+  if (location.pathname != "/react-ecommerce-store/browse") {
+    navigate('/react-ecommerce-store/browse');
   }
 }
 
@@ -186,7 +186,7 @@ const handleSelectGame = (e) => {
     return
   } else if (e.target.classList[0] != "AddToCart_addToCart__zbJPe") {
         setSelectedGame(games[e.target.parentNode.id]);
-        navigate(`/games/${games[e.target.parentNode.id].surname}`);
+        navigate(`/react-ecommerce-store/games/${games[e.target.parentNode.id].surname}`);
   }
 }
 
@@ -212,7 +212,7 @@ const clearFilter = () => {
 const openGamePage = (e) => {
   setCartDisplayed(false);
   let selectedGameSurname = e.target.id;
-  navigate(`/games/${selectedGameSurname}`);
+  navigate(`/react-ecommerce-store/games/${selectedGameSurname}`);
 }
 
 const handleHover = (e) => {
@@ -314,16 +314,16 @@ const handleRemoveFromCart = (e) => {
 useEffect(() => {
   setOverlap(false);
 
-  if (location.pathname === "/") {
+  if (location.pathname === "/react-ecommerce-store/") {
     setBrowsing(false);
   } else {
     setBrowsing(true);
   }
 
-  if (location.pathname != "/browse") {
+  if (location.pathname != "/react-ecommerce-store/browse") {
     document.body.style.overflow = "hidden";
 
-  } else if (location.pathname === "/browse") {
+  } else if (location.pathname === "/react-ecommerce-store/browse") {
     document.body.style.overflow = "scroll";
   }
 }, [location.pathname])
@@ -347,7 +347,7 @@ useEffect(() => {
   return (
       <AnimatePresence exitBeforeEnter>
           <Routes key={location.pathname} location={location}>
-            <Route path="/" element={<Home 
+            <Route path="/react-ecommerce-store/" element={<Home 
                                         handleHover={handleHover} 
                                         hoverState={hoverState} 
                                         shownGames={shownGames} 
@@ -367,7 +367,7 @@ useEffect(() => {
                                         setOverlap={setOverlap}
                                         openGamePage={openGamePage}
                                       />} />
-            <Route path="/browse" element={<Browse 
+            <Route path="/react-ecommerce-store/browse" element={<Browse 
                                               cart={cart}
                                               cartAmount={cartAmount}
                                               handleHover={handleHover} 
@@ -400,7 +400,7 @@ useEffect(() => {
                                               setHoverState={setHoverState}
                                               openGamePage={openGamePage}
                                           />} />
-            <Route path="/games/:gameId" element={<GamePage
+            <Route path="/react-ecommerce-store/games/:gameId" element={<GamePage
                                                cart={cart}
                                                cartAmount={cartAmount}
                                                handleHover={handleHover}

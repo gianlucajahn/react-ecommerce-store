@@ -52,7 +52,7 @@ const Home = props => {
     setOverlap(true);
     setTimeout(() => {
       setBrowsing(true);
-      navigate('/browse');
+      navigate('/react-ecommerce-store/browse');
     }, 1500);
   }
 
@@ -63,15 +63,15 @@ const Home = props => {
 
   const handleNavGamePage = () => {
     setHoverState([...hoverState, hoverState[21].hovered = false]);
-    navigate('/games/riseofthetombraider');
+    navigate('/react-ecommerce-store/games/riseofthetombraider');
   }
   
   const handleNavNotFoundPage = () => {
-    navigate('/this-page');
+    navigate('/react-ecommerce-store/this-page');
   }
   
   const handleNavNotFoundQuery = () => {
-    navigate('/games/404');
+    navigate('/react-ecommerce-store/games/404');
   }
   
   const handlePlayDice = () => {
@@ -80,7 +80,7 @@ const Home = props => {
     setOverlap(true);
     setTimeout(() => {
       setBrowsing(true);
-      navigate(`games/${randomSurname}`);
+      navigate(`/react-ecommerce-store/games/${randomSurname}`);
     }, 1500);
   }
 
