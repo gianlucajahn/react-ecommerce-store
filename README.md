@@ -6,7 +6,7 @@
 </p>
 
 ## Short Description
-An e-commerce store, imitating a Game Store, built with React. Includes dedicated game pages, a search functionality, genre and rating filters, a like feature and a wishlist. Responsive to the bone and tested with Jest. You can find a list of [features](#features), [performance tests](#performance) and [technologies used](#technologies) below.
+An e-commerce store, imitating a Game Store, built with React. Includes dedicated game pages, a search functionality, genre and rating filters, a like feature and a wishlist. Responsive to the bone and tested with Jest. You can find a list of [features](#features), [performance tests](#performance) and [technologies used](#technologies-used) below.
 
 ## 🔴 Demo
 🧪 [Live Demo](https://gianlucajahn.github.io/react-ecommerce-store)
@@ -52,5 +52,5 @@ My motivations in building this project were showcasing what I learned so far an
 - Working with a CDN (Cloud Delivery Network) to improve performance by accelerating bundle delivery
 - organizing and connect a project with React Router Dom
 
-## Legal: Copyright Informations
+## Sources
 All rights to all pictures, products and names on this website belong to the respective publishers of the games displayed. I only used them to build an environment for myself to learn coding in React with. This page is not being used commercially. If you are an owner of the copyrighted material, please let me know if you have any issues with this page and I'll take it down immediately.
