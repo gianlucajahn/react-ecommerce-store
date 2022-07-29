@@ -78,7 +78,7 @@ useEffect(() => {
                 <div className={styles.notFoundContent}>
                     <img className={styles.notFoundImg} src={require("../../Resources/image/404.png")} alt="Not Found Warning" />
                     <div className={styles.notFoundText}>
-                        <h2><span>{location.pathname}</span> is not available!</h2>
+                        <h2><span>{location.pathname.substring(22)}</span> is not available!</h2>
                         <p>The page you tried to access is not available. You will be redirected to our browse section shortly. If you think this is an error, <span className={styles.contact}>contact us!</span></p>
                     </div>
                 </div>
