@@ -101,7 +101,7 @@ const Slider = props => {
                 />
             </button>
     
-            <button className={styles.forward} onClick={next} id="23" onMouseEnter={handleHover} onMouseLeave={handleHover} alt="Next Picture">
+            <button className={styles.forward} onClick={next} id="23" onMouseEnter={handleHover} onMouseLeave={handleHover} aria-label="Next Picture">
                 <Right
                   className={styles.right} 
                   style={{ fill: hoverState[23].hovered ? "#fff" : "#ccc" }}

@@ -183,15 +183,15 @@ const Home = props => {
                               <Git className={styles.ctaSVG} />
                               Commit Log
                             </button></a>
-                            <a href="" target="_blank"><button className={`${styles.cta} ${styles.lastChild}`} aria-label="Open performance test results">
+                            <a href="https://github.com/gianlucajahn/react-ecommerce-store/blob/main/README.md#performance" target="_blank"><button className={`${styles.cta} ${styles.lastChild}`} aria-label="Open performance test results">
                               <Performance className={`${styles.ctaSVG}`} />
                               Performance
                             </button></a>
-                            <a href="" target="_blank"><button className={`${styles.cta} ${styles.lastChild}`} aria-label="View technologies used"> 
+                            <a href="https://github.com/gianlucajahn/react-ecommerce-store/blob/main/README.md#technologies-used" target="_blank"><button className={`${styles.cta} ${styles.lastChild}`} aria-label="View technologies used"> 
                               <img className={styles.technologies} src={require("../../Resources/image/whatruns.png")} alt="WhatRuns logo"/>
                               Technologies
                             </button></a>
-                            <a href="https://github.com/gianlucajahn/react-ecommerce-store#sources" target="_blank"><button className={`${styles.cta} ${styles.lastChild}`} aria-label="View Sources">
+                            <a href="https://github.com/gianlucajahn/react-ecommerce-store/blob/main/README.md#sources" target="_blank"><button className={`${styles.cta} ${styles.lastChild}`} aria-label="View Sources">
                               <Sources className={`${styles.ctaSVG}`} />
                               Our Sources
                             </button></a>
