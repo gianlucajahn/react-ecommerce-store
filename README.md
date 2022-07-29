@@ -46,5 +46,13 @@ My motivations in building this project were showcasing what I learned so far an
 - Working with a CDN (Cloud Delivery Network) to improve performance by accelerating bundle delivery
 - organizing and connect a project with React Router Dom
 
+## Screenshots
+<br />
+![](/src/Resources/image/preview0.png)
+![](/src/Resources/image/preview1.png)
+![](/src/Resources/image/preview2.png)
+![](/src/Resources/image/preview3.png)
+![](/src/Resources/image/preview4.png)
+
 ## Legal: Copyright Informations
 All rights to all pictures, products and names on this website belong to the respective publishers of the games displayed. I only used them to build an environment for myself to learn coding in React with. This page is not being used commercially. If you are an owner of the copyrighted material, please let me know if you have any issues with this page and I'll take it down immediately.
