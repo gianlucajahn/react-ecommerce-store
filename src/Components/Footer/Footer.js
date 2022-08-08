@@ -53,7 +53,7 @@ const Footer = props => {
             <div className={styles.footerEnd}>
               <div className={styles.endLeft}>
                 <h4>Privacy</h4>
-                <h4>Website Privacy Notice</h4>
+                <h4>Security</h4>
                 <h4>Cookies</h4>
                 <h4>Legal</h4>
                 <h4>Collaborative Guidelines</h4>

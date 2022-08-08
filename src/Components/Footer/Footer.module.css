@@ -70,6 +70,7 @@
     display: flex;
     justify-content: space-between;
     margin-top: 106px;
+    gap: 20px;
 }
 
 .infoLeft p span {
@@ -129,4 +130,112 @@
     margin-top: 40px;
     height: 20px;
     cursor: pointer;
+}
+
+@media screen and (max-width: 1275px) {
+    .footer {
+        padding: 40px 175px 0px 175px;
+    }
+}
+
+@media screen and (max-width: 1085px) {
+    .footer {
+        padding: 40px 125px 0px 125px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .sections {
+        gap: 80px;
+    }
+
+    .section {
+        width: 200px;
+    }
+
+    .footerEnd {
+        gap: 20px;
+    }
+
+    .section4 {
+        margin-right: 0px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .endLeft h4 {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .footer {
+        padding: 40px 50px 0px 50px;
+    }
+
+    .infoLeft p {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .sections {
+        gap: 30px;
+    }
+
+    .section h3 {
+        margin-bottom: 4px;
+    }
+
+    .footerInfo {
+        margin-top: 70px;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .footerInfo {
+        margin-top: 85px;
+    }
+}
+
+@media screen and (max-width: 535px) {
+    .footer {
+        padding: 40px 28px 0px 28px;
+    }
+
+    .endLeft {
+        gap: 8px;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .section h3 {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .section h3 {
+        font-size: 12px;
+    }
+
+    .endRight img {
+        width: 12px;
+        height: 12px;
+    }
+}
+
+@media screen and (max-width: 330px) {
+    .section h3 {
+        font-size: 10px;
+    }
+
+    .endRight img {
+        width: 10px;
+        height: 10px;
+    }
+
+    .endLeft h4 {
+        font-size: 8px;
+    }
 }
