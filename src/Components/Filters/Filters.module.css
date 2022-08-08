@@ -99,3 +99,9 @@
 .filterSVG4 {
     transition: 0.2s all;
 }
+
+@media screen and (max-width: 600px) {
+    .filters {
+        display: none;
+    }
+}

@@ -132,3 +132,47 @@ body {
     transition: 0.3s all;
 }
 
+@media screen and (max-width: 850px) {
+    .displayStyle p {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .displayStyle {
+        display: none;
+    }
+
+    .list h1 {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .list {
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+
+    .list h1 {
+        font-size: 48px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .list {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .list h1 {
+        font-size: 38px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .filterButton {
+        font-size: 12px;
+    }
+}
+

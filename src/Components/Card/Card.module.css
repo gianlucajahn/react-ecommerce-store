@@ -5,6 +5,7 @@
     border-radius: 12px;
     transition: 0.3s all;
     position: relative;
+    padding-bottom: 56.25%;
 }
 
 .cardHome {
@@ -283,4 +284,57 @@
 .likeSVG:focus {
     transform: scale(1.25);
 }
+
+@media screen and (max-width: 1700px) {
+    .name {
+        padding-right: 20px;
+    }
+}
+
+@media screen and (max-width: 1240px) {
+    .name {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 975px) {
+    .name {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 840px) {
+    .name {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .name {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .name {
+        font-size: 40px;
+    }
+
+    .card img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 475px) {
+    .name {
+        font-size: 34px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .name {
+        font-size: 26px;
+    }
+}
+
 
