@@ -78,7 +78,7 @@ const Cart = props => {
             
                         <div 
                           className={styles.bottom}  
-                          style={{ marginTop: "850px", width: "87.5%" , display: "flex", justifyContent: "space-between", alignItems: "center" }}
+                          style={{ width: "87.5%" , display: "flex", justifyContent: "space-between", alignItems: "center" }}
                         >
                                 <h3>Total: ${newTotal}</h3>
                                 <button 

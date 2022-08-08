@@ -4,6 +4,7 @@
     min-height: 100vh !important;
     background-color: rgba(0,0,0,.6);
     z-index: 10;
+    overflow: hidden;
 }
 
 .back {
@@ -21,7 +22,7 @@
     right: 0%;
     background-color: #1A1A1A;
     width: 22.5%;
-    height: 100%;
+    min-height: 100vh;
     z-index: 12;
     padding: 30px 0px 30px 28px;
     box-sizing: border-box;
@@ -78,6 +79,7 @@
     justify-content: space-between;
     align-items: center;
     position: absolute;
+    bottom: 3.5%;
 }
 
 .bottom h3 {
@@ -114,6 +116,7 @@
     align-items: center;
     padding: 17px 20px;
     margin-right: 16px;
+    gap: 10px;
 }
 
 .item:not(:first-child) {
@@ -174,4 +177,76 @@
 
 .bottom h3 {
     font-family: "GT Bold";
+}
+
+@media screen and (max-width: 1750px) {
+    .cart {
+        width: 27.5%;
+    }
+}
+
+@media screen and (max-width: 1350px) {
+    .cart {
+        width: 32.5%;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .cart {
+        width: 37.5%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .cart {
+        width: 42.5%;
+    }
+}
+
+@media screen and (max-width: 870px) {
+    .cart {
+        width: 45.5%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .cart {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .cart {
+        width: 57.5%;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .cart {
+        width: 65%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .cart {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .cart {
+        width: 85%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .cart {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .cart {
+        width: 100%;
+    }
 }
