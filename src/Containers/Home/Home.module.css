@@ -194,5 +194,81 @@ a {
     font-family: "GT Bold";
 }
 
+@media only screen and (max-width: 1000px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .left,
+    .right {
+        width: auto;
+        height: auto;
+        margin-top: 100px;
+    }
+
+    .buttonsRight,
+    .buttons,
+    .splash {
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .left,
+    .splash {
+        width: 450px;
+    }
+
+    .right {
+        margin-top: 20px;
+        margin-bottom: 100px;
+    }
+
+    .buttons {
+        width: 276px;
+        height: 190px;
+        align-self: center;
+        flex-direction: column;
+    }
+
+    .buttons button {
+        width: 100%;
+        gap: 20px;
+        padding-left: 75px;
+    }
+
+    .splash {
+        height: 225px;
+    }
+
+    .splash h1 {
+        font-size: 56px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .left,
+    .splash {
+        width: 276px;
+    }
+
+    .splash {
+        padding: 10px 35px 10px 35px;
+        height: 60px;
+        justify-content: center;
+    }
+
+    .splash h1 {
+        font-size: 36px;
+    }
+
+    .splash p {
+        display: none;
+    }
+}
 
 
