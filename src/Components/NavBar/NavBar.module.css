@@ -132,3 +132,91 @@ form button {
 form button:active {
     transform: scale(0.9);
 }
+
+@media screen and (max-width: 1160px) and (min-width: 1021px) {
+    .searchdiv input {
+        width: 350px;
+        margin-left: 20px;
+    }
+}
+
+@media screen and (max-width: 1020px) and (min-width: 926px) {
+    .searchdiv input {
+        width: 250px;
+        margin-left: 20px;
+    }
+}
+
+@media screen and (max-width: 925px) and (min-width: 851px) {
+    .searchdiv input {
+        width: 200px;
+        margin-left: 0px;
+    }
+}
+
+@media screen and (max-width: 850px) and (min-width: 770px) {
+    .searchdiv input {
+        width: 150px;
+        margin-left: 0px;
+    }
+
+    .navbar_left,
+    .navbar_right {
+        gap: 35px;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .logodiv,
+    .githubdiv {
+        display: none;
+    }
+
+    .searchdiv input {
+        margin-left: 0px;
+    }
+
+    .searchdiv {
+        margin-right: 20px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .cartdiv {
+        width: 20vw;
+    }
+
+    .searchdiv input {
+        width: 50vw;
+    }
+}
+
+@media screen and (max-width: 485px) {
+    .searchdiv {
+        margin-right: 10px;
+    }
+
+    .searchdiv input {
+        width: 40vw;
+    }
+
+    .navbar {
+        padding: 5px 15px;
+    }
+
+    .cartdiv {
+        width: 25vw;
+    }
+}
+
+@media screen and (max-width: 485px) {
+    .cartdiv {
+        width: 30vw;
+    }
+}
+
+@media screen and (max-width: 325px) {
+    .cartdiv h3 {
+        font-size: 14px;
+    }
+}
