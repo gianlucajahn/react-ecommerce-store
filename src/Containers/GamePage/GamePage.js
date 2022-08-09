@@ -196,6 +196,7 @@ const GamePage = props => {
                         id="21" 
                         onMouseEnter={handleHover} 
                         onMouseLeave={handleHover} 
+                        className={styles.addToCartButton}
                         style={{ color: hoverState[21].hovered ? "#92f" : "#999999" }} 
                         onClick={handleAddToCart} 
                         aria-label="Add"

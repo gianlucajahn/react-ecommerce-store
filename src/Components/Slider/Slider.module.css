@@ -1,7 +1,12 @@
 .slider {
     width: 67.5%;
+    height: 100%;
     position: relative;
     box-sizing: border-box;
+}
+
+.slide {
+    height: 100%;
 }
 
 .currentImg {
@@ -123,4 +128,25 @@
     background-color: #92f;
     transition-duration: 0.6s;
     cursor: pointer;
+}
+
+@media screen and (max-width: 1770px) {
+    .slider {
+        width: 60%;
+        
+    }
+}
+
+@media screen and (max-width: 1530px) {
+    .slider {
+        width: 67.5%;
+        
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .slider {
+        width: 100%;
+        
+    }
 }

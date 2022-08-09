@@ -71,7 +71,8 @@ header h1 {
 
 .gameInfo {
     justify-content: space-between;
-    width: 28%
+    width: 28%;
+    flex-shrink: 0;
 }
 
 .aboutTop {
@@ -342,4 +343,194 @@ header h1 {
 .liked {
     fill: #F53333;
     transition-duration: 0.3s;
+}
+
+@media screen and (max-width: 1770px) {
+    .gameInfo {
+        width: 35%;
+    }
+
+    .aboutTop {
+        height: 200px;
+    }
+
+    .aboutBottom {
+        height: 210px !important;
+        font-size: 12px !important;
+        animation: opening 0.5s ease-in-out forwards;
+    }
+}
+
+@media screen and (max-width: 1530px) {
+    .gameInfo {
+        width: 28%;
+    }
+
+    .aboutBottom {
+        height: 220px !important;
+        font-size: 12px !important;
+        animation: opening 0.5s ease-in-out forwards;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .game {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .gamepage {
+        overflow: scroll;
+    }
+
+    .gameInfo {
+        width: 91%;
+    }
+
+    .aboutBottom,
+    .aboutBottomClosed {
+        margin-bottom: 15px;
+    }
+
+    .open a,
+    .open h4,
+    .buttonHovered,
+    .buttonNotHovered {
+        font-size: 18px !important;
+    }
+
+    .aboutBottom {
+        height: 280px !important;
+        font-size: 12px !important;
+        animation: opening 0.5s ease-in-out forwards;
+        padding-top: 40px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .aboutTop {
+        height: 240px !important;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    header h1 {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 825px) {
+    header h1 {
+        font-size: 32px;
+    }
+
+    .aboutTop {
+        height: 270px !important;
+    }
+
+    .aboutBottom {
+        height: 295px !important;
+        font-size: 12px !important;
+        animation: opening 0.5s ease-in-out forwards;
+        padding-top: 40px;
+    }
+}
+
+@media screen and (max-width: 675px) {
+    header h1 {
+        font-size: 26px;
+    }
+}
+
+@media screen and (max-width: 590px) {
+    header h1 {
+        font-size: 20px;
+        padding-top: 6px;
+    }
+}
+
+@media screen and (max-width: 590px) {
+    header h1 {
+        font-size: 20px;
+        padding-top: 6px;
+    }
+
+    .gamepageContent {
+        padding: 30px 25px;
+    }
+
+    .aboutTop {
+        padding: 30px 40px 30px 34px;
+    }
+
+    .open a,
+    .open h4,
+    .buttonHovered,
+    .buttonNotHovered {
+        font-size: 16px !important;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .game {
+        gap: 15px;
+    }
+
+    .aboutTop {
+        height: 320px !important;
+    }
+
+    header h1 {
+        font-size: 17px;
+        padding-top: 3px;
+    }
+
+    .goBack {
+        font-size: 20px;
+    }
+
+    .aboutBottom {
+        height: 330px !important;
+        font-size: 12px !important;
+        animation: opening 0.5s ease-in-out forwards;
+        padding-top: 40px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    header h1 {
+        font-size: 14px;
+        padding-top: 3px;
+    }
+
+    header {
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .aboutBottom {
+        height: 320px !important;
+    }
+
+    .open a,
+    .open h4,
+    .buttonHovered,
+    .buttonNotHovered {
+        font-size: 14px !important;
+    }
+
+    .addToCart {
+        gap: 20px;
+    }
+
+    .addToCartButton {
+        font-size: 16px !important;
+    }
+}
+
+@media screen and (max-width: 308px) {
+    .aboutBottom {
+        height: 370px !important;
+    }
 }
