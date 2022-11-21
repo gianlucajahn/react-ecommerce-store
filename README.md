@@ -1,4 +1,4 @@
-<h1 align="center">🛍️ React E-Commerce Store</h1>
+<h1 align="center">👥 Typescript React Reddit Clone</h1>
 
 ![](/src/Resources/image/preview1.png)
 <p align="center">
