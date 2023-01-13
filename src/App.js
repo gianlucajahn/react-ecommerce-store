@@ -134,6 +134,7 @@ const location = useLocation();
 
 if (location.pathname != "/react-ecommerce-store/" && location.pathname != "/react-ecommerce-store/browse" && selectedGame === false) {
   let surname = location.pathname.substring(29);
+  console.log("test");
   let currentGame = games.find(game => game.surname === surname);
   if (currentGame != undefined) {
     setSelectedGame(currentGame);
