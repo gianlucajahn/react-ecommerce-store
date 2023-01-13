@@ -27,7 +27,7 @@ I let [Google Lighthouse](https://chrome.google.com/webstore/detail/lighthouse/b
 ![Google Lighthouse Performance Results](https://i.ibb.co/qkXkY5W/report1.png)
 
 ## Motivation
-My motivations in building this project were showcasing what I learned so far and to have somewhat of a "sandbox" to experiment and build within. I was able to learn new libraries and I had to be creative with ways to increase my application's performance. I also believed that building a project with a much bigger codebase than my preceding ones and learning how to organize such a codebase could set me off better for work in a business environment - and it did.
+My motivations in building this project were showcasing what I learned so far and to have somewhat of a "sandbox" to experiment and build within. I was able to learn new libraries and I had to be creative with ways to improve my application's performance. I also believed that building a project with a much bigger codebase than my preceding ones and learning how to organize such a codebase could set me off better for work in a business environment - and it did.
 
 ## Features
 - Expressive, responsive and clear UI/UX
@@ -50,7 +50,7 @@ My motivations in building this project were showcasing what I learned so far an
 ## What I learned:
 - Using motion libraries (e.g. Framer Motion) to achieve much smoother user experiences while maintaining clean code
 - Working with a CDN (Cloud Delivery Network) to improve performance by accelerating bundle delivery
-- organizing and connect a project with React Router Dom
+- organizing and connecting a project with React Router Dom
 
 ## Credits
 [nekusu](https://github.com/nekusu): UI/UX for the game pages and cart popup
