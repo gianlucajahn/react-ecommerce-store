@@ -53,6 +53,4 @@ My motivations in building this project were showcasing what I learned so far an
 - organizing and connecting a project with React Router Dom
 
 ## Credits
-[nekusu](https://github.com/nekusu): UI/UX for the game pages and cart popup
-
 All rights to all pictures, products and names on this website belong to the respective publishers of the games displayed. I only used them to build an environment for myself to learn coding in React with. This page is not being used commercially. If you are an owner of the copyrighted material, please let me know if you have any issues with this page and I'll take it down immediately.
